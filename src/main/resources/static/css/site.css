@@ -1,0 +1,7174 @@
+/* ===== Standard colours for AIP =================================================================================== */
+/*                                                                                                                    */
+/* 1. Arial                                                                                                           */
+/* 2. Trebuchet MS                                                                                                    */
+/*                                                                                                                    */
+/* ===== Standard colours for AIP =================================================================================== */
+
+/*default styles */
+body {
+    color:#333333;
+    font-family:Arial, sans-serif;
+    margin:0 auto;
+    padding:0;
+    width:100%;
+}
+
+h3,
+h4,
+h5,
+p {
+    margin:0;
+}
+
+h2 {
+    font-size:0.9em;
+}
+
+h3 {
+    line-height:1.4em;
+    padding:0;
+}
+
+h4 {
+    height:auto;
+    padding:0;
+}
+
+p { /*global settings to override pub2web stylesheet to something sensible */
+    padding:5px;
+}
+
+#content p {
+    margin-left:15px;
+}
+
+ul { /*global settings to override pub2web stylesheet to something sensible */
+    margin:0;
+    margin-left:1em;
+    padding:7px 7px 7px 0;
+}
+
+ul.flat {
+    overflow:visible;
+}
+
+.content img {
+    margin:0; /* override pub2web */
+    vertical-align:middle;
+}
+
+a,
+a:visited,
+a:active,
+.underline {
+    color:#1a6594;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#333333;
+    text-decoration:underline;
+}
+
+p img {
+    float:none; /* override pub2web */
+    margin:0; /* override pub2web */
+}
+
+input[type="password"],
+input[type="text"] {
+    background-color:#ffffff;
+    border-color:#cccccc;
+    border-style:solid;
+    border-width:1px;
+}
+
+#signname {
+    font-size:13px;
+    width:145px;
+}
+
+#signpsswd {
+    font-size:13px;
+    width:145px;
+}
+
+.container {
+    background-color:transparent; /* override pub2web */
+    margin:0 auto;
+    position:relative;
+    width:980px; /* override pub2web */
+}
+
+/* Used by Volume/Page search */
+a.downarrow,
+a.downarrow:visited,
+a.downarrow:active {
+    background:url("/images/aip/chevron_down.gif") no-repeat 0 5px transparent;
+    padding-left:17px;
+}
+
+a.downarrow:hover {
+    text-decoration:underline;
+}
+
+a.uparrow,
+a.uparrow:visited,
+a.uparrow:active {
+    background:url("/images/aip/chevron_up.gif") no-repeat 0 5px transparent;
+    padding-left:17px;
+}
+
+a.uparrow:hover {
+    text-decoration:underline;
+}
+
+/*top navigation*/
+#containerwrapper {
+    clear:both;
+    margin:0;
+    position:relative;
+}
+
+#content {
+    width:710px;
+    float:left;
+}
+
+#content h1 {
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:26px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+#content h2 {
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:20px;
+    font-weight:bold;
+}
+
+#content a.moreheadline {
+    font-size:smaller;
+}
+
+#header {
+    float:left;
+    margin-bottom:0;
+    position:absolute;
+    top:-90px;
+}
+
+#header #banner {
+    background:transparent;
+    border:none;
+}
+
+#topnav {
+    float:left;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    left:20px;
+    position:absolute;
+    top:30px;
+}
+
+#topnav a {
+    color:#006699;
+    font-weight:bold;
+    padding-right:10px;
+    text-decoration:none;
+}
+
+#topnavcontainerwrapper {
+    background:url("/images/aip/grad-bkg-top.jpg") repeat-x bottom left;
+    border-bottom:solid 1px #cccccc;
+    clear:both;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    height:84px;
+}
+
+#topnavcontainer {
+    height:80px;
+    margin:0 auto;
+    position:relative;
+    width:980px;
+}
+
+#topnavcontainer ul {
+    float:right;
+    list-style-type:none;
+    margin:0;
+    padding:15px 0;
+}
+
+#topnavcontainer ul.leftmenu {
+    float:left;
+}
+
+#topnavcontainer ul.rightmenu {
+    float:right;
+    margin-right:15px;
+}
+
+#topnavcontainer li {
+    font-size:1.1em;
+    padding:0;
+}
+
+#topnavcontainer li a,
+#topnavcontainer li a:visited,
+#topnavcontainer li a:active {
+    color:#006699;
+}
+
+h1#logo {
+    float:left;
+    margin-bottom:0;
+    margin-top:16px;
+    width:260px;
+}
+
+#searchBox ul {
+    float:right;
+    margin:0;
+    padding:2px 0;
+}
+
+#searchBox li {
+    list-style:none;
+    float:right;
+}
+
+#searchBox li.volumePageLink {
+    padding-right:25px;
+    border-bottom:none 1px #ffffff;
+}
+
+#article .volumePageInput,
+#issue .volumePageInput,
+#journal .volumePageInput {
+    padding-top:10px;
+}
+
+#searchBox a {
+    font-size:10px;
+}
+
+/* home page*/
+#homepage blockquote {
+    border-bottom:solid 1px #cccccc;
+    float:left;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    margin:0;
+    padding-bottom:7px;
+    padding-top:10px;
+}
+
+#homepage blockquote p {
+    color:#797979;
+    font-size:18px;
+    margin:5px 30px 5px 10px;
+}
+
+#homepage blockquote strong {
+    color:#333333;
+}
+
+#homepage blockquote p a {
+    font-style:normal;
+}
+
+#homepage .cyclenavcontainer {
+    clear:both;
+    float:left;
+    margin:15px 10px 15px 0;
+    width:100%;
+}
+
+#slideshow {
+    float:left;
+    width:321px; /* this was increased to line up carousel text and Most Read text below. */
+}
+
+#slideshow img {
+    margin:auto;
+    max-height:240px;
+    max-width:340px;
+    vertical-align:middle;
+}
+
+#cyclenav {
+    float:left;
+    padding:0 0 0 28px;
+    width:330px;
+}
+
+#cyclenav li {
+    border-bottom:1px dashed #cccccc;
+    color:#999999;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    list-style:none;
+    margin:0;
+    padding:5px 0 10px 0;
+}
+
+#cyclenav li.last {
+    border:none;
+}
+
+#cyclenav li a,
+#cyclenav li a:visited,
+#cyclenav li a:active {
+    color:#999999;
+    display:inline-block;
+    font-size:15px;
+    line-height:23px;
+}
+
+#cyclenav li.activeSlide a {
+    color:#333333;
+    text-decoration:none;
+}
+
+#cyclenav li.activeText a {
+    color:#333333;
+    text-decoration:none;
+}
+
+.homeimage {
+    display:none;
+}
+
+.activeImage {
+    display:block;
+}
+
+/* home page main content*/
+.mostcontainer {
+    border-bottom:solid 3px #cccccc;
+    border-top:solid 3px #cccccc;
+    clear:left;
+    float:left;
+    margin-bottom:0;
+    padding-bottom:0;
+    padding-top:10px;
+    width:100%;
+}
+.mostcontainerNoBorder {
+    border-bottom:none;
+    border-top:none;
+}
+
+#homepage .mostcontainer,
+#article .mostcontainer,
+#conferencepaper .mostcontainer,
+#confProcSerial .mostcontainer,
+#issue .mostcontainer,
+#standardscontainer .mostcontainer {
+    border-bottom:none 3px #ffffff;
+    margin-bottom:0;
+}
+
+.featuredissues {
+    clear:both;
+    padding-top:14px;
+}
+
+.collectionContainer h2,
+.commentsContainer > h3,
+.featuredissues h3,
+.keywords-container h3,
+.latestarticles h3,
+.mostcontainer h3,
+.shib_part h3,
+.standardslists h3,
+.subjectscontainer h3,
+.searchResultsContainerInner h3,
+.affiliationSearchResultsContainer h3,
+.topicSearchResultsContainer h3,
+.institutionSearchResultsContainer h3,
+.contributorSearchResultsContainer h3 {
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.featuredissues h3,
+.keywords-container h3,
+.mostcontainer h3,
+.standardslists h3 {
+    margin-bottom:10px;
+    position:relative;
+    width:90%;
+}
+
+.keywords-container dl {
+    margin:7px;
+}
+
+.featuredArticleContainer h4,
+.mostcontainer h4 {
+    font-size:13px;
+    font-weight:bold;
+}
+
+.mostcontainer ul {
+    padding:0;
+}
+
+.mostcontainer li {
+    color:#666666;
+    padding:9px 0;
+}
+
+.mostrecentarticles,
+.lateststandards {
+    width:350px;
+    float:left;
+}
+
+.recentmaterial {
+    border-top:solid 3px #cccccc;
+    clear:both;
+    padding-top:30px;
+    width:710px;
+}
+
+.mostrecentarticles li {
+    border-bottom:none 1px #ffffff;
+}
+
+.mostrecentarticles li.last {
+    border:none;
+}
+
+.mostread {
+    width:330px;
+    float:right;
+}
+
+.mostreadcontainer {
+    margin-bottom:23px;
+}
+
+.mostcited {
+    border:none 1px #cccccc;
+    border-top:solid 1px #cccccc;
+    clear:both;
+    float:right;
+    margin-top:0;
+    padding:15px 0 0 0;
+    width:330px;
+}
+
+.mostcitedcontainer {
+    border-top:solid 3px #cccccc;
+    margin-bottom:23px;
+    padding-top:10px;
+}
+
+.notopborder {
+    border-top:none 2px #ffffff;
+}
+
+
+/* Used in many places... */
+.std-display {
+    color:#006197;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:9.5px;
+    font-style:normal;
+    font-weight:bold;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+a.lesslink,
+a.lessLink,
+a.lessLink2,
+a.moreLink,
+a.moreLink2,
+a.morelink,
+a.morelink2 {
+    clear:both;
+    color:#006197;
+    float:right;
+    margin-right:0;
+    padding-bottom:5px;
+    padding-right:5px;
+}
+
+a.lessLink,
+a.lessLink2,
+a.lesslink {
+    display:none;
+}
+
+.subjectscontainer {
+    border-top:solid 3px #cccccc;
+    clear:both;
+    float:left;
+    margin:20px 0 0 0;
+    padding-bottom:25px;
+    padding-top:25px;
+    width:100%;
+}
+
+.subjectscontainer .leftbox {
+    float:left;
+    width:230px;
+}
+
+.subjectscontainer .middlebox {
+    float:left;
+    width:230px;
+}
+
+.subjectscontainer .rightbox {
+    float:left;
+    width:230px;
+}
+
+.subjectscontainer h3 {
+    padding:0 0 15px 0;
+}
+
+.subjectscontainer a {
+    font-size:13px;
+    padding-left:0;
+}
+
+.subjectscontainer a:hover {
+    background-position:0 -26px;
+}
+
+.subjectscontainer ul {
+    margin:0;
+    padding:0;
+}
+
+.subjectscontainer li {
+    padding:2px 0;
+}
+
+/* rightsidebar right*/
+.advertscontainer {
+    clear:both;
+    float:left;
+    padding-top:0;
+}
+
+#sidebar_right .advertscontainer {
+    padding-top:15px;
+}
+
+.advertscontainer img {
+    float:right;
+    margin-bottom:20px;
+}
+
+.advertscontainer .advert {
+    margin:5px 35px 15px 35px;
+    display:none;
+}
+
+.advertscontainer .advertTop {
+    height:90px;
+    margin:0 0 20px 0;
+    width:728px;
+}
+
+.advertscontainer .advertTop2 {
+    clear:both;
+    height:60px;
+    margin:10px auto;
+    width:468px;
+}
+
+.advertscontainer .advertRight {
+    float:right;
+    height:600px;
+    width:160px;
+}
+
+.advertscontainer .advertRight1,
+.advertscontainer .advertRight2,
+.advertscontainer .advertRight3 {
+    float:left;
+    max-width:125px;
+    min-width:120px;
+}
+
+.navigation > ul {
+    border-bottom:dashed 1px #cccccc;
+}
+
+.navigation li {
+    border-bottom:1px dashed #cccccc;
+    font-size:11px;
+    padding:2px 0;
+}
+
+.navigation li:last-child,
+.navigation li.last {
+    border-bottom:none 1px #ffffff;
+}
+
+.toolsprite {
+    background-image:url("/images/aip/tool-sprites.gif");
+    background-position:left center;
+    background-repeat:no-repeat;
+    padding-left:24px;
+}
+
+.toolsprite.register {
+    background-image:url("/images/aip/icon_register.gif");
+}
+
+.toolsprite.signin {
+    background:url("/images/aip/icon_signin.png") 0 0 no-repeat;
+    height:17px;
+}
+.toolsprite.signin.up {
+    background:url("/images/aip/icon_signin.png") 0 -18px no-repeat;
+    height:17px;
+}
+
+/* sets default for sign in box */
+#loginBox .signIn.chevroncontent {
+    display:none;
+}
+
+.toolsprite.signin-institution {
+    background-image:url("/images/aip/icon_signin_institution.gif");
+}
+
+.toolsprite.signout {
+    background-image:url("/images/aip/icon_signout.gif");
+}
+
+.toolsprite.myaccount {
+    background-position:0 0;
+}
+
+.toolsprite.cart {
+    background-position:0 -30px;
+}
+
+.toolsprite.addtofavourite {
+    background-position:0 -60px;
+}
+
+.toolsprite.administration {
+    background-image:url("/images/aip/icon_admin.gif");
+}
+
+.toolsprite.inaccessible {
+    background-image:url("/images/aip/icon_edit_inaccess_content.gif");
+}
+
+#sidebar_right ul.navigation {
+    border-bottom:solid 1px #cccccc;
+    padding:2px 0;
+}
+
+#sidebar_right ul.navigation li:last-child {
+    border-bottom:none 1px #cccccc;
+}
+
+#sidebar_right ul.navigation a {
+    padding-bottom:2px;
+    padding-top:2px;
+}
+
+#loginBox .navigation {
+    border-bottom:none 1px #cccccc;
+    border-top:none 1px #cccccc;
+}
+
+#loginBox .navigation .item-signin {
+    border-bottom:none 1px #ffffff;
+}
+#loginBox fieldset {
+    margin:4px 0 0 0;
+    padding:3px 6px 3px 24px;
+}
+
+#loginBox input.styledbutton {
+    margin-top:15px;
+    width:147px;
+}
+
+#loginBox > p {
+    display:none;
+}
+
+.signininput .forgotten {
+    color:#1a6594;
+    font-size:11px;
+    line-height:1.4;
+}
+
+.signin-error {
+    color:#ff0000;
+    font-size:0.87em;
+}
+
+/* fixed to updating sign in info error */
+form#newregactivation .error,
+form#regForm .error {
+    color:#ff0000;
+    float:none;
+}
+
+.icon-key {
+    border-bottom:solid 2px #cccccc;
+    border-top:solid 2px #cccccc;
+    padding:10px 0 10px 0;
+    clear:both;
+    color:#333333;
+}
+
+.icon-key h4 {
+    color:#333333;
+    font-size:12px;
+    font-weight:bold;
+    padding-bottom:5px;
+}
+
+.icon-key ul.flat {
+    line-height:2.0;
+    padding-bottom:0;
+    padding-top:0;
+}
+
+/* top link */
+.toplink {
+    clear:both;
+    margin-bottom:0;
+    position:relative;
+    width:710px;
+}
+
+.toplink a {
+    margin-right:0;
+    position:absolute;
+    right:-125px;
+    top:33px;
+}
+
+a.uparrowright,
+a.uparrowright:visited,
+a.uparrowright:active {
+    background:url("/images/aip/uparrow.gif") no-repeat right center transparent;
+    padding-right:20px;
+}
+
+a.uparrowright:hover {
+    background:url("/images/aip/uparrow_selected.gif") no-repeat right center transparent;
+    padding-right:20px;
+    text-decoration:underline;
+}
+/*recently viewed / recent searches footer section*/
+.footer_recentcontainer {
+	clear: both;
+	width:710px;
+	border-top:3px #ccc solid;
+}
+	.footer_recentcontainer h5 {
+		font-family: "Trebuchet MS", Arial, sans-serif;
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	.footer_recentcontainer a {
+		font-weight:bold;
+	}
+	.footer_recentcontainer ul{
+		padding-top:0px;
+	}
+	.footer_recentcontainer ul.flat li {
+		margin:15px 0px;
+	}
+.footer_recentsearches,
+.footer_recentlyviewedcontent{
+	width:48%;
+	padding:15px 0px;
+	margin:0px;
+	float:left;
+}
+.footer_recentlyviewedcontent {
+	margin-right:20px
+}
+
+/* footer */
+#bottomnavcontainer {
+    margin-top:20px;
+}
+
+#footerinclude {
+    background:url("/images/aip/footer-grad-bkg.gif") repeat-x 0 0;
+    height:110px;
+    clear:both;
+}
+
+#footercontainerwrapper {
+    margin:0 auto;
+    width:980px;
+}
+
+#footer {
+    font-size:11px;
+    margin:0 auto;
+    padding-top:20px;
+    width:980px;
+}
+
+.footerlinklist {
+    float:left;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    margin-left:0;
+}
+
+#footer .footerlink {
+    padding-right:35px;
+}
+
+#footer .sociallink {
+    padding-left:5px;
+    vertical-align:top;
+}
+
+#footer .copyrightnotice {
+    color:#999999;
+    float:left;
+    margin-bottom:15px;
+    margin-left:0;
+    margin-top:40px;
+    width:730px;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:11px;
+}
+
+#footer .socialbookmarks {
+    width:150px;
+    float:right;
+}
+
+#footer .socialbookmarks .label {
+    color:#666666;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:11px;
+    font-weight:bold;
+    width:64px;
+}
+
+#footer .footersiteguide a {
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:13px;
+}
+
+#footer .footersiteguide a span {
+    border-right:solid 1px #cccccc;
+    display:block;
+    height:10px;
+    line-height:10px;
+    padding:0 12px;
+}
+
+#footer .footersiteguide li.first a span {
+    padding-left:0;
+}
+
+#footer .footersiteguide li.last a span {
+    border-right:none;
+}
+
+#footer .footersiteguide {
+    clear:both;
+    float:left;
+    width:100%;
+}
+
+#footer .footersiteguide li {
+    width:auto;
+    float:left;
+    padding:6px;
+}
+
+#footer .footersiteguide li.last {
+    border:none;
+}
+
+#footer .footersiteguide li.first {
+    padding-left:0;
+}
+
+.a_to_z {
+    border-bottom:none 1px #ffffff;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    padding-bottom:0;
+    padding-top:0;
+    margin-bottom:0;
+    float:right;
+    margin-right:10px;
+}
+
+#journalspage .resultsnav {
+    float:none;
+    margin-bottom:0;
+    padding:0;
+}
+
+#journalspage .publistwrapper > ul.flat {
+    padding:0;
+}
+
+#journalspage .publistwrapper > ul.flat > li {
+    border-bottom:solid 1px #cccccc;
+    padding:13px 0 13px 0;
+}
+
+#journalspage .publistwrapper > ul.flat > li:last-child {
+    border-bottom:none 1px #ffffff;
+}
+
+#container p {
+    margin:0;
+    padding:0 0 10px 0;
+}
+
+.newestfirst ul {
+    list-style:none outside none;
+    margin-left:400px;
+}
+
+ul,
+li {
+    list-style:none outside none;
+    vertical-align:baseline;
+}
+
+#navbar li {
+    float:left;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    list-style:none outside none;
+    padding-right:32px;
+}
+
+.searchDiv {
+    height:30px;
+    position:relative;
+}
+
+.std-search-box {
+    border:solid 1px #006699;
+    color:#333333;
+    font-size:13px;
+    height:20px;
+    padding:5px 40px 6px 10px;
+    width:300px;
+    vertical-align: top;
+}
+
+#quickSearchBox {
+    float:right;
+    margin-left:10px;
+}
+
+.defaultTerm {
+    color:#999999;
+}
+
+.searchDiv #searchbutton {
+    position:absolute;
+    right:8px;
+    top:6px;
+}
+
+#navbar li a {
+    font-size:16px;
+}
+
+#navbar li.lessRightPadding {
+    padding-right:15px;
+}
+
+#navbar span.mainNavSeparator {
+    font-weight:600;
+    font-size:16px;
+    color:#797979;
+}
+
+#searchBox .searchDiv {
+    float:right;
+    margin-top:10px;
+}
+
+.publistwrapper li.odd {
+    background-color:#ffffff;
+}
+
+/* Defined separately since it is from an external component */
+li.seeMoreFacetsLink {
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:9.5px;
+    font-style:normal;
+    font-weight:bold;
+    letter-spacing:1px;
+    padding-left:0;
+    text-transform:uppercase;
+}
+
+/* Defined separately since it is from an external component */
+#morelikethis .morelink {
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:9.5px;
+    font-style:normal;
+    font-weight:bold;
+    letter-spacing:1px;
+    padding-left:0;
+    text-transform:uppercase;
+}
+
+div.related #morelikethis {
+    font-size:0.8em;
+}
+
+div.related #morelikethis .authors {
+    font-size:12px;
+}
+
+#navbar ul.link {
+    border-bottom:none;
+    margin-left:25px;
+}
+
+#navbar ul {
+    background:transparent;
+    border-bottom:none 1px #cccccc;
+    clear:both;
+    float:left;
+    margin:0;
+    margin-bottom:0;
+    padding:0;
+    position:relative;
+    width:760px;
+}
+
+#navbar li.menuSearchBox {
+    border-bottom:none;
+    padding-right:0;
+}
+
+.advancedLink {
+    border-bottom:none;
+    float:right;
+    margin-right:0;
+}
+
+.volumePageLink {
+    border-bottom:none;
+    margin-left:0;
+}
+
+.advancedLink a,
+.volumePageLink a {
+    font-size:11px;
+}
+
+#navbar .separator-solid {
+    border-top:solid 1px #cccccc;
+    position:absolute;
+    top:91px;
+    width:600px;
+}
+
+#navbar li.active a {
+    color:#333333;
+}
+
+.newestfirst li {
+    display:none;
+}
+
+.newestfirst .first {
+    display:block;
+}
+
+.newestfirst {
+    display:none;
+}
+
+/* ========== Start of TABS styling ================================================================================= */
+
+ul.tabset {
+    border-bottom:solid 1px #cccccc;
+    height:2.5em;
+    list-style:none outside none;
+    margin:10px 0 5px 0;
+    padding:5px 0 1px 0;
+    position:relative;
+}
+
+ul.tabset li {
+    background-color:#ebebeb;
+    margin-right:2px;
+}
+
+ul.tabset li.active {
+    background-color:#ffffff;
+    border-bottom:solid 2px #ffffff;
+}
+
+ul.tabset li a {
+    padding-left:5px;
+}
+
+ul.tabset li a span {
+    background-position:right top;
+    height:2.6em;
+    padding:0 5px 0 0;
+}
+
+ul.tabset li.active a span {
+    color:#333333;
+}
+
+ul.tabset span {
+    font-family:"Trebuchet MS", Arial, sans-serif;
+}
+
+ul.tabset li a,
+ul.tabset li span {
+    background:url("/images/aip/tab-corners.gif") no-repeat top left;
+    color:#6d6d6d;
+    display:block;
+    float:left;
+    line-height:2.5em;
+}
+
+ul.tabset li a:hover span {
+    color:#006699;
+}
+
+ul.tabset li a:hover {
+    background-color:#ffffff;
+}
+
+ul.tabset li.disabled,
+ul.tabset li a.disabled,
+ul.tabset li a.disabled:hover span {
+    background-color:#b0b0b0;
+    color:#666666;
+    cursor:default;
+}
+
+#conceptpage ul.tabset li a span,
+#searchResultsTabs ul.tabset li span {
+    padding:0 16px 0 8px;
+}
+
+/* ========== End   of TABS styling ================================================================================= */
+
+.searchresultlink,
+.returntoparentlink {
+    padding-left:0;
+}
+
+.resultsbuttons {
+    float:none;
+}
+
+#conceptpage ul.tabset,
+#searchResultsTabs ul.tabset {
+    padding:0 40px 1px 180px;
+    width:480px; /* Don't forget the padding! */
+}
+
+/* ========== Start of publisher page styling ======================================================================= */
+
+.publisheritem {
+    border-bottom:solid 1px #cccccc;
+    clear:both;
+    display:block;
+    float:left;
+    margin-bottom:10px;
+    overflow:hidden;
+    padding-top:20px;
+    padding-bottom:20px;
+    width:100%;
+}
+
+.publisheritem:last-of-type {
+    border-bottom:none 1px #ffffff;
+}
+
+.publisheritem h3 {
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:1.5em;
+    font-weight:bold;
+}
+
+.publisheritem .publisherlogodiv {
+    display:inline-block;
+    width:18%;
+}
+
+.publisherBrandingLogo img,
+.publisheritem .publisherlogodiv img {
+    max-width:105px;
+}
+
+.publisheritem .publisherinfodiv {
+    display:inline-block;
+    vertical-align:top;
+    width:75%;
+}
+
+#publisherpage .separated-list {
+    margin-left:240px;
+    margin-top:20px;
+}
+
+.publisheritem a {
+    text-decoration:underline;
+}
+
+.publisheritem .logo {
+    float:left;
+    clear:both;
+    margin-right:20px;
+    max-height:120px;
+    width:90px;
+}
+
+.pubExternalHomepage {
+    font-family:"Trebuchet MS", Arial, sans-serif;
+}
+
+/* ========== End   of publisher page styling ======================================================================= */
+
+/** various facet overrides **/
+#content .facets {
+    border:none;
+    padding:24px 0 0;
+    margin-top:10px;
+}
+
+.facets,
+.issueBar {
+    border:none;
+    font-size:0.9em;
+    width:150px;
+}
+
+.facets ul li.browsefacetterm,
+.facets ul li.facetitem,
+.facets ul li.seeAhahFacetsLink,
+.facets ul li.seeMoreFacetsLink,
+.facets ul li.toggleajaxfacetitem {
+    list-style:none;
+    margin-top:8px;
+}
+
+.facets ul {
+    margin:0 0 20px 0;
+    padding:0;
+}
+
+.facets h3 {
+    border-bottom:2px solid #D7D7D7;
+    border-top:2px solid #D7D7D7;
+    color:#333333;
+    font-size:11px;
+    font-weight:bold;
+    margin:5px 0 0 0;
+    padding:2px 0;
+    text-transform:uppercase;
+    width:140px;
+}
+
+.facets > h3:first-child  {
+    margin:0
+}
+
+.facets.years li {
+    /*margin-top:15px;*/
+}
+
+.resultItemContainer {
+    border-bottom:solid 1px #cccccc;
+    float:left;
+    padding-bottom:5px;
+    padding-top:5px;
+    position:relative;
+    width:100%;
+}
+
+.resultItemContainer:last-of-type {
+    border-bottom:none 1px #ffffff;
+}
+
+.resultItem {
+    clear:both;
+    margin:0;
+    padding-bottom:10px;
+    padding-left:25px;
+    position:relative;
+}
+
+#searchResultsContainer .sortBy {
+    padding-bottom:18px;
+    padding-top:25px;
+}
+
+#conceptpage #searchResultsContainer .sortBy {
+    padding-top:35px;
+}
+
+#conceptpage #conceptcontent #searchResultsContainer .showhide,
+#conceptpage #conceptcontent #searchResultsContainer .sortBy,
+#conceptpage #conceptcontent #searchResultsContainer .showAllDescriptions {
+    display:none;
+}
+
+#conceptcontent .searchResultsContainerInner {
+    padding-top:0;
+}
+
+#institutionpage #searchResultsContainer .sortBy {
+/*    padding-top:12px; */
+}
+
+#searchShowHide {
+    padding-top:22px;
+}
+
+#conceptpage #searchShowHide {
+    padding-top:32px;
+}
+
+#institutionpage #searchShowHide {
+    padding-top:10px;
+}
+
+#conceptbyauthorcontent .facets,
+#conceptbyauthorcontent #searchShowHide,
+#conceptbyauthorcontent .showhide {
+    display:none;
+}
+
+.ptol-bookendsContainer .publistwrapper h4 {
+/*    margin-left:171px; */
+}
+
+#conceptbyauthorcontent #searchResultsContainer {
+    margin-left:0;
+    width:710px;
+}
+
+/* Defined separately since it is from an external component */
+#thirdpartysearchresultspage .showhide {
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:9.5px;
+    font-style:normal;
+    font-weight:bold;
+    letter-spacing:1px;
+    padding-bottom:5px;
+    padding-top:5px;
+    text-transform:uppercase;
+}
+
+#thirdpartysearchresultspage .authors .label,
+#thirdpartysearchresultspage .source .label {
+    display:none;
+}
+
+.searchfulltext {
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.resultsnav p {
+    float:left;
+}
+
+#searchShowHide .showHideAbstracts .plus {
+    background:url("/images/aip/plus_icon.gif") no-repeat scroll left center transparent;
+    color:#006699;
+    padding-bottom:0;
+    padding-left:10px;
+}
+
+#searchShowHide .showHideAbstracts .minus {
+    background:url("/images/aip/minus_icon.gif") no-repeat scroll left center transparent;
+}
+
+#searchShowHide .showHideAbstracts a {
+    color:#006699;
+}
+
+a.hideAllDescriptions,
+a.showAllDescriptions {
+    padding-left:10px;
+}
+
+.showhide {
+    padding:7px 0 4px 0;
+    text-decoration:none;
+}
+
+.showhide .underline:hover {
+    text-decoration:underline;
+}
+
+.browsecontent {
+    float:left;
+}
+
+.publistwrapper {
+    margin-left:170px;
+}
+
+#tabbedpages {
+    overflow:inherit;
+    padding-top:5px;
+}
+
+.journaltopleft {
+    float:left;
+    padding-left:0;
+    padding-right:0;
+    position:relative;
+    width:170px;
+}
+
+.journaltopleft img.magnify {
+    bottom:1px;
+    position:absolute;
+    right:61px;
+}
+
+.searchwrapperbox {
+    display:none;
+}
+
+.meta-block {
+    margin-bottom:10px;
+    margin-top:5px;
+}
+
+.journaleditorialinfo {
+    float:right;
+    margin-right:40px;
+}
+
+.resultItem .authors .label {
+    font-weight:normal;
+}
+
+#container .descriptioncontainer,
+#container .description,
+#container .description.contain {
+    margin:0 0 0 11px;
+}
+
+#container .description .descriptioncontainer {
+    margin:0 0 0 0;
+}
+
+#container .descriptioncontainer p,
+#container .description.contain p {
+    font-size:11px;
+}
+
+#container .description.noabstract {
+    margin:5px 0 0 0;
+}
+
+.tools {
+    float:left;
+    font-size:11px;
+    margin-top:0;
+    padding-bottom:0;
+}
+
+#journal .toc .tools .favouritesForm {
+    display:block;
+}
+
+#journal .tools {
+    margin-top:20px;
+}
+
+.tools .citation,
+.tools .email,
+.tools .favorites {
+    background-attachment:scroll;
+    background-color:transparent;
+    background-position:center left;
+    background-repeat:no-repeat;
+    display:inline;
+}
+
+.tools .fleft {
+    padding-top:0;
+}
+
+.tools .citation {
+    background-image:url("/images/aip/citation_icon.gif");
+    padding-bottom:0;
+    width:105px;
+}
+
+.tools .toolsprite {
+    padding-left:20px;
+}
+
+.tools .email {
+    background-image:url("/images/aip/email_icon.gif");
+    width:75px;
+}
+
+.tools .favorites {
+    background-image:url("/images/aip/favorites_icon.gif");
+    width:125px;
+}
+
+.citationtext a.toggle {
+    background:none;
+    padding:0;
+}
+
+.emailtext,
+.citationtext,
+.favoritestext {
+    padding-left:20px;
+    font-size:11px;
+}
+
+#homepage #navbar li {
+    border-bottom:none;
+}
+
+.separator {
+    border-bottom:3px solid #cccccc;
+    clear:both;
+    margin-bottom:10px;
+    padding-top:0;
+}
+
+.borderLineTop {
+    border-top:3px solid #cccccc;
+}
+
+#journal .issueBar,
+#issue .issueBar {
+    border:none;
+    clear:both;
+}
+
+#maincontent .issueBar h4 {
+    font-weight:bold;
+    font-size:1em;
+}
+
+#maincontent .issueBar h5 {
+    font-weight:bold;
+    font-size:1em;
+}
+
+.showhideall {
+    display:none;
+}
+
+#issue .issueTitle h3 {
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    padding:0 0 0 170px;
+}
+
+/* ========== Start of general page styling ========================================================================= */
+.box {
+    background-color:#ffffff;
+    margin:0.5em;
+    padding:0 0 0 0;
+}
+
+.generalpage-container {
+    width:100%;
+}
+
+.general-sidebar {
+    float:left;
+    height:auto;
+    margin-top:10px;
+    padding:5px;
+    width:100px;
+}
+
+.general-sidebar ul {
+    list-style-type:none;
+    margin-left:0;
+    margin-right:0;
+    margin-top:100px;
+}
+
+.general-sidebar ul li {
+
+}
+
+.general-content {
+    height:auto;
+    margin-left:165px;
+    padding:10px;
+}
+
+.general-content h2 {
+    color:#ff0000;
+}
+
+.generalpage-content {
+    float:right;
+    width:500px;
+    text-align:justify;
+}
+
+/* ========== End   of general page styling ========================================================================= */
+/* ========== Start of DEBUG styling ================================================================================ */
+
+.AIPDEBUG {
+    background-color:black;
+    border-radius:5px;
+    color:yellow;
+    display:none;
+    left:2px;
+    opacity:0.3;
+    padding:0;
+    position:fixed;
+    top:2px;
+    z-index:99;
+}
+
+/* ========== End   of DEBUG styling ================================================================================ */
+
+#searchresultspage .toplink a {
+    margin-top:-37px;
+}
+
+
+.searchResultsTitle {
+    padding:15px 0 0 24px;
+}
+
+/* Some common bits for popover/popdown boxes */
+.popBox-common {
+    background-color:#fbfaf8;
+    border-color:#cccccc;
+    border-width:1px;
+    border-style:solid;
+    color:#333333;
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* Used by Volume/Page search */
+.popOverBox {
+    border-radius:1%/3%;
+    box-shadow:2px 1px 4px rgba(0, 0, 0, 0.25);
+    padding:15px;
+}
+
+#volPageMenu {
+    display:none;
+    padding:10px;
+    position:absolute;
+    right:0;
+    top:25px;
+    width:228px;
+    z-index:100;
+}
+
+#searchpublication {
+    width:220px;
+}
+
+.searchInput {
+    height:21px;
+    width:43px;
+}
+
+#gobutton {
+    margin-left:10px;
+    margin-top:5px;
+}
+
+#gobutton.styledbutton {
+    min-width:46px;
+    padding:1px 0;
+}
+
+#volPageContainer {
+    position:relative;
+    float:right;
+}
+
+#searchResultsContainer {
+    width:525px;
+}
+
+#searchResultsContainer.publistwrapper.nofacetmargin {
+    width:710px;
+}
+
+.pricingDetails .access-options,
+.pubtopright .access-options {
+    background-color:transparent;
+    border:none 1px #cccccc;
+    font-size:11px;
+    font-weight:bold;
+    margin:0 10px;
+    padding:0;
+}
+
+.access-options .purchaseItem,
+.access-options .purchaseItem {
+    color:#333333;
+    font-size:15px;
+    text-align:left;
+}
+
+.access-options .purchaseItem span,
+.access-options .purchaseItem span {
+    font-weight:bold;
+}
+
+.access-options .purchaseItem .styledbutton,
+.access-options .purchaseItem .styledbutton,
+.access-options .rentItem .styledbutton {
+    float:left;
+    margin-top:3px;
+}
+
+.fulltextandtools {
+    padding:0;
+    position:relative;
+}
+
+.pricingDetails {
+    border:solid 1px #cccccc;
+    float:left;
+    width:220px;
+}
+
+.accessfulltextlabel {
+    display:none;
+}
+
+.fulltext {
+    font-size:12px;
+    padding-top:0;
+}
+
+.fulltext li.pdf {
+    background:url("/images/aip/pdf_icon.gif") no-repeat scroll left top #ffffff;
+    background-color:#f3f3f3;
+    background-size:17px 17px;
+}
+
+.fulltext li.html {
+    background:url("/images/aip/icon_view_online.gif") no-repeat scroll left top #ffffff;
+    background-color:#f3f3f3;
+}
+
+.fulltext li.xml {
+    display:none;
+}
+
+.fulltext .html .htmlText,
+.fulltext .html .fulltextsize,
+.fulltext .pdf .fulltextsize {
+    display:none;
+}
+
+.fulltext a,
+.fulltext a:visited,
+.fulltext a:active,
+.fulltext .underline {
+    padding-left:22px;
+}
+
+.fulltextsize {
+    display:none;
+    font-size:11px;
+}
+
+.access-options ul.flat {
+    padding:0;
+    width:175px;
+}
+
+.separated-list {
+    border-top:none;
+}
+
+.separated-list > li {
+    border-bottom:none 1px #ffffff;
+    overflow:hidden;
+}
+
+.articlenav {
+    border-top:1px dashed #CCCCCC;
+    height:35px;
+    margin-bottom:0;
+    margin-top:3px;
+    padding-top:10px;
+    width:720px;
+}
+
+.navigate-resources {
+    float:left;
+    margin-bottom:5px;
+}
+
+#article .navigate-resources {
+    margin-bottom:0;
+}
+
+
+.separator-dotted {
+    border-top:2px dotted #cccccc;
+    padding-bottom:10px;
+    width:100%;
+}
+
+.separator-dotted-long {
+    border-top:2px dotted #cccccc;
+    padding-bottom:10px;
+    width:710px;
+}
+
+.separator-solid-long-thin {
+    border-top:none 1px #cccccc;
+    clear:both;
+    padding-bottom:5px;
+    width:710px;
+}
+
+.separator-solid {
+    border-top:solid 3px #cccccc;
+    clear:both;
+    padding-bottom:5px;
+    width:100%;
+}
+
+.addtofavourites {
+    float:none;
+}
+
+#article .abstract-container,
+#conferencepaper .abstract-container {
+    color:#4d4d4d;
+    float:left;
+    padding-bottom:13px;
+    padding-top:4px;
+    width:520px;
+}
+
+.keywords-container {
+    border:solid 1px #5ab4e6;
+    border-radius:3px;
+    float:right;
+    margin-left:5px;
+    margin-top:4px;
+    padding:5px;
+    width:170px;
+}
+
+#article .keywords-container span.meta-key,
+#conferencepaper .keywords-container span.meta-key,
+#standard .keywords-container span.meta-key {
+    color:#808080;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:14px;
+}
+
+#article .patent-container span.meta-key {
+    color:#333333;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:13px;
+}
+
+#container .publisherdetail .logo {
+    float:left;
+}
+
+.publisherdetail {
+    clear:both;
+    float:left;
+    margin-bottom:20px;
+    margin-top:20px;
+    width:100%;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:14px;
+    color:#333333;
+}
+
+#publisherpage .a_to_z {
+    margin:0;
+    float:left;
+    width:500px;
+}
+
+.publisherlogocontainer {
+    min-width:225px;
+    min-height:100px;
+    float:right;
+}
+
+.publisherlogocontainer .logo {
+    border:solid 1px #cccccc;
+}
+
+.pageTitle {
+    float:left;
+    padding:10px;
+}
+
+#publisherhomepage .separator-dotted-long {
+    clear:both;
+}
+
+#publisherhomepage .resultsnav {
+    display:none;
+}
+
+#publisherhomepage .separated-list > li {
+    border-bottom:solid 1px #cccccc;
+}
+
+#publisherhomepage .separated-list > li:last-child {
+    border-bottom:none 1px #ffffff;
+}
+
+#magazinesection a.pricing-tools-trigger,
+#subjectspage a.metastore-tools-trigger,
+#subjectspage a.pricing-tools-trigger,
+#magazinepost a.pricing-tools-trigger,
+#publisherslistpage a.metastore-tools-trigger,
+#journalspage a.pricing-tools-trigger,
+#weblog a.pricing-tools-trigger,
+#obituaries a.pricing-tools-trigger,
+#publisherhomepage .content-tools-create-Standards,
+#publisherhomepage .content-tools-create-Collection,
+#publisherhomepage .content-tools-create-Book,
+#publisherhomepage .create-links a[resourcetype="http://aip.metastore.ingenta.com/ns/ItemTypeJournal"] {
+    display:none;
+}
+
+#publisherhomepage .pageTilte h1 {
+    padding-top:10px;
+}
+
+#publisherhomepage .publisherlogocontainer {
+    min-height:0;
+    min-width:0;
+}
+
+#publisherhomepage .advertscontainer {
+    padding-top:40px;
+}
+
+#publisherhomepage .articleMetadata {
+    width:85%;
+}
+
+.toolsprite.submit {
+    background-image:url("/images/aip/icon_submit_to_pub.gif");
+}
+
+.toolsprite.rssFeed {
+    background-position:0 -297px;
+    padding-left:24px;
+}
+
+.toolsprite.emailalert {
+    background-image:url("/images/aip/tool-sprites.gif");
+    background-position:0 -120px;
+    padding-left:24px;
+}
+
+.toolsprite.searchhistory {
+    background-image:url("/images/aip/tool-sprites.gif");
+    background-position:0 -237px;
+    padding-left:24px;
+}
+
+.toolsprite.savesearch {
+    background-image:url("/images/aip/tool-sprites.gif");
+    background-position:0 -269px;
+    padding-left:24px;
+}
+
+.toolsprite.savesearchRSS {
+    background-image:url("/images/aip/icon_rss.gif");
+}
+
+.toolsprite.createsearchalert {
+    background-image:url("/images/aip/tool-sprites.gif");
+    background-position:0 -328px;
+    padding-left:24px;
+}
+
+.content-alert-items li img {
+    vertical-align:text-bottom;
+}
+
+#article .pubmetadata,
+#conferencepaper .pubmetadata,
+#standard .pubmetadata {
+    float:left;
+    width:500px;
+    margin-top:10px;
+}
+
+.pubmetadata>div {
+    float:left;
+    width:560px;
+    clear:both;
+    padding-top:10px;
+}
+
+#article .doi_label,
+#conferencepaper .doi_label,
+#standard .doi_label {
+    padding-top:10px;
+}
+
+#issue .doi_label {
+    display:none;
+}
+
+#article .doi-crossmark {
+    display:none;
+}
+
+.patent-container {
+    border:solid 1px #ffffff;
+    clear:right;
+    float:right;
+    margin-left:5px;
+    padding:5px;
+    width:170px;
+}
+
+div.patent {
+    padding-top:3px;
+}
+
+#recommendToLibrarian {
+    background-image:url("/images/aip/tool-sprites.gif");
+    background-position:0 -90px;
+    background-repeat:no-repeat;
+    padding-left:24px;
+}
+
+#recommendToLibraryForm fieldset {
+    width:95%;
+}
+
+.toolsprite.reprint-permission {
+    background-image:url("/images/aip/icon_reprints_permissions.gif");
+}
+
+.toolsprite.export {
+    background-image:url("/images/aip/tool-sprites.gif");
+    background-position:0 -150px;
+    padding-left:24px;
+}
+
+.export-citations li {
+    margin-left:30px;
+}
+
+#breadcrumb {
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:11px;
+    margin-bottom:-14px;
+    margin-top:14px;
+}
+
+#breadcrumb .separator {
+    border-bottom:0;
+}
+
+#article .iconlist,
+#conferencepaper .iconlist,
+#standard .iconlist {
+    display:block;
+}
+
+.bookmarks {
+    display:none;
+    height:20px;
+    left:-20px;
+    position:absolute;
+    top:15px;
+    width:150px;
+}
+
+.sharelinks {
+    cursor:pointer;
+    display:inline-block;
+    padding:0 0 0 2px;
+    position:relative;
+}
+
+.citation ul.togglecontent {
+    margin-left:20px;
+}
+
+#topnavcontainer ul .siginlabel {
+    float:left;
+}
+
+#topnavcontainer ul .signedinas {
+    float:left;
+}
+
+#topnavcontainer ul .signoutlink {
+    float:right;
+}
+
+#topnavcontainer li.last a {
+    float:right;
+}
+
+.ratethis {
+    color:#6d6d6d;
+}
+
+.meta-header {
+    font-family:Arial, sans-serif;
+}
+
+.pub-history {
+    margin-right:10px;
+}
+
+.bookmark-rating-container {
+    border-bottom:1px dotted #cccccc;
+    border-top:1px dotted #cccccc;
+    height:25px;
+    margin-top:10px;
+    width:500px;
+}
+
+#article .doi a,
+#conferencepaper .doi a,
+#standard .doi a {
+    color:#006699;
+}
+
+#article .pub-history {
+    color:#6d6d6d;
+}
+
+.pricingDetails,
+.pubtopright {
+    background-color:#f3f3f3;
+    border:solid 1px #cccccc;
+    margin-bottom:10px;
+    margin-top:1px;
+    padding-bottom:10px;
+    padding-top:7px;
+    width:150px;
+}
+
+.pubtopright {
+    float:right;
+    margin-right:15px;
+}
+
+#article ul.meta-header span.meta-key,
+#conferencepaper ul.meta-header span.meta-key,
+#standard ul.meta-header span.meta-key,
+#confProcSerial ul.meta-header span.meta-key,
+#confProc ul.meta-header span.meta-key,
+#confProcTitlesList ul.meta-header span.meta-key,
+#confProcVolumesList ul.meta-header span.meta-key {
+    color:#666666;
+    font-size:13px;
+}
+
+#article .authors,
+#conferencepaper .authors,
+#standard .authors {
+    font-family:Verdana;
+    font-size:13px;
+    font-weight:normal;
+}
+
+.publication-history span.meta-key {
+    color:#333333;
+}
+
+#sidebar_right .export-citation img {
+    padding-left:4px;
+}
+
+#sidebar_right .emailalert img {
+    padding-left:4px;
+}
+
+#sidebar_right ul .togglecontent {
+    padding-left:15px;
+}
+
+#sidebar_right .toolsprite.emailalert.expanded {
+    background-image:url("/images/aip/tool-sprites.gif");
+    background-position:0 -120px;
+    padding-left:24px;
+}
+
+#sidebar_right .toolsprite.export.expanded {
+    background-image:url("/images/aip/tool-sprites.gif");
+    background-position:0 -150px;
+    padding-left:24px;
+}
+
+#article ul.tabset li.active span,
+#conferencepaper ul.tabset li.active span,
+#standard ul.tabset li.active span {
+    color:#333333;
+}
+
+#navbar ul.link a {
+    color:#6d6d6d;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+}
+
+#standard .abstract-container {
+    color:#4d4d4d;
+    float:left;
+    padding-bottom:10px;
+    width:60%;
+}
+
+#standard .copyright-info {
+    border:none 1px #ffffff;
+    padding-left:12px;
+}
+
+.standard-info-container {
+    float:right;
+    margin-left:10px;
+    width:30%;
+}
+
+.standard-info-container li {
+    padding-bottom:10px;
+}
+
+#confProc .publistwrapper {
+    margin-left:0;
+}
+
+#confProc li,
+#confProc ul {
+    padding-left:0;
+}
+
+#confProc .resultsnav {
+    display:none;
+}
+
+#confProc .navigationBar {
+    width:99%;
+}
+
+.section-title,
+.subsection-title,
+.subsubsection-title {
+    color:#4d4d4d;
+    display:list-item;
+    list-style-type:none;
+}
+
+.section-title {
+    margin-left:20px;
+}
+
+.subsection-title {
+    margin-left:40px;
+}
+
+.subsubsection-title {
+    margin-left:60px;
+}
+
+#article .pubmetadata span.meta-value p {
+    color:#4d4d4d;
+}
+
+.headerlink {
+    font-size:1.1em;
+    font-weight:bold;
+    padding-left:10px;
+    padding-top:3px;
+}
+
+.author-name {
+    color:#333333;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+}
+
+.copyright-info {
+    border-bottom:1px dashed #cccccc;
+    clear:left;
+    padding-bottom:20px;
+    padding-top:10px;
+}
+
+.item-additional-info {
+    padding-top:11px;
+}
+
+.item-publication-history,
+.item-fulltext-sections {
+    padding-top:10px;
+}
+
+.item-doi {
+    width:50%;
+    float:left;
+}
+
+.item-title-crossmark {
+    display:block;
+    overflow:hidden;
+    clear:both;
+}
+
+.item-title {
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:14px;
+}
+
+.item-bookmarks-ratings-navigation-access {
+    display:block;
+    float:left;
+}
+
+.item-bookmarks-ratings-navigation-access .pubtopright {
+    margin-bottom:0;
+    margin-top:-25px;
+}
+
+.item-bookmarks-ratings-navigation-access .pubtopright .access-options .accessfulltextlabel {
+    display:none;
+}
+
+.item-crossmark {
+    float:right;
+    padding-left:5px;
+}
+
+.item-acknowledgements {
+    padding-top:10px;
+}
+
+.doi-crossmark {
+    display:block;
+    overflow:hidden;
+}
+
+.title-with-crossmark {
+    color:#111111;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:21px;
+}
+
+.related #morelikethis {
+    border:none;
+    padding:0;
+    margin:0;
+}
+
+.related h4 {
+    color:#808080;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:1.5em;
+}
+
+.related h5 {
+    font-size:12px;
+    padding-top:10px;
+}
+
+.related li .meta-value,
+.related li .authors {
+    font-size:1em;
+}
+
+.related ul {
+    margin:0;
+    padding:0;
+}
+
+.related li span.meta-key {
+    font-size:13px;
+    color:#666666;
+}
+
+.related .no-related-articles {
+    color:#4d4d4d;
+}
+
+.pubtopright ul.fulltext li.html {
+    display:none;
+}
+
+.pubtopright .fulltext a.pdf {
+    background:none;
+}
+
+.pubtopright .fulltext li.pdf {
+    padding-left:0;
+    padding-top:0;
+}
+.pubtopright .fulltext li.ie7_class3 {
+    min-height:29px;
+}
+
+.pubtopright .fulltext li.ie7_class3 a {
+    padding-left:33px;
+}
+
+#conferencepaper .item-additional-info {
+    padding-top:5px;
+}
+
+#banner {
+    position:relative;
+}
+
+#searchBox {
+    position:absolute;
+    right:0;
+    top:0;
+    width:370px;
+    z-index:999;
+}
+
+/* author popup ui styling*/
+div.authorpopupwrapper a.ui-dialog-titlebar-close span.ui-icon.ui-icon-closethick {
+    background-image:url("/images/aip/close_cross_button.png");
+    background-position:0 0;
+    height:20px;
+    width:20px;
+}
+
+div.authorpopupwrapper div.ui-dialog {
+    background-color:#fbfaf8;
+    border-color:#cccccc;
+    border-width:1px;
+    border-style:solid;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    /* Firefox v3.5+ */
+    -moz-box-shadow:1px 1px 4px rgba(0,0,0,0.7);
+    /* Safari v3.0+ and by Chrome v0.2+ */
+    -webkit-box-shadow:1px 1px 4px rgba(0,0,0,0.7);
+    /* Firefox v4.0+ , Safari v5.1+ , Chrome v10.0+, IE v10+ and by Opera v10.5+ */
+    box-shadow:1px 1px 4px rgba(0,0,0,0.7);
+    -ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX=1,OffY=1,Color=#40000000,Positive=true)";
+    padding:0;
+}
+
+div.authorpopupwrapper div.ui-dialog div.ui-dialog-titlebar {
+    background:#fbfaf8;
+    border:none;
+    color:#333333;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:normal;
+    line-height:137%;
+    padding-bottom:0;
+    padding-bottom:3px;
+    margin-bottom:0;
+}
+
+div.authorpopupwrapper div.ui-dialog div.popup-header div.authorname-in-popup {
+    color:#333333;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    line-height:120%;
+    text-align:left;
+}
+
+div.authorpopupwrapper div.ui-dialog div.popup-header {
+    margin-bottom:0;
+    padding-top:5px;
+    padding-bottom:0;
+}
+
+.authorpopupwrapper .popup-link {
+    border-bottom:1px dashed #cccccc;
+    color:#0072aa;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:11px;
+    line-height:225%;
+    text-align:left;
+}
+
+.authorpopupwrapper .popup-link.popup-link-last {
+    border-bottom:none;
+}
+
+div.authorpopupwrapper div.ui-dialog div#authorpopup.ui-dialog-content {
+    background:#fbfaf8;
+    height:auto !important;
+    padding-top:0;
+}
+
+div.authorpopupwrapper .ui-dialog .ui-dialog-titlebar-close {
+    margin:-24px 0 0 0;
+}
+
+/* ========== Start of Advanced Search styling ====================================================================== */
+
+#searchResultsContainer .even {
+    background-color:#ffffff;
+}
+
+#searchContent {
+    color:#222222;
+    padding-bottom:30px;
+    padding-top:20px;
+    width:100%;
+}
+
+#searchContent h2 {
+    border-top:none thin #ffffff;
+    font-size:15px;
+    padding-top:15px;
+    text-transform:uppercase;
+}
+
+#searchContent .searchWithinContainer h2,
+#searchContent .searchBetweenDatesContainer h2,
+#searchContent .sortResultsByContainer h2 {
+    display:inline-block;
+    padding: 15px 0px;
+    margin:0px;
+    width: 36%;
+}
+
+#searchContent .searchWithinContainer h2 {
+    vertical-align: top;
+}
+
+#searchContent .inline {
+    display:block;
+}
+
+.termInputGroup {
+    margin-bottom:15px;
+}
+
+.termInput {
+    margin-bottom:15px;
+}
+
+.termInput .connector {
+    padding:0 10px;
+}
+
+.termInput .longfield {
+    width:405px;
+}
+
+.termInput .longfield2 {
+    width:478px;
+}
+
+.termInput select {
+    margin:0;
+    width:190px;
+}
+
+.termInput .operator {
+    margin-right:10px;
+    width:60px;
+}
+
+.termInput input.error {
+    margin:0;
+    /*border:1;*/
+    color: #8a1f11;
+}
+
+.searchCriteria {
+    border-top:dashed thin #cccccc;
+    clear:both;
+    float:left;
+    width:100%;
+}
+
+.searchCriteria.mainSearchContainer {
+    border-top:none thin #ffffff;
+}
+
+.sortByInput select {
+    padding:3px 5px;
+    width:450px;
+    border: solid thin #cccccc;
+}
+
+.submitsearch a {
+    border:none;
+    float:right;
+    font-weight:bold;
+    text-align:center;
+    width:60px;
+}
+
+.submitsearch a,
+.submitsearch a:link,
+.submitsearch a:visited,
+.submitsearch a:hover,
+.submitsearch a:active {
+    color:#ffffff;
+}
+
+#submitsearch {
+    width:70px;
+    margin:10px 10px 10px 0;
+}
+
+#submitsearch span {
+    font-size:1em;
+}
+
+.searchcriteria {
+    margin-top:25px;
+}
+
+.yearInput {
+    margin:-35px 0px 10px 260px;
+}
+
+.yearInput input.error {
+    margin:0;
+    padding:1px;
+}
+
+.yearInput label.error {
+    float:left;
+}
+
+.searchBetweenDatesContainer .yearInput {
+    width:60%;
+    display:inline-block;
+    margin:0px;
+}
+
+.yearFromLabel {
+    width:auto;
+    margin: 2px 2px 0 0;
+}
+
+#searchContent  .sortByInput.inline {
+    margin:0px;
+    display:inline;
+}
+
+.sortResultsByContainer .sortByInput .inline{
+    margin:0px;
+    display:inline;
+}
+
+.advancedPageSize {
+    display:none;
+}
+
+/*#inputcalto,,
+#inputcalfrom {
+    padding-right:17px;
+    padding-top:5px;
+}*/
+
+.submitlabel {
+    color:#ffffff;
+}
+
+.inactiveLink {
+    color:#cccccc;
+    font-weight:bold;
+}
+
+.resultItem .inactiveLink {
+    color:#333333;
+    font-weight:normal;
+}
+
+.sortByLabel {
+    color:#333333;
+}
+
+.keyicon {
+    background-attachment:scroll;
+    background-color:transparent;
+    background-position:bottom right;
+    background-repeat:no-repeat;
+    color:transparent;
+    vertical-align:middle;
+    width:15px;
+    z-index:-999;
+}
+
+.accessIcons {
+    left:0;
+    padding-top:0;
+    position:absolute;
+    top:0;
+}
+
+.publicationDescriptionContainer .accessIcons {
+    padding-top:3px;
+}
+
+.access_icon_f,
+.access_icon_fc {
+    background-image:url("/images/aip/icon_access_fc.gif");
+}
+
+.access_icon_t,
+.access_icon_ft {
+    background-image:url("/images/aip/icon_access_ft.gif");
+}
+
+.access_icon_oa {
+    background-image:url("/images/aip/icon_access_oa.gif");
+}
+
+.access_icon_s,
+.access_icon_sc {
+    background-image:url("/images/aip/icon_access_sc.gif");
+}
+
+.no_access_icon {
+    position:absolute;
+    background:url("/images/aip/icon_unsubscribed.jpg") right no-repeat;
+}
+
+#searchresultspage .itemDescription {
+    margin:0;
+}
+
+#searchresultspage .navigationBar {
+    margin-top:15px;
+    width:100%;
+}
+
+.multipleSelectInstructions {
+    font-style:italic;
+    margin-bottom:30px;
+}
+
+/* ========== End   of Advanced Search styling ====================================================================== */
+/* ========== Styling for latest articles on journal homepage ======================================================= */
+#journal .publistwrapper {
+    margin-left:0;
+}
+
+#journal ul.toggle-content {
+    margin-left:0;
+}
+
+#journal li.showhide span.symbol {
+    display:none;
+}
+
+#journal li.showhide span.plus {
+    background:url("/images/aip/plus_icon.gif") no-repeat left center transparent;
+    padding-bottom:5px;
+}
+
+#journal li.showhide span.minus {
+    background:url("/images/aip/minus_icon.gif") no-repeat left center transparent;
+}
+
+#journal li.showhide span.underline {
+    margin-left:20px;
+}
+
+#journal .toc .publistwrapper,
+#journal .toc ul.togglecontent,
+#journal .toc ul.togglecontent li {
+    margin-left:0;
+    padding-left:0;
+}
+
+#journal .toc .access-options {
+    display:none;
+}
+
+#journal .toc .favouritesForm {
+    display:none;
+}
+
+/* ========== End of styling for latest articles on journal homepage ================================================ */
+/* ========== Styling for sort options on conference proceedings list =============================================== */
+.confProcSortOptions .confprocSortOption {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#confProcTitlesList .publistwrapper ul.flat {
+    float:left;
+}
+/*cp print on demand styles*/
+.pubtopright.cpPODLinkContainer {
+	padding: 2px 10px;
+}
+
+.content img.cpPODicon{
+	margin-right: 10px;
+}
+
+.cpPODLinkContainer a {
+	font-weight:bold;
+}
+ 
+/* ========== End of styling for sort options on conference proceedings list ======================================== */
+/* ========== Start of styling for floating RSS icon... ============================================================= */
+
+.rssicon {
+    float:none;
+    padding-left:5px;
+    vertical-align:middle;
+}
+
+/*.rssicon a {
+    vertical-align:3px;
+}*/
+
+.publisherBannerRssContainer .rssicon {
+    position:absolute;
+    right:0;
+}
+
+.publisherBrandingTitle .rssicon {
+    display:inline;
+    float:none;
+}
+
+#advancedsearchpage .rssicon,
+#myaccountpage .rssicon {
+    display:none;
+}
+
+.titleRss .rssicon {
+    left:350px;
+    top:40px;
+}
+
+.news-picks .rssicon {
+    margin-top:0;
+    z-index:99;
+}
+
+#article .bannerRss .rssicon,
+.bannerRss .rssicon {
+    right:-264px;
+    top:140px;
+}
+
+.publisherBannerRssContainer {
+    position:relative;
+}
+
+.publisherTitleRssContainer {
+    position:relative;
+}
+
+/* ========== End   of styling for floating RSS icon... ============================================================= */
+/* ========== Start of styling for sidebar_right... ================================================================= */
+#sidebar_right {
+    color:#0072aa;
+    float:right;
+    font-size:11px;
+    margin-top:5px;
+    position:relative;
+    right:35px;
+    width:197px;
+    z-index:99;
+}
+
+#sidebar_right.brandingLogo1 {
+    margin-top:5px;
+}
+
+#sidebar_right.brandingLogo2 {
+    margin-top:40px;
+}
+
+ul.menuexport {
+    padding:0;
+}
+
+/* ========== End   of styling for sidebar_right... ================================================================= */
+/* ========== Start of styling for My Scitation page... ============================================================= */
+.layoutrow {
+    clear:both;
+}
+
+.layoutrow h4 {
+    border:none;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:x-large;
+    font-weight:bold;
+    padding:0 50px 0 0;
+}
+
+/* ========== End   of styling for My Scitation page... ============================================================= */
+/* ========== Start of styling for Editors Picks... ================================================================= */
+.editorsPicks .itemInListImage,
+.featuredArticle .itemInListImage {
+    float:left;
+}
+
+.editorsPicks .itemInListMetadata,
+.featuredArticle .itemInListMetadata {
+    display:block;
+    padding-left:85px;
+}
+
+.editorsPicks .itemInListMetadata.noImage,
+.featuredArticle .itemInListMetadata.noImage {
+    display:block;
+    padding-left:0;
+}
+
+.editorsPicks .articleInTocShowHide {
+    padding-left:10px;
+}
+
+.mostrecentarticles .editorsPicks li {
+    border:none;
+    display:block;
+    overflow:hidden;
+}
+
+.editorsPicks li.noImage,
+.featuredArticle li.noImage {
+    width:100%;
+}
+
+.editorsPicks .itemInListDoi {
+    display:none;
+}
+
+/* ========== End of of styling for Editors Picks... ================================================================ */
+/* ========== Start of styling for issue TOC ======================================================================== */
+.publistwrapper li.sectionContents {
+    display:block;
+}
+
+.issueToc .section1,
+.featuredArticleContainer .heading,
+#confProc .section1 {
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    padding:0;
+    position:relative;
+    text-transform:uppercase;
+}
+
+.issueToc .tocheading2,
+.issueToc .tocheading3 {
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    position:relative;
+}
+
+.issueToc .tocheading2,
+.issueToc .tocheading3,
+.issueToc .articleInToc {
+    padding-bottom:10px;
+    padding-left:0;
+    padding-top:10px;
+}
+
+.issueTocShowhide {
+    position:relative;
+}
+
+.publistwrapper li .sectionshowhidebutton .plus {
+    display:inline;
+}
+
+.publistwrapper li .sectionshowhidebutton .none {
+    display:inline;
+}
+
+.sectionshowhidebutton {
+    float:left;
+    padding-right:5px;
+}
+
+.articleSeparatorInToc {
+    width:100%;
+    border-bottom:solid 1px #cccccc;
+}
+
+.sectionSeparatorInToc {
+    width:100%;
+    border-bottom:3px solid #cccccc;
+}
+
+a.toggle.expanded {
+    background-image:url("/images/aip/minus_icon.gif");
+    padding-left:10px;
+    padding-bottom:0;
+}
+
+.citationtext a.toggle.expanded {
+    background-image:none;
+    padding-left:0;
+}
+
+a.expandLinkClass {
+    background:url("/images/aip/plus_icon.gif") no-repeat scroll left center transparent;
+    padding-left:10px;
+    padding-bottom:0;
+}
+
+.issueBar h4 {
+    display:none;
+}
+
+.issueBar .expandLinkClass {
+    color:#808080;
+}
+
+.issueBar ul {
+    padding-left:0;
+    padding-top:0;
+}
+
+.issueBar ul li {
+    border-bottom:solid 1px #cccccc;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+
+.issueBar ul li.issue {
+    padding-bottom:0;
+    border-bottom:none;
+    padding-top:5px;
+    margin:0;
+}
+
+.issueBar ul.togglecontent {
+    padding-top:0;
+    padding-bottom:0;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.sectionBar {
+    border-bottom:solid 2px #cccccc;
+    clear:both;
+    float:left;
+    padding:0;
+    width:140px;
+}
+
+.sectionBar ul.togglecontent {
+    padding-top:0;
+    padding-bottom:0;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.sectionBar ul li {
+    border-bottom:solid 2px #cccccc;
+    padding-bottom:10px;
+    padding-top:10px;
+}
+
+.sectionname {
+    text-transform:capitalize;
+}
+
+.allSectionsLink {
+    float:right;
+    margin-bottom:20px;
+}
+
+.articleInTocShowHide {
+    float:left;
+}
+
+.articledescription {
+    display:none;
+    border-top:1px dashed #cccccc;
+    padding-top:5px;
+    margin-top:5px;
+    color:#333333;
+}
+
+/* Access Icons styling */
+div.magazineDescriptionContainer .accessIcons {
+    padding-top:20px;
+}
+
+div.magazineDescriptionContainer span.meta-value.authors a {
+    padding-top:5px;
+}
+
+div.publicationDescriptionContainerInner,
+div.standardDescriptionContainerInner,
+div.conferencePaperDescriptionInner,
+div.magazineDescriptionContainerInner {
+    float:left;
+    padding-left:25px;
+    position:relative;
+    width:700px;
+}
+
+div.conferencePaperDescription,
+div.magazineDescriptionContainer,
+div.standardDescriptionContainer,
+div.publicationDescriptionContainer {
+    float:left;
+    margin-bottom:15px;
+    position:relative;
+}
+#article div.publicationDescriptionContainer {
+    margin-bottom:2px;
+}
+
+ul.browseItemResults.flat {
+    float:none;
+    margin-bottom:5px;
+}
+
+ul.browseItemResults.flat div.coverImageContainer img {
+    padding-top:0;
+}
+
+ul.browseItemResults.flat .accessIcons {
+    padding-top:0;
+}
+
+div.articleMetadata {
+    float:left;
+    position:relative;
+    width:100%;
+}
+
+div.aip-tab-content div.articleMetadata {
+    float:none;
+}
+
+div.articleMetadataInner {
+    margin-bottom:0;
+    float:left;
+    margin-left:25px;
+    position:relative;
+    width:95%;
+}
+
+div.articleMetadataInner span.articleTitle span.xref {
+    display:none;
+}
+
+#journalspage .articleMetadata {
+    max-width:85%;
+}
+
+#rightsidecontainer div.articleMetadataInner {
+    margin-left:0;
+}
+
+#mostcited div.articleMetadataInner,
+#mostviewed div.articleMetadataInner,
+#mostrecentitems div.articleMetadataInner  {
+    margin-left:0;
+}
+
+div.articlemetadata li {
+    position:relative;
+}
+
+.articleMetadata .minus,
+.articleminus {
+    display:none;
+}
+
+.issueToc .article_source_label,
+#confProc .article_source_label {
+    display:none;
+}
+
+.articledescription .doi_label {
+    color:#808080;
+}
+
+.issuecontents {
+    padding-top:20px;
+    clear:both;
+}
+
+.featuredArticleContainer,
+.issueTocContents {
+    border-top:3px solid #cccccc;
+    padding-top:10px;
+    margin-top:10px;
+}
+
+.sectionContentsList {
+    padding-left:0;
+}
+
+/* ========== End   of styles for issue homepage ==================================================================== */
+/* ========== Start of styles for latest articles on journal homepage =============================================== */
+
+.latestarticles {
+    padding-top:10px;
+}
+
+#journal #tabbedpages .latestarticles {
+    float:left;
+    padding-top:10px;
+    width:100%;
+}
+#journal #tabbedpages .latestarticlesline {
+    border-top:3px solid #CCCCCC;
+}
+
+.latestarticles h3 {
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    position:relative;
+    text-transform:uppercase;
+}
+
+.latestarticles .articleSourceTag,
+.latestarticles .authors_label,
+.latestarticles .doi_label,
+.latestarticles .doi,
+.latestarticles .fulltextandtools {
+    display:none;
+}
+
+.authors_label {
+    display:none;
+}
+
+.latestarticles .articledescription {
+    border-top:none;
+}
+
+#article .related .articleSourceTag {
+    font-size:1.2em;
+}
+
+/* ========== End of styles for latest articles on journal homepage ================================================= */
+/* ========== Styling for journal homepage overview tab ============================================================= */
+
+.journaltopright {
+    margin-left:170px;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+}
+
+.journalOverviewDescription,
+.journalOverviewPublicationHistoryContainer {
+    color:#333333;
+    font-size:1.2em;
+}
+
+.journalOverviewPublicationHistoryContainer {
+    padding-top:10px;
+}
+
+.journalOverviewIssnContainer .meta-value,
+.journalOverviewIssnContainer .meta-key {
+    color:#333333;
+    font-size:1.1em;
+    font-weight:normal;
+}
+
+.journalImpactFactorsContainer {
+    float:right;
+}
+
+.journalImpactFactorContainer {
+    padding-top:5px;
+}
+
+.journalImpactFactorContainer .meta-key {
+    color:#333333;
+    font-size:1.3em;
+    font-weight:normal;
+}
+
+.journalImpactFactorContainer .meta-value {
+    color:#333333;
+    font-size:1.3em;
+    font-weight:bold;
+}
+
+.aboutContainer {
+    color:#333333;
+    font-family:inherit;
+}
+
+/* ========== End of styling for journal homepage overview tab ====================================================== */
+/* ========== Start of STANDARDS HOMEPAGE STYLE ===================================================================== */
+
+.standardslists .mainTitle {
+    border-bottom:solid 1px #cccccc;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:17px;
+    font-weight:bold;
+    margin-bottom:10px;
+    width:330px;
+}
+
+.standardslists .ANSIseries {
+    width:345px;
+}
+
+.standardslists .ISOseries {
+    width:345px;
+}
+
+.standardslists .blurbarea1 {
+    border:solid 1px #cccccc;
+    float:right;
+    padding:5px;
+    width:335px;
+}
+
+.standardslists li {
+    margin:5px 0 10px 8px;
+}
+
+.standardslists .seriestitle {
+    margin:0;
+    padding:0;
+}
+
+.standardslists .seriestitle h4 {
+    font-weight:bold;
+}
+
+#standardscontainer .journalOverviewDescription {
+    font-size:14px;
+    padding-bottom:10px;
+}
+
+#standardscontainer .create-links {
+    display:none;
+}
+
+#standardscontainer .standardslists {
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+#standardsseries #content .facets {
+    border:none 1px #ffffff;
+    margin-top:10px;
+    padding:0;
+}
+
+#standardsseries .articledescription {
+    border-top:none;
+}
+
+#standardsseries .facets ul.flat li {
+    padding-bottom:4px;
+    padding-top:4px;
+}
+
+#standardsseries .publistwrapper {
+    padding-top:0;
+}
+
+#standardsseries .resultsnav {
+    display:none;
+}
+
+#standardsseries .description {
+    margin-bottom:5px;
+    padding-top:5px;
+}
+
+#standardsseries ul.flat.separated-list {
+    padding-top:0;
+}
+
+#standardsseries .publistwrapper .separated-list>li {
+    border-bottom:none 1px #ffffff;
+    padding-bottom:10px;
+    padding-left:0;
+    padding-top:5px;
+}
+
+#standard .bookmark-rating-container {
+    border-bottom:0;
+    border-top:0;
+    height:25px;
+    margin-top:0;
+}
+
+#standard .bookmarkcontainer {
+    display:none;
+}
+
+#standard .iconlist {
+    display:block;
+}
+
+.standard-details {
+    border-bottom:solid 1px #cccccc;
+}
+
+.standard-details.last {
+    border-bottom:none 1px #cccccc;
+}
+
+.standard-title {
+    display:block;
+    font-weight:bold;
+}
+
+.standard-description {
+    display:none;
+}
+
+/* ========== End of STANDARDS HOMEPAGE STYLE ======================================================================= */
+.thickseparator {
+    border-bottom:3px solid #cccccc;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+#publisherhomepage ul.tabset {
+    clear:both;
+    width:700px;
+}
+
+.itemCitation {
+    font-size:12px;
+    padding-top:5px;
+    font-family:verdana;
+    font-size:11px;
+}
+#morelikethis .itemCitation {
+    padding-left:25px;
+    padding-top:0;
+}
+
+#content ul.tabset {
+    clear:both;
+}
+
+#banner #logo img {
+    max-width:180px;
+    margin-bottom:10px;
+}
+
+img.cover {
+    border:solid 1px #cccccc;
+    height:auto;
+    width:108px;
+}
+
+#tabbedpages .journaloverviewtab .journaltopleft img.cover {
+    max-width:150px;
+    margin-bottom:8px;
+}
+
+.rightsidecontainer {
+    display:block;
+    float:right;
+    overflow:hidden;
+}
+
+.rightsidemost {
+    position:relative;
+}
+
+.blogpostinfocontainer {
+    width:70%;
+}
+
+.blogpostinfocontainer .bookmark-rating-container {
+    border-bottom:none;
+    border-top:none;
+    float:right;
+    width:75%;
+}
+
+.blogcreator img {
+    float:left;
+    margin:0 8px 8px 0;
+    max-width:150px;
+    width:101px;
+}
+
+#content .blogheader h2 {
+    font-size:26px;
+}
+
+.citationvolume {
+    font-weight:bold;
+}
+
+/* Styling for h1 for container to make it consistent */
+#container h1,
+#searchExplanationTextDialogDisplay h1 {
+    color:#333333;
+    margin-top:16px;
+}
+
+#searchExplanationTextDialogDisplay h1 {
+    margin-top:6px;
+}
+
+/* Consanguinity styling */
+.consanguinityContainer {
+    border:1px dotted #cccccc;
+    padding:15px;
+    margin-top:15px;
+}
+
+.consanguinityTitleContainer {
+    font-weight:bold;
+}
+
+.crossMarkImage {
+    padding-left:20px;
+}
+
+.paginatorContainer {
+    float:left;
+    font-weight:bold;
+}
+
+.affiliations_label {
+    display:none;
+}
+
+.affiliations_number {
+    font-size:0.83em;
+    vertical-align:super;
+}
+
+.contributorLinks,
+.institutionLinks {
+    margin-bottom:5px;
+    margin-top:5px;
+    padding-top:5px;
+}
+
+/* ========== Start of styling for odds and ends ==================================================================== */
+.smallertext {
+    font-size:0.67em;
+}
+
+#editcontentpage img {
+    vertical-align:middle;
+}
+
+.hidehash {
+    display:none;
+}
+
+/* Override the size of the font for blurb edit... */
+.wym_skin_default .wym_html textarea {
+    font-size:1.2em;
+}
+
+.ui-widget div.wym_area_main textarea.wym_html_val {
+    font-size:13px;
+}
+
+/* Registration form styling... */
+.regForm input.styledbutton {
+    float:right;
+    margin:0 72px 10px 0;
+    width:auto;
+}
+
+.regForm fieldset {
+    width:90%;
+}
+
+.regInputField {
+    clear:both;
+}
+
+#counterreports .regLabel {
+    float:left;
+}
+
+#counterreports .regInput .checkbox {
+    margin:5px 10px 10px 0;
+}
+
+.regInput #termsandconditions {
+    border:none 1px #ffffff;
+    float:none;
+    margin:0;
+    width:40px;
+}
+
+#regForm .form-field {
+    clear:both;
+}
+
+.regForm input.allAffiliations {
+    float:none;
+}
+
+.eduPersonScopedAffiliationContainer {
+    float:left;
+}
+
+.eduPersonScopedAffiliationContainer .checkbox, #shibeditor_login_active {
+    border:none;
+    margin:0 5px;
+    width:20px;
+}
+
+#forgottencredentialspage .username label,
+#forgottencredentialspage .emailaddress label {
+    display:inline-block;
+    font-weight:bold;
+    margin-left:30px;
+    width:100px;
+}
+
+#forgottencredentialspage div#content.content div p {
+    float:left;
+}
+
+#forgottencredentialspage .instructions {
+    display:inline-block;
+    padding:10px 0;
+}
+
+.existingUser,
+.newUser {
+    border:1px solid #cccccc;
+    float:left;
+    margin-bottom:10px;
+    margin-right:20px;
+    padding:0 10px 0 10px;
+    width:600px;
+}
+
+.existingUser fieldset,
+.newUser fieldset {
+    width:90%;
+}
+
+.itemAction {
+    font-weight:bold;
+    color:#222222;
+}
+
+.updateAlertsHeading {
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+.updateAlertsButton {
+    margin-top:-15px;
+}
+
+.updateAlertsButton a.styledbutton {
+    float:right;
+    margin:10px 50px;
+}
+
+.alertNameCol {
+    width:50%;
+}
+
+.alertActionCol {
+    width:25%;
+}
+
+.alertLinks {
+    clear:both;
+}
+
+.regConfirmationLinks > li {
+    display:none;
+}
+
+.regConfirmationLinks > li:first-child {
+    display:block;
+    font-size:1.5em;
+}
+
+#registrationContent h3,
+#registrationContent h3 ~ p {
+    font-size:20px;
+    font-weight:bold;
+}
+
+.articleMetadata .description {
+    display:none;
+}
+
+.displayPerPage,
+.pager,
+.paginator,
+.perpageoptions {
+    display:inline-block;
+    font-size:9.5px;
+    font-style:normal;
+    font-weight:bold;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.perpageoptions {
+    margin-top:3px;
+}
+
+.latestarticles ul {
+    padding-left:0;
+    padding-right:0;
+}
+
+/* Change fieldset styling */
+fieldset {
+    float:left;
+    width:85%;
+}
+
+fieldset legend {
+    text-transform:uppercase;
+    font-size:1.4em;
+    margin:0 !important;
+    padding:0;
+}
+
+.itemInCart a.styledbutton {
+    display:block;
+}
+
+/* ========== End   of styling for odds and ends ==================================================================== */
+/* ========== Start of styling for buttons ========================================================================== */
+
+#resetForm_save,
+a.styledbutton,
+.styledbutton {
+    background-color:#3075ad;
+    border:solid 1px #cccccc;
+    color:#ffffff;
+    cursor:pointer;
+    font-family:"Trebuchet MS", sans-serif;
+    font-size:14px;
+    font-weight:bold;
+    padding:4px 0;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+
+#resetForm_save:hover,
+a.styledbutton:hover,
+.styledbutton:hover {
+    background-color:#111111;
+    color:#bfbfbf;
+    text-decoration:none;
+}
+
+#resetForm_save:visited,
+a.styledbutton:visited,
+.styledbutton:visited {
+    color:#ffffff;
+}
+
+#resetForm_save {
+    float:right;
+    margin:10px 30px;
+    min-width:130px;
+    text-align:center;
+    width:auto;
+}
+
+#resetForm_emailAddress,
+#resetForm_username {
+    width:350px;
+}
+
+form#resetForm .disabled {
+    display:none;
+}
+
+/* ========== End   of styling for buttons ========================================================================== */
+/* ========== Start of styling for e-mail page ====================================================================== */
+
+#email-form {
+    border:1px solid #CCCCCC;
+    margin:0 auto;
+    padding:10px;
+    float:left;
+    width:620px;
+}
+
+#email-form input.styledbutton[value="Cancel"] {
+    display:none;
+}
+
+#email-form input.styledbutton {
+    float:right;
+    margin:10px 30px;
+    width:auto;
+    line-height:normal;
+}
+
+#email-form label {
+    display:inline-block;
+    font-weight:bold;
+    width:200px;
+    color:#333333;
+}
+
+#email-form label.error {
+    color:#ff0000;
+    width:400px;
+}
+
+#email-form .form-input-text {
+    width:385px;
+}
+
+/* ========== End   of styling for e-mail page ====================================================================== */
+/* ========== General purpose class for hidden elements ============================================================= */
+.hiddenElement {
+    display:none;
+}
+
+.itemInListImage,
+.itemInListImage img {
+    height:60px;
+    overflow:hidden;
+    width:80px;
+}
+
+#journal #tabbedpages .mostcontainer .itemInListImage img {
+    max-width:60px;
+}
+
+.leftBarPadding {
+    padding-top:30px;
+    clear:both;
+    float:left;
+    width:120px;
+}
+
+/* ========== Start of dialog STYLING  ============================================================================== */
+
+.signInOrRegisterWrapper {
+    color:#333333;
+    font-family:Arial, sans-serif;
+    font-size:12px;
+}
+
+.searchExplanationTextDisplayWrapper {
+    color:#333333;
+    font-family:Arial, sans-serif;
+    font-size:10px;
+}
+
+.signInOrRegisterWrapper .ui-dialog-titlebar,
+.searchExplanationTextDisplayWrapper .ui-dialog-titlebar {
+    background:none;
+    background-color:#ffffff;
+    border:none 1px #ffffff;
+    padding:0;
+}
+
+.signInOrRegisterWrapper .ui-dialog,
+.searchExplanationTextDisplayWrapper .ui-dialog {
+    font-size:11px;
+    padding:0;
+}
+
+.signInOrRegisterWrapper .ui-dialog .ui-dialog-content,
+.searchExplanationTextDisplayWrapper .ui-dialog-content {
+    padding:5px 15px;
+}
+
+.signInOrRegisterWrapper h2 {
+    font-size:13px;
+    font-weight:bold;
+}
+
+
+#topicAlertDialog .dialog-close {
+	float: right;
+	margin: 10px 0px;
+	cursor:pointer;
+}
+
+/* ========== End   of dialog STYLING  ============================================================================== */
+/* ========== Start of Concept styling ============================================================================== */
+
+.childConceptBlock {
+    padding:0 0 0 8px;
+}
+
+.hbg-bar {
+    background:-webkit-gradient(linear, left top, left bottom, from(#ffe187), to(#fdca39));
+    background:-moz-linear-gradient(top, #ffe187, #fdca39);
+    background-color:#fdca39;
+    border:solid 1px #d3a907;
+    color:#125aa7;
+    font-weight:normal;
+    height:10px;
+    padding-left:5px;
+}
+
+.hbg-title {
+    font-weight:bold;
+    text-align:center;
+}
+
+.hbg-value {
+    visibility:hidden;
+}
+
+.hbg-common {
+    clear:left;
+    display:block;
+    float:left;
+}
+
+.hbg-float-left {
+    float:left;
+}
+
+.hbg-overflow-hidden {
+    overflow:visible;
+}
+
+dd.conceptweight {
+    clear:left;
+    margin-bottom:6px;
+}
+
+dt.conceptlabel {
+    line-height:1.2em;
+    width:100%;
+}
+
+.subjectList {
+    overflow:visible;
+}
+
+.subjectList ul {
+    float:none;
+    padding-right:0;
+    width:auto;
+}
+
+.subjectList li {
+    border-bottom:solid 1px #cccccc;
+}
+
+.subjectList li.first {
+    border-top:solid 1px #cccccc;
+}
+
+.subjectList li.last {
+    border-bottom:none 1px #ffffff;
+}
+
+.subjectListTitle {
+    font-weight:bold;
+    text-align:right;
+}
+
+.conceptgraph {
+    border-top:solid thin #cccccc;
+    clear:both;
+    margin-top:20px;
+    padding:10px;
+}
+
+.conceptgraph .showhide {
+    float:right;
+    cursor:pointer;
+}
+
+.conceptgraph .showhide .minus {
+    display:none;
+}
+
+.conceptgraph .showhide .plus {
+    display:inline;
+}
+
+.conceptlabel a {
+    font-weight:bold;
+}
+
+#topicSearchBox {
+}
+
+.topicDiv {
+    position:relative;
+}
+
+.topicDiv #topicbutton {
+    position:relative;
+    right:30px;
+    top:6px;
+}
+
+#subjectspage .subjectList ul {
+    line-height:2.5em;
+}
+
+.visibleConcept {
+    display:block;
+}
+
+.hiddenConcept {
+    display:none;
+}
+
+.topicFolder {
+    font-weight:bold;
+    width:95%;
+}
+
+.link2topic {
+    float:right;
+    padding-right:10px;
+}
+
+.topic-noexpand {
+    padding-left:13px;
+}
+
+.topicTitle {
+    color:#222222;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:11px;
+    padding-left:45px;
+}
+
+.topicAlert {
+    float:right;
+    padding-right:0;
+}
+
+.conceptsheader {
+    margin-bottom:20px;
+    padding:5px 0 5px 0;
+}
+
+.conceptsheader h3 {
+    font-size:1.1em;
+    font-weight:bold;
+}
+
+.conceptspartcontainer {
+    background:url("/images/aip/concepts-bg.png") repeat-y scroll;
+    margin-top:20px;
+}
+
+.conceptspart {
+    float:left;
+    width:225px;
+}
+
+.conceptspart li {
+    display: inline;
+}
+
+.conceptspart li a {
+    font-size:0.9em;
+}
+
+.morespecificconcepts,
+.relatedconcepts {
+    padding-left:15px;
+}
+
+.topicsAlertsInstructions {
+    border:dotted 1px #cccccc;
+}
+
+.submitTopicAlert {
+    height:30px;
+    text-align:right;
+}
+
+.submitTopicAlert:first-child {
+    margin-bottom:0;
+    padding-top:0;
+}
+
+.submitTopicAlert:last-child {
+    margin-bottom:10px;
+    padding-top:15px;
+}
+
+#conceptpage #tabbedpages {
+    padding-top:0;
+}
+
+#conceptpage .itemDescription {
+    float:left;
+    margin:0 0 19px 0;
+    width:100%;
+}
+
+#conceptpage #conceptcontent #searchResultsContainer .itemDescription {
+    margin-bottom:10px;
+}
+
+/*
+#conceptpage .explanationText,
+#conceptpage .resultsbuttons,
+#conceptpage #searchResultsTabs {
+    display:none;
+}
+
+#conceptpage .navigationBar {
+    margin-top:15px;
+    width:100%;
+}
+*/
+
+.noresults {
+    padding-top:10px;
+}
+
+/* ========== End   of Concept styling ============================================================================== */
+/* ========== Start of Conference styling =========================================================================== */
+.confProceed .mostcited {
+    clear:none;
+    border:none;
+    padding:0;
+}
+
+/* with in main style sheet but adding to it here.. as added for conf proceeding areas. */
+#container .resultsnav p {
+    padding:2px;
+    padding-left:5px;
+}
+
+#journalspage #content .facets {
+    margin-top:0;
+}
+
+#journalspage #content .facets h3 {
+    margin-top:0;
+}
+
+#container .resultsnav .description p {
+    padding-bottom:12px;
+    width:100%;
+}
+
+.confprocSortOptions {
+    float:right;
+    font-size:9.5px;
+    font-style:normal;
+    font-weight:bold;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+#confProcVolumesList .publistwrapper ul.flat {
+    float:left;
+}
+
+.confProceedPaginatorContainer {
+    padding-bottom:32px;
+}
+
+#confProc ul.meta-header span.meta-key {
+    color:#333333;
+    font-size:100%;
+}
+
+#conferencepaper ul.meta-header span.meta-key {
+    color:#333333;
+    font-size:100%;
+}
+
+#confProcTitlesList .resultsnav ul {
+    padding:3px 7px 3px 0;
+}
+
+#confProcTitlesList ul.flat.separated-list > li {
+    border-bottom:1px solid #cccccc;
+}
+
+#confProcTitlesList #content .facets {
+    margin-top:0;
+    padding:1px 0 0;
+}
+
+#confProcTitlesList #titlestab .facets h3:first-child {
+    margin:1px 0 12px 0;
+}
+
+#confProcTitlesList .flat .articleMetadata {
+    margin-left:0;
+    width:510px;
+}
+
+#confProcVolumesList .resultsnav ul {
+    padding:3px 7px 3px 0;
+}
+
+#confProcVolumesList #content .facets {
+    margin-top:0;
+    padding:1px 0 0;
+}
+
+#confProcVolumesList #titlestab .facets h3:first-child {
+    margin:1px 0 12px 0;
+}
+
+#confProcVolumesList .flat .articleMetadata {
+    margin-left:0;
+}
+
+#confProcVolumesList ul.flat.separated-list > li {
+    border-bottom:solid 1px #cccccc;
+}
+
+#confProc ul.flat.separated-list > li {
+    border-bottom:solid 1px #cccccc;
+}
+
+#confProc ul.flat.separated-list > li:last-child {
+    border-bottom:none 1px #ffffff;
+}
+
+#confProcVolumesList li,
+#confProcVolumesList ul,
+#confProcVolumesList .showhide,
+#confProcVolumesList .flat .articleMetadata {
+    padding-left:0;
+    margin-left:0;
+}
+
+/* ========== End of Conference styling ============================================================================== */
+#container .publisherBrandingTitle h1 {
+    margin-bottom:5px;
+}
+
+.JournalsubTitles {
+    color:#333333;
+    font-family:"Trebuchet MS", sans-serif;
+    font-size:16px;
+    font-style:italic;
+}
+
+.volumeissue {
+    font-weight:bold;
+}
+
+.mediaObjectContainer {
+    display:block;
+    text-align:center;
+    width:100%;
+}
+
+.doi_link {
+    display:block;
+}
+
+/* ======= Start Did you mean styling ================================================================================= */
+.didYouMean {
+    font-style:italic;
+}
+
+.searchTermFieldsExt div {
+    float:left;
+}
+
+.searchTermFieldsExt {
+    padding-bottom:25px;
+}
+
+.searchTermDisplayDialog .searchTermFieldsExt {
+    height:8px;
+}
+
+.searchTermDisplayDialog .searchTermLabel,
+.searchTermDisplayDialog .searchFieldLabel {
+    padding-top:5px;
+}
+
+.searchTermTextExt div {
+    float:left;
+}
+
+.searchTermLabel {
+    padding:0;
+    width:180px;
+}
+
+.searchTermDisplayDialog .searchTermLabel {
+    padding-left:0;
+    width:235px;
+}
+
+.searchTermHeadings {
+    border-bottom:2px dotted #cccccc;
+    font-weight:bold;
+}
+
+.searchTermFieldHeadings {
+    border-bottom:2px dotted #cccccc;
+    font-weight:bold;
+    padding:0 250px 0 0;
+}
+
+.searchTerm {
+    width:180px;
+}
+
+.searchTermDisplayDialog .searchTerm {
+    width:200px;
+}
+
+.tryAnotherSearchText {
+    padding-top:5px;
+}
+
+.searchTermTextExt {
+    font-weight:bold;
+    padding-top:15px;
+}
+
+.searchTermDisplayDialog .searchTermTextExt {
+    padding:0;
+}
+
+.externalDatabases {
+    font-weight:bold;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.relatedlinks {
+    font-size:12px;
+    float:right;
+}
+
+.noResultsFound {
+    font-style:italic;
+    font-weight:bold;
+    padding:5px 0 5px 0;
+}
+
+.searchOperator {
+    padding:0;
+    width:0;
+}
+
+.searchTermDisplayDialog .searchOperator {
+    padding-right:15px;
+    width:20px;
+}
+
+.hideTermFields {
+    display:none;
+}
+
+.searchExplanationTextDialogHiddenDisplay {
+    display:none;
+}
+
+.searchTermDisplayDialog h1 {
+    border-bottom:1px solid #cccccc;
+    margin-top:6px;
+    width:75%;
+}
+
+.searchTermDisplayDialog {
+    padding-left:5px;
+}
+
+/* ========== End Did you mean styling ============================================================================== */
+
+.separated-list li img.cover {
+    height:auto;
+    margin:0 10px 0 0;
+    width:58px;
+}
+
+.external-link-icon {
+    background:url("/images/jp/external-link-icon.gif") no-repeat scroll 99% 40% transparent;
+    padding-right:16px;
+}
+
+.lastUpdated {
+    color:#666666;
+    font-size:11px;
+    font-style:italic;
+}
+
+.eic-intro {
+    font-size:1.1em;
+    font-style:italic;
+    font-weight:bold;
+    padding:0.5em;
+}
+
+div#eic-jump-menu {
+    border:1px solid #cccccc;
+    height:135px;
+    margin:10px 0;
+    overflow-y:scroll;
+}
+
+div.eic-section > h2 {
+    background-color:#eeeeee;
+    border-top:solid 1px #d7d7d7;
+    border-bottom:solid 1px #d7d7d7;
+    margin-bottom:10px;
+    margin-top:10px;
+    padding-left:5px;
+}
+
+div.eic-section li {
+    border-bottom:1px dashed #f7f7f7;
+    margin:5px 0;
+    outline:dotted 1px #dddddd;
+    padding:3px;
+}
+
+div.eic-section li span.eic-label {
+    display:inline-block;
+    font-size:1.1em;
+    font-style:italic;
+    font-weight:bold;
+    padding-right:10px;
+}
+
+div.eic-section .smallertext {
+    font-size:1em;
+    font-style:italic;
+}
+
+.eic-note:before {
+    color:#cc0000;
+    content:"Note: ";
+    font-weight:bold;
+}
+
+#useradmincontent {
+    clear:both;
+}
+
+#useradmincontent fieldset,
+#searchrelateduser fieldset {
+    width:95%;
+}
+
+/* ========== Start of styling for Marked Lists ===================================================================== */
+
+#lessupdatemarkedlist,
+#lessbottomremovemarkedlist {
+    padding:5px 0;
+}
+
+#lessupdatemarkedlist .styledbutton,
+#lessbottomremovemarkedlist .styledbutton {
+    padding-left:5px;
+    padding-right:5px;
+}
+
+#markedlistspage .itemInCart {
+    font-size:0.87em;
+}
+
+/* ========== End   of styling for Marked Lists ===================================================================== */
+/* ========== Start Saved search rummage.css overwrites ===================================================================== */
+
+.savedSearchesDiv {
+    margin:0;
+}
+
+.savedSearchFolder {
+    border-top:none;
+    border-bottom:1px dashed #606060;
+    min-height:40px;
+}
+
+.savedSearchFolders {
+    border-bottom:none;
+    border-top:2px solid #cccccc;
+}
+
+.savedSearchHeadings {
+    margin:0;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-top:solid 2px #cccccc;
+}
+
+.folderButton {
+    cursor:pointer;
+}
+
+.folderName {
+    color:#21648e;
+    display:block;
+    float:left;
+    font-weight:bold;
+    margin:0 0 0 4px;
+}
+
+.content .savedSearchFolder .itemContent img {
+    margin:2px 0 0 0;
+}
+
+.savedSearchFolder .alertAction,
+.savedSearchFolder .moveAction,
+.savedSearchFolder .deleteAction {
+    margin-top:20px;
+}
+
+.savedSearchFolder .deleteFolder {
+    margin-top:9px;
+}
+
+.itemContent {
+    color:#222222;
+    margin:15px 0 0;
+}
+
+.savedSearchContent {
+    margin:0;
+    padding:5px 0 15px 0;
+    width:100%;
+}
+
+.folderChangerPopup {
+    border:solid 1px #cccccc;
+    border-radius:3px; /* future proofing */
+    box-shadow:0 0 8px #cccccc;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+.folderChangerDiv {
+    float:left;
+    min-width:125px;
+}
+
+.folderChangerStyle {
+    background-color:#ffffff;
+    display:none;
+    font-weight:normal;
+    padding:12px;
+    position:absolute;
+    text-align:left;
+    z-index:999;
+}
+
+.fleft {
+    display:block;
+    float:left;
+    margin-top:8px;
+    width:150px;
+}
+
+.createNewFolderButton {
+    background:url("/images/aip/create_new_folder.png") no-repeat;
+    margin-left:9px;
+    padding-left:22px;
+}
+
+.searchTitleHeader {
+    display:none;
+}
+
+.searchDetail {
+    font-weight:bold;
+}
+
+.deleteActionHeader {
+    cursor:none;
+    float:left;
+}
+
+.searchHistoryControls {
+    display:block;
+    float:right;
+    width:201px;
+}
+.searchHistoryControls .folderSelector {
+    float:left;
+    margin-right:7px;
+}
+
+.searchHistoryItem .itemContent {
+    margin:2px 0 0;
+}
+.searchHistoryItem {
+    border-top:1px dashed #cccccc;
+    padding:14px 0;
+}
+
+.sssavebutton {
+    float:right;
+    margin-bottom:10px;
+    text-align:right;
+}
+
+.searchgo {
+    margin:3px 0;
+}
+
+.searchHistoryControls .searchgo .btn-orange {
+    margin-bottom:5px;
+    margin-top:0;
+    min-width:50px;
+    padding:1px 0;
+}
+
+.manageMarkedList {
+    clear:both;
+}
+
+.manageMarkedList .authors {
+    margin:10px 0 10px 0;
+}
+
+.manageMarkedList .resultItem .itemDescription {
+    float:left;
+    margin-left:0;
+    width:373px;
+}
+
+.manageMarkedList .resultItem .access-options {
+    border:1px solid #cccccc;
+    float:right;
+    padding:5px;
+    width:130px;
+}
+
+.manageMarkedList .resultItem {
+    border-bottom:solid 1px #cccccc;
+    float:left;
+    margin:0 0 19px 0;
+    padding-bottom:10px;
+    padding-left:0;
+    width:710px;
+}
+
+.manageMarkedList .resultItem .pubType {
+    width:93px;
+}
+
+#lessupdatemarkedlist,
+#updatemarkedlist {
+    border-bottom:solid 1px #cccccc;
+    border-top:solid 3px #cccccc;
+    margin:0 0 19px 0;
+    padding:9px 0;
+}
+
+.manageMarkedList .resultItem .bookmarkcontainer {
+    clear:right;
+    float:right;
+    margin-top:10px;
+}
+
+.resultItem .formControl {
+    clear:left;
+    margin-top:10px;
+}
+
+.removeMyFavourite {
+    display:block;
+    font-size:80%;
+    margin:0 0 0 16px;
+    width:50px;
+}
+
+.manageMarkedList .controlbookmarks {
+    clear:both;
+}
+
+.manageMarkedList .formControl .left {
+    float:left;
+    margin:0;
+}
+
+.manageMarkedList .lessdisplayPerPage {
+    float:right;
+    margin-top:-6px;
+}
+
+.myFavouritesResults {
+    font-weight:bold;
+}
+
+.lesssort {
+    padding-bottom:9px;
+}
+
+.sortByInputLabel {
+    color:#222222;
+}
+
+li.citation {
+    list-style:decimal;
+    padding-bottom:20px;
+}
+
+.citation {
+    display:list-item;
+    color:#1a6594;
+}
+
+.citationAuthors {
+    font-weight:bold;
+}
+
+.citationContainerAuthors .etal {
+    font-style:italic;
+}
+
+.citationSourceSource {
+    font-style:italic;
+}
+
+#articlecitation li {
+    color:#333333;
+}
+
+#article .flat.navigate-resources.bobby {
+    padding-top:4px;
+}
+
+#articlecitation .stripe {
+    background-color:transparent;
+}
+
+#container .citationdetails p {
+    padding:5px 0 20px 0;
+}
+
+.articleabstract h3,
+.citationdetails h3 {
+    display:none;
+}
+
+#referencedetails h3,
+#referencedetails .meta-header {
+    display:none;
+}
+
+#articlecitation a {
+    text-decoration:none;
+}
+
+#articlecitation a:hover {
+    text-decoration:underline;
+}
+
+.navigationBar,
+.resultsnav {
+    background-color:#e9e9e9;
+    float:right;
+    height:22px;
+    margin-bottom:20px;
+    padding:0 4px;
+    width:540px;
+}
+
+.blogPagination {
+    margin-right:12px;
+    margin-top:10px;
+}
+
+.topPagination {
+    float:right;
+    margin:0 0 16px 0;
+}
+
+#confProc .publistwrapper.resultsnav {
+    float:left;
+    margin-bottom:1px;
+    margin-top:10px;
+    width:100%;
+}
+
+#confProcVolumesList .resultsnav p {
+    padding-left:0;
+}
+
+/* ========== Start of reference style ===================================================================== */
+
+#articlereference .citation {
+    color:#4d4d4d;
+}
+
+#articlereference .group-citation-label {
+    display:none;
+}
+
+#articlereference .citation-label {
+    font-weight:bold;
+    padding-right:5px;
+}
+
+#articlereference .reference-volume {
+    font-weight:bold;
+  }
+
+#articlereference a:link {
+    text-decoration:none;
+}
+
+#articlereference .referencecontainer .reference {
+    border-bottom:solid 1px #cccccc;
+}
+
+#articlereference .referencecontainer:last-child .reference {
+    border-bottom:none 1px #ffffff;
+}
+
+#articlereference .reference {
+    padding:13px 0 13px 0;
+}
+ul.expandable li.refdetail {
+    background-image:none;
+    padding:5px 0 11px 0;
+}
+
+ul.reference li.refdetail {
+    background-image:none;
+    padding:5px 0 11px 0;
+}
+
+#articlereference .reference .showhide {
+    padding:0 0 4px 10px;
+}
+
+#articlereference .referencematch {
+    background-color:#ffffff;
+    border:none;  /* overwrite existing border style */
+    border-top:dashed 1px #ccc;
+}
+
+#articlereference .referencematch li,
+.citation {
+    padding-bottom:0;
+}
+
+#articlereference .refcontainer {
+    clear:both;
+    float:left;
+    margin-right:15px;
+    margin-left:10px;
+    padding-top:10px;
+    width:705px;
+}
+
+#articlereference .refnumbercontainer {
+    float:left;
+    padding-right:3px;
+    text-align:right;
+    width:20px;
+}
+
+#articlereference .refbody {
+    float:right;
+    width:680px;
+}
+
+#referencedetails {
+    float:left;
+    margin-bottom:20px;
+}
+
+#referencedetails div.citation {
+    display:inline;
+}
+
+#referencedetails .citation-label {
+    display:none;
+}
+
+
+#referencedetails .reference-source {
+    font-style:italic;
+}
+
+#referencedetails .reference-italic {
+    font-style:italic;
+}
+
+#referencedetails .reference-bold {
+    font-weight:bold;
+}
+
+
+#referencedetails .reference-sub {
+    font-size:0.83em;
+    vertical-align:sub;
+}
+
+#referencedetails .reference-sup {
+    font-size:0.83em;
+    vertical-align:super;
+}
+
+#referencedetails .reference-sc {
+    font-variant:small-caps;
+}
+
+#referencedetails .reference-overline {
+    text-decoration:overline;
+}
+
+#referencedetails .reference-strike {
+    text-decoration:line-through;
+}
+
+#referencedetails .reference-underline {
+    text-decoration:underline;
+}
+
+.reference-link-start {
+    display:none;
+}
+
+span.references ol.references > li {
+    margin:5px 0;
+}
+
+/*  Commented out for bug 44233 and added
+.refcontainer {
+    display:inline-block;
+}
+    added below to fix bug 44233 also */
+.references .reference {
+    display:block;
+}
+.fulltext-reference-meta-doi {
+    width:100%;
+    padding-left:3px;
+}
+
+/* ========== End   of reference style ============================================================================== */
+/* ========== Start of Shibboleth page stylings ===================================================================== */
+
+.wayfInput {
+    margin:0;
+    width:500px;
+}
+
+.wayfSection {
+    border-top:solid 1px #cccccc;
+    clear:both;
+    margin-top:10px;
+}
+
+.wayfAthens {
+    border-bottom:solid 1px #cccccc;
+    float:left;
+    margin-bottom:15px;
+    padding-bottom:15px;
+    width:100%;
+}
+
+#wayfpage h2,
+#wayfpage h3 {
+    color:#333333;
+    margin-top:20px;
+}
+
+#wayfpage button {
+    float:right;
+    margin-top:5px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+#wayfpage .controls {
+    margin:10px 0;
+    width:500px;
+}
+
+.shib_part {
+    clear:both;
+    float:left;
+    margin-bottom:5px;
+    margin-left:20px;
+    width:500px;
+}
+
+.shib_part.shibSignin {
+    margin-top:15px;
+}
+
+.shib_part > h3 {
+    font-family:Arial;
+    font-size:12px;
+    margin-bottom:15px;
+}
+
+.shib_separator {
+    font-weight:bold;
+    font-style:italic;
+    margin-bottom:0;
+}
+
+#wayfSearch {
+    height:2em;
+}
+
+.athens_part {
+    margin-bottom:15px;
+    margin-left:20px;
+    width:500px;
+}
+
+.athens_controls {
+    margin-top:-40px;
+}
+
+#athensSignin.styledbutton > a span {
+    color:#ffffff;
+}
+
+#athensSignin.styledbutton > a:hover span {
+    color:#bfbfbf;
+}
+
+.wayfGoButton {
+    float:right;
+}
+
+.wayfSearchText {
+    margin-top:3em;
+}
+
+.wayfSearchContainer > input {
+    width:575px;
+}
+
+.wayfSearchButtonContainer button {
+    float:right;
+}
+
+/* ========== End   of Shibboleth page stylings ===================================================================== */
+
+/* ========== Start of Ratings styling ============================================================================== */
+
+.ratingBoxWrapper {
+    display:none;
+}
+
+.ratingOption {
+    display:inline-block;
+    width:100px;
+}
+
+.ratingsOuterContainer {
+    clear:both;
+    float:left;
+    width:auto;
+    height:16px;
+}
+
+.ratingsContainer {
+    display:inline-block;
+}
+
+.currentRating {
+    color:#222222;
+    display:inline-block;
+}
+
+.recommendOuterContainer {
+    float:left;
+}
+
+.ratingsRecommendContainer {
+    margin-top:24px;
+    width:100%;
+}
+
+.ratingWrapper {
+    position:relative;
+}
+
+#ratingResult {
+    background:none repeat scroll 0 0 #FFFFFF;
+    color:#00A04B;
+    left:258px;
+    position:absolute;
+    top:0;
+    width:500px;
+    z-index:9999;
+}
+
+.recommendation.RecommendThis {
+    color:#333333;
+}
+
+.recommendation.youRecommendedThis {
+    color:#333333;
+}
+
+.ratingLegend {
+    clear:both;
+    display:none;
+    margin-top:10px;
+}
+
+.recommendWrapper {
+    border-left:1px solid #b0b0b0;
+    color:#b0b0b0;
+    font-weight:normal;
+    padding-left:12px;
+    text-transform:none;
+    margin-left:14px;
+}
+
+/* ========== End   of Ratings styling ============================================================================== */
+/* ========== Start of Comments styling ============================================================================= */
+
+#commentsSection {
+    clear:both;
+    margin-bottom:10px;
+}
+
+.commentsContainerEnabled {
+    border-top:solid 3px #cccccc;
+    margin-top:20px;
+    padding-top:10px;
+    width:710px;
+}
+
+.commentsContainerDisabled {
+    display:none;
+}
+
+.commentsContainer > h3 {
+    display:inline-block;
+}
+
+.commentsContainer fieldset {
+    border:none 1px #ffffff;
+    margin-bottom:0;
+    padding:0;
+    width:100%;
+}
+
+div.commentsContainer fieldset div {
+    margin:10px 0 7px 0;
+}
+
+div.commentsContainer fieldset div.commentblock {
+    margin-top:20px;
+}
+
+div.commentsContainer fieldset div.feedbacklinks {
+    margin-bottom:10px;
+    margin-top:0;
+}
+
+div.commentsContainer fieldset div.usercommenttext {
+    color:#4d4d4d;
+    font-size:12px;
+    margin-bottom:20px;
+    max-width:690px;
+}
+
+div.commentsContainer fieldset div.rejectedComment {
+    display:none;
+    font-size:smaller;
+    margin-bottom:0;
+}
+
+.separated-list .commentsAhahCountContainer,
+.separated-list .commentCountContainer,
+.separated-list .replynodecommentcount {
+    display:inline;
+}
+
+.commentCountContainer {
+    display:inline-block;
+}
+
+.commentRemoved {
+    display:none;
+}
+
+.commentsDisabled {
+    display:none;
+}
+
+.addcomment-field-label {
+    display:none;
+}
+
+.addcommentlink {
+    display:inline-block;
+    float:none;
+    margin-bottom:0;
+    margin-top:0;
+}
+
+.addcommentlink a.styledbutton {
+    color:#ffffff;
+    padding:4px;
+}
+
+#addCommentForm fieldset {
+    width:100%;
+}
+
+#addCommentForm textarea {
+    height:240px;
+    width:505px;
+}
+
+#addCommentForm fieldset + p {
+    display:none;
+}
+
+/* Same as class std-display */
+.feedbacklinks {
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:9.5px;
+    font-style:normal;
+    font-weight:bold;
+    letter-spacing:1px;
+    margin-bottom:10px;
+    margin-top:20px;
+    text-transform:uppercase;
+}
+
+.feedbacklinks a {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.feedbacklinks a:first-child {
+    padding-left:0;
+}
+
+#showComment {
+    display:inline-block;
+    float:right;
+    margin-bottom:15px;
+    margin-top:0;
+}
+
+.commentBlock {
+    border-bottom:1px dashed #cccccc;
+    margin-top:20px;
+}
+
+.commentBlock:first-child {
+    margin-top:0;
+}
+
+.commentBlock:last-child {
+    border-bottom:none;
+    margin-top:20px;
+}
+
+.commentBlock .usercommentsubmitter,
+.commentBlock .usercommentdate {
+    display:none;
+}
+
+.commentBlock > div:first-child {
+    color:#212121;
+    font-size:13px;
+    font-weight:bold;
+    margin-bottom:0;
+    margin-top:0;
+}
+
+#moderationForm .commentBlock > .commentBlock {
+    margin:10px 0 20px 20px;
+}
+
+.commentBlock > .commentBlock div:first-child {
+    background-image:url("/images/aip/icon_reply.gif");
+    background-position:center left;
+    background-repeat:no-repeat;
+    padding-left:15px;
+}
+
+.commentBlock > .commentBlock:last-child {
+    margin-bottom:20px;
+}
+
+#formResponse.commentSubmitted {
+    color:#1a6594;
+}
+
+#moderationForm .commentApproved,
+#moderationForm .flagSubmitted,
+#moderationForm .ratingSubmitted,
+#moderationForm .recommendSubmitted {
+    color:#1a6594;
+}
+
+/* ========== End   of Comments styling ============================================================================= */
+
+.keywords-container h3 {
+    text-transform:none;
+    margin-left:7px;
+}
+
+.displayAllConcepts {
+    text-align:right;
+}
+
+.displayAllConcepts img {
+    cursor:pointer;
+}
+
+#article .keyTopicsStyles {
+    border:none;
+    font-weight:bold;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+}
+
+.ui-widget-content a {
+    color:#1a6594;
+    font-family:Arial, sans-serif;
+}
+
+.keyTopicsStyles .ui-widget-header {
+    border:none;
+    background:none;
+    font-size:23px;
+}
+#article .ui-state-hover {
+/*    background-image:url("/images/jp/ui-icons_222222_256x240.png"); */
+}
+.keyTopicsStyles .ui-widget-header .ui-icon {
+    background-image:url("/images/aip/close_cross_button.png");
+}
+
+.keyTopicsStyles .ui-widget-header .ui-state-hover .ui-icon {
+    background-image:url("/images/aip/close_cross_button.png");
+}
+
+.keyTopicsStyles .ui-icon-closethick {
+    background-position:0 0;
+}
+
+.keyTopicsStyles .ui-state-hover {
+    border:none;
+    background:none;
+}
+
+.blogheader .bookmarkcontainer {
+    float:none;
+    padding:11px 0 25px 0;
+}
+
+#articlecitation .citationContainer div a:hover {
+    text-decoration:underline;
+}
+
+.loginIdentifyHeader {
+    font-weight:normal;
+    font-size:12px;
+    color:#333333;
+}
+
+#loginBox .signedinas {
+    color:#333333;
+    font-weight:bold;
+}
+
+#loginBox .signedinas:nth-child(2) {
+    font-size:1.5em;
+    margin:7px 0;
+}
+
+#loginBox .signedinas.institutionalusermsg {
+    font-size:1em;
+}
+
+#brandedHeader {
+    border:solid 1px #eeeeee;
+    margin-top:10px;
+    text-align:center;
+    width:197px;
+}
+
+#brandedHeader img {
+    max-height:50px;
+    vertical-align:middle;
+}
+
+.broughtToYouBy {
+    margin-top:8px;
+    margin-bottom:8px;
+    display:block;
+    color:#333333;
+}
+
+#loginBox #brandedHeader .inactiveLink {
+    display:block;
+    margin:10px 0 10px 0;
+}
+
+#journal .separated-list,
+#mostcited .separated-list,
+#homepage .separated-list,
+#mostcitedcontent .separated-list {
+    margin-left:0;
+}
+
+#journal .separated-list li,
+#homepage .separated-list li {
+    padding:0;
+}
+
+#journal #mostcitedcontent a.morelink,
+#homepage #mostcitedcontent a.morelink {
+    padding-top:13px;
+}
+.mostcited .mostcited {
+    border-color:#ffffff;
+    padding:0;
+}
+
+#mostcited .separated-list li,
+#mostcitedcontent .separated-list li {
+    padding-bottom:3px;
+    padding-top:3px;
+}
+
+#mostviewed .separated-list li {
+    padding-bottom:0;
+    padding-top:0;
+}
+
+#mostcitedcontent .separated-list .flat li,
+#mostviewed .separated-list .flat li {
+    padding:5px 0;
+}
+
+/* ==================Most Viewed Component stylings======================== */
+
+#mostviewed {
+    border:none;
+    margin-top:0;
+    padding:0;
+}
+
+#mostviewed .morelink a {
+    background-image:url("/images/aip/plus_icon.gif");
+    background-position:left 4px;
+    background-repeat:no-repeat;
+    padding-left:10px;
+}
+
+#journal #mostcitedcontent .articleMetadata .meta-key,
+#journal #mostcitedcontent .articleMetadata .meta-value,
+#journal #mostcitedcontent .articleMetadata .showhide,
+#homepage #mostviewed .articleMetadata .meta-key,
+#homepage #mostviewed .articleMetadata .showhide,
+#journal #mostviewed .articleMetadata .meta-key,
+#journal #mostviewed .articleMetadata .showhide,
+#article #mostviewed .articleMetadata .showhide,
+#issue #mostviewed .articleMetadata .showhide,
+#mostviewed h4 {
+    display:none;
+}
+
+/* ==================end of Most Viewed Component stylings======================== */
+/* ========== Start of deepdyve style =============================================================================== */
+
+.rentItem {
+    background-color:#f3f3f3;
+}
+
+.rentItem .price {
+    display:inline-block;
+    font-size:1.1em;
+    font-weight:bold;
+    margin-left:0;
+}
+
+.deepdyve {
+    display:none;
+}
+
+div.rent-link-text a.rent-link-text {
+    font-size:9px;
+    text-align:center;
+}
+
+div.rent-link-text {
+    text-align:center;
+    padding:2px 0 5px 0;
+}
+
+/* ========== End of deepdyve style ================================================================================= */
+
+.openurlfield {
+    float:left;
+}
+
+#article ul.item-authors {
+    float:left;
+    width:520px;
+    padding-top:3px;
+}
+
+/* bug 38647 The Create serial link should not be offered on any page */
+.content-tools-create-Serial {
+    display:none;
+}
+
+.dialogCitationLabel {
+    font-style:italic;
+    font-weight:bold;
+}
+
+/* ========== Start of Article Metric styling ======================================================================= */
+
+.metricsDetails #abstractDayView,
+.metricsDetails #fulltextDayView {
+    display:none;
+}
+
+.metricsDetails #metricTotals {
+    margin-bottom:0;
+    padding-top:10px;
+    width:auto;
+}
+
+.metricCount {
+    text-align:right;
+    width:50px;
+}
+
+.totalCount {
+    width:120px;
+}
+
+.graphOutput {
+    border:none 1px #cccccc;
+    height:300px;
+    margin-bottom:25px;
+    width:710px;
+}
+
+.metricsDetails table.jqplot-table-legend {
+    width:auto;
+}
+
+.metricsErrorTable {
+    border-collapse:collapse;
+    display:block !important;
+}
+
+.metricsErrorDesc {
+    border:solid thin #cccccc;
+    width:120px;
+}
+
+.metricsErrorCount {
+    border:solid thin #cccccc;
+    width:50px;
+}
+
+/* ========== End   of Article Metric styling ======================================================================= */
+
+.discountPrice {
+    color:#ff0000;
+    display:inline-block;
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* ========== site wide style amends for Buttons. ==========  */
+.styledbutton {
+    min-width:130px;
+    text-align:center;
+    width:auto;
+}
+
+a.styledbutton {
+    min-width:120px;
+}
+
+#submitsearch,
+.submitsearch a {
+    width:auto;
+}
+
+.highlight {
+    font-style:normal;
+}
+
+span.lineThrough {
+    text-decoration:line-through;
+    color:#cccccc;
+}
+
+.intro-text {
+    border-bottom:solid 2px #cccccc;
+    margin-bottom:15px;
+    padding-bottom:20px;
+}
+
+.libraryAdminWelcome {
+    border:solid 1px #cccccc;
+    padding:5px;
+}
+
+.libraryAdminWelcomeTitle {
+    font-weight:bold;
+}
+
+.libraryAdminWelcomeText {
+    color:#222222;
+}
+
+/* Social media bookmarks and Commenting*/
+.bookmarkcontainer {
+    float:left;
+    margin-right:0;
+    padding-top:0;
+}
+
+.bookmarkcontainer a {
+    margin-left:4px;
+}
+
+.bookmarkcontainer a:hover {
+    text-decoration:none;
+}
+
+.bookmarkcontainer .moreshareoptions a:first-child {
+    margin:0;
+}
+
+.viewfurthershareoptions {
+    cursor:pointer;
+    display:inline;
+    margin-left:4px;
+}
+
+.moreshareoptions {
+    display:none;
+    height:27px;
+    left:3px;
+    position:absolute;
+    top:12px;
+    width:145px;
+    z-index:99;
+}
+
+.socialMediaCommenting {
+    float:right;
+}
+
+.socialMediaCommenting a {
+    text-decoration:none;
+}
+
+span.mendeley {
+    padding-right:2px;
+}
+
+.socialMediaCommenting div.bibsonomy img {
+    border:1px solid #cccccc;
+}
+
+.printlink {
+    padding-right:4px;
+}
+
+/* sponsor box for publishers aapm and aapt */
+div#publisher-sponsors-box {
+    background:#f7f7f7;
+    border:1px solid #cccccc;
+    margin:10px 0;
+    padding:10px;
+}
+
+div#publisher-sponsors-box .publisher-sponsors-list {
+    padding:10px 10px 0 10px;
+}
+
+.pendingWaterMark {
+    border:1px solid #cccccc;
+    color:#ff0000;
+    font-size:1.4em;
+    font-weight:bold;
+    margin-top:20px;
+    padding:5px 5px 5px 5px;
+}
+
+fieldset.pendingresults div {
+    margin-left:0;
+}
+
+.responseTimes {
+    clear:both;
+    display:none;
+}
+
+td.null3 {
+    padding-left:0;
+}
+
+.ajax-error {
+    color:#aa0000;
+    font-weight:bold;
+    opacity:0.6;
+}
+
+/* ========== Start of SIQ styling ================================================================================== */
+.siqDoi,
+.siqItemId,
+.siqPageTitle,
+.siqCitationsTabEnabled,
+.siqReferencesTabEnabled,
+.siqFullTextHTMLTabEnabled,
+.siqPub2webEventType {
+    display:none;
+}
+
+/* ========== End   of SIQ styling ================================================================================== */
+/* ========== Start of rating styling =============================================================================== */
+
+#itemRating {
+    background-color:#3075ad;
+    color:#ffffff;
+    font-family:"Trebuchet MS", Arial;
+    font-weight:bold;
+    margin:0 10px;
+    padding:1px 5px;
+    vertical-align:middle;
+}
+
+#itemRating:hover {
+    background-color:#333333;
+    text-decoration:none;
+}
+
+.noStarRating, .currentStarRating {
+    margin-left:10px;
+    vertical-align:middle;
+    color:#B0B0B0;
+}
+
+.loginPrompt {
+    background:url("/images/aip/curved_arrow.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color:#222222;
+    display:inline-block;
+    font-family:verdana;
+    font-size:9px;
+    font-weight:normal;
+    letter-spacing:0;
+    margin-left:0;
+    margin-top:2px;
+    padding-left:16px;
+    padding-top:2px;
+    text-transform:none;
+}
+
+/* ========== End   of rating styling =============================================================================== */
+/* ========== Start of reports styling ============================================================================== */
+
+#reportspage .reportintro {
+    padding:0 0 10px 0;
+}
+
+#reportspage .reportlist {
+    padding-left:20px;
+}
+
+#reportspage .reportlist li {
+    line-height:2;
+    list-style-type:decimal;
+}
+
+/* ========== End   of reports styling ============================================================================== */
+/* ========== Start of odds and ends styling ======================================================================== */
+
+.figuresblock,
+.multimediablock,
+.tablesblock {
+    float:left;
+    clear:both;
+}
+
+.figuresblock h2,
+.multimediablock h2,
+.tablesblock h2 {
+    margin-bottom:0;
+}
+
+.blurb-editor > img {
+    max-height:10px;
+    max-width:10px;
+    margin-right:-2px;
+}
+
+.adminAmendLinks {
+    clear:both;
+}
+
+/* Overrides for first page preview... */
+#previewWrapper {
+    float:left;
+    margin:0 15px 5px 5px;
+    width:105px;
+}
+
+.previewthumbnailink img {
+    border:1px solid #333333;
+    margin:0;
+    width:500px;
+}
+
+div.previewthumbnailink {
+    text-align:left;
+}
+
+.previewthumbnailink .previewMagnify {
+    display:none;
+}
+
+#top .previewNavGrey {
+    display:none;
+}
+
+/* fix for author popup dialog when crossmark present */
+div.authorpopupwrapper .ui-dialog-titlebar {
+    width:176px;;
+}
+
+div.authorpopupwrapper .ui-dialog-titlebar-close {
+    background:none;
+}
+
+span.refmatch {
+    display:block;
+}
+
+.cursorDefault {
+    cursor:default;
+}
+
+.cursorPointer {
+    cursor:pointer;
+}
+
+.cursorWait {
+    cursor:wait;
+}
+
+.opacity50pc {
+    opacity:0.5;
+}
+
+.initialHide {
+    display:none;
+}
+
+#open-crossmark {
+    padding-bottom:4px !important;
+}
+
+.hideMe {
+    display:none;
+}
+
+.hideSoMe {
+    display:none;
+}
+
+.showSoMe {
+    display:block;
+}
+
+.facethidetext {
+    display:none;
+}
+
+#signinform .pwbox-highlight {
+    border:solid 1px #d0b178;
+}
+
+#signinform .pwbox-normal {
+    border:solid 1px #cccccc;
+}
+
+#container .item-title h3 p {
+    font-size:100%;
+    display:inline;
+}
+
+.signin_text {
+    font-size:1.75em;
+    font-weight:bold;
+}
+
+.testRightsLink {
+}
+
+.contributor-intro-text,
+.inst-intro-text {
+    margin-bottom:0;
+    padding-bottom:0;
+}
+
+/* ========== Start of Topic Search Results styling ================================================================= */
+.affiliationSearchResultsContainer,
+.topicSearchResultsContainer,
+.contributorSearchResultsContainer,
+.institutionSearchResultsContainer {
+    background-color:#f9f9f9;
+    border-bottom:solid 2px #cccccc;
+    border-top:solid 2px #cccccc;
+    margin-bottom:0;
+    margin-left:160px;
+    padding:13px 10px 13px 24px;
+}
+
+.affiliationSearchResultsContainer {
+	margin-top:15px;
+}
+
+.topicSearchResults {
+    margin-bottom:5px;
+    margin-top:5px;
+}
+
+.affiliationSearchName,
+.topicSearchName {
+    display:inline;
+}
+
+/* ========== End   of Topic Search Results styling ================================================================= */
+/* ========== Start of +MORE / -LESS styling ======================================================================== */
+
+#homepage .meta-value.authors,
+#journal .meta-value.authors {
+    display:none;
+}
+
+/* ========== End   of +MORE / -LESS styling ======================================================================== */
+
+/* Free trial styling */
+
+.trialdetails {
+    clear:both;
+}
+
+/* ========== Styling for blog captions as requested by Paul G ====================================================== */
+.blog-caption-text {
+    background-color:#ebebeb;
+    font-style:italic;
+    text-align:center;
+}
+
+.blog-caption-text img {
+    display:block;
+    margin:auto;
+}
+
+/* ========== End of Styling for blog captions as requested by Paul G =============================================== */
+/* ========== Fix for bug 43804 ===================================================================================== */
+.figureCaptionContainer .xref sup,
+.captionContainer .xref sup {
+    font-size:100%;
+    vertical-align:inherit;
+}
+
+.figureCaptionContainer .xref a,
+.figureCaptionContainer .xref a:visited,
+.figureCaptionContainer .xref a:active,
+.figureCaptionContainer .xref a:hover,
+.captionContainer .xref a,
+.captionContainer .xref a:visited,
+.captionContainer .xref a:active,
+.captionContainer .xref a:hover {
+    color:inherit;
+    cursor:default;
+    text-decoration:none;
+}
+
+/* ========== End of fix for bug 43804 ============================================================================== */
+
+.confproctoc .articleMetadata {
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+/* ========== Fix for bug 44352 ===================================================================================== */
+#journalspage #container .publistwrapper p {
+    padding:2px 2px 0 5px;
+}
+
+/* ========== End of fix for bug 44352 ============================================================================== */
+/* ========== Fix for bug 42092 ===================================================================================== */
+#usersearchresults .resultsCountFound {
+    clear:both;
+}
+
+/* ========== End of fix for bug 42092 ============================================================================== */
+
+/* Home page Blurb update, so taking off padding the blurb 'P'tag has given heading */
+#container .mostrecentarticles h3 p {
+    padding:0;
+}
+
+#homepage #mostviewed h5 a,
+#homepage #mostcited h5 a {
+    font-size:13px;
+}
+
+/* ========== Fix for consortia COUNTER reports display ============================================================= */
+
+#counterstatsform .regInput select {
+    width:auto;
+}
+
+/* ========== End of fix for consortia COUNTER reports display ============================================================= */
+/* ========== Start of changes for volume/issue bar - bug 44899 ===================================================== */
+
+.issueBar {
+    padding:3px 0;
+    width:140px;
+}
+
+.issueBar ul li:last-child {
+    border-bottom:none 1px #ffffff;
+}
+
+.issuecontents > .issueBar .issue-list {
+    border-bottom:solid 2px #cccccc;
+    margin-bottom:15px;
+    max-height:500px;
+    overflow-y:auto;
+}
+
+/* ========== End   of changes for volume/issue bar - bug 44899 ===================================================== */
+/* ========== Start of changes for More details? - bug 45004 ======================================================== */
+
+.moreDetails {
+    display:none;
+}
+
+/* ========== End   of changes for More details? - bug 45004 ======================================================== */
+
+.create-links {
+    clear:both;
+}
+
+.ui-icon-plus {
+    display:inline-block;
+}
+
+.figAttrib {
+    font-size:0.9em;
+    font-weight:normal;
+    font-style:italic;
+}
+
+.figureCaptionContainer a[id],
+.captionContainer a[id] {
+    display:none;
+}
+
+.manageMarkedList .source-doi {
+    display:none;
+}
+
+#institutionpage #content .facets {
+    padding-top:0;
+    margin-top:7px;
+}
+
+#institutionpage .clearer {
+    clear:none;
+}
+
+#institutionpage .articleInToc {
+    float:left;
+    border-bottom:1px solid #CCCCCC;
+}
+
+#institutionpage .article_source_label,
+.related #morelikethis .article_source_label {
+    display:none;
+}
+
+#contributorpage #content .facets {
+    padding-top:0;
+    margin-top: 7px;
+}
+
+#contributorpage #linkedInstitutionsContainer .publistwrapper,
+#institutionauthorspage #linkedContributorsContainer .publistwrapper {
+    margin-left:0;
+}
+
+#linkedContributorsContainer .separated-list > li,
+#linkedInstitutionsContainer .separated-list > li {
+    border-bottom:solid 1px #cccccc;
+}
+
+#linkedContributorsContainer .separated-list > li:last-child,
+#linkedInstitutionsContainer .separated-list > li:last-child {
+    border-bottom:none 1px #ffffff;
+}
+
+#linkedContributorsContainer .navigationBar,
+#linkedContributorsContainer .resultsnav,
+#linkedInstitutionsContainer .navigationBar {
+    margin:10px 0;
+    width:100%;
+}
+
+#linkedInstitutionsContainer .resultsnav {
+    display:none;
+}
+
+#linkedContributorsContainer .a_to_z,
+#linkedInstitutionsContainer .a_to_z {
+    float:right;
+    padding-left:0;
+}
+
+
+#linkedContributorsContainer .articleMetadataInner,
+#linkedInstitutionsContainer .articleMetadataInner {
+    margin-left:0;
+}
+
+#linkedContributorsContainer ul.browseItemResults.flat,
+#linkedInstitutionsContainer ul.browseItemResults.flat {
+    margin-bottom:0;
+    padding:0;
+}
+
+.contributorList li,
+.institutionList li {
+    border-bottom:solid 1px #cccccc;
+    padding-bottom:10px;
+    padding-top:10px;
+}
+
+.contributorList li:last-child,
+.institutionList li:last-child {
+    border-bottom:none 1px #ffffff;
+}
+
+/* Fix for 44539/44527 spacing request */
+.wplogo {
+    padding-left:70px;
+}
+
+/* Fix for 45109/45263 (additional to PTOL requirements) */
+.blogpostbody img,
+.blogInList img {
+    max-width:500px;
+}
+
+.authorNote .note_number {
+    vertical-align:super;
+}
+
+span.overline {
+    text-decoration:overline;
+}
+
+.commentBreak {
+    display:block;
+}
+
+#maincontainer,
+#footer .footerlinklist,
+#footer .copyrightnotice {
+    margin-left:10px;
+}
+
+#topnavcontainerwrapper,
+#bottomnavcontainer {
+    margin-left:-10px;
+}
+
+/* ========== Start of Mega menu styling ============================================================================ */
+
+.megamenu {
+    background-color:white;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-color:#999999;
+    border-style:none solid solid solid;
+    border-width:1px;
+    display:none;
+    font-size:14px;
+    /* padding-right:15px; */
+    position:absolute;
+    z-index:999;
+}
+
+#megamenu {
+    left:53px;
+    min-width:290px;
+    top:35px;
+}
+
+#megamenu_pub {
+    background-color:#ffffff;
+    background-image:url("/images/aip/grad-bkg-top.jpg");
+    background-position:bottom left;
+    background-repeat:repeat-x;
+    left:0;
+    top:90px;
+    width:469px;
+}
+
+#megamenu_pub li {
+    float:none;
+    padding-right:2px;
+    padding-top:0;
+}
+
+.megamenu-column {
+    float:left;
+    margin-top:0;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom:18px;
+    padding-top:18px;
+}
+
+.megamenu-list ul {
+    list-style-type:none;
+}
+
+.megamenu-list ul li {
+    padding:2px 0;
+}
+
+#navbar .megamenu-list.megamenu-column > ul {
+    width:100%;
+}
+
+#navbar #aip_authors {
+    padding-right:86px;
+}
+#navbar #megamenu_pub li a {
+    font-size:14px;
+}
+.navChevron {
+    display:inline-block;
+    background:url(/images/aip/down_arrow_mainnav.png) no-repeat 0 0;
+    height:7px;
+    width:11px;
+    cursor:pointer;
+}
+.chevronUp {
+    background:url(/images/aip/down_arrow_mainnav.png) no-repeat 0 -6px;
+}
+/* ========== End   of Mega menu styling ============================================================================ */
+/* ========== Fix for #46004 ======================================================================================== */
+
+.tandcLink.small {
+    font-size:1em;
+}
+
+/* ========== Start of Social Media icons styling =================================================================== */
+
+.socialmediacontainer {
+    /* background-color:#f8f8f8; */
+    /* border:solid 1px #cccccc; */
+    /* border-radius:5px; */
+    margin-top:5px;
+    padding:2px 5px;
+}
+
+.soMeTitle {
+    color:#333333;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.soMeIcon {
+    height:17px;
+    margin:2px;
+    padding:0;
+    width:17px;
+}
+
+.soMeTitle.joinanAIPmembersociety a {
+	 color:#333333 !important;
+}
+
+/* ========== End   of Social Media icons styling =================================================================== */
+/* ========== Start of Collection styling =========================================================================== */
+
+#confprocserialcollectionspage #content .facets,
+#itemtypejournalcollectionspage #content .facets,
+#publishercollectionspage #content .facets,
+#spotlightjournalcollectionspage #content .facets {
+/*    margin-top:-5px; */
+    padding-top:2px;
+}
+
+#journalcollectionspage #content .facets {
+    padding-top:2px;
+}
+
+#collectionspage #content .facets {
+    padding-top: 8px;
+}
+
+#collectionspage #content .facets h3 {
+    margin-top:2px;
+}
+
+#collectionspage .publistwrapper {
+    margin-top:5px;
+}
+
+#collectionspage #content h1 {
+    margin-bottom:0;
+}
+
+#collectionspage .resultsnav p {
+    font-weight:bold;
+}
+
+#collectionspage div.articleMetadata,
+#confprocserialcollectionspage div.articleMetadata,
+#itemtypejournalcollectionspage div.articleMetadata,
+#journalcollectionspage div.articleMetadata,
+#publishercollectionspage div.articleMetadata,
+#spotlightjournalcollectionspage div.articleMetadata {
+    max-width:85%;
+}
+
+#collectionspage .publistwrapper .separated-list > li,
+#confprocserialcollectionspage .publistwrapper .separated-list > li,
+#itemtypejournalcollectionspage .publistwrapper .separated-list > li,
+#journalcollectionspage .publistwrapper .separated-list > li,
+#publishercollectionspage .publistwrapper .separated-list > li,
+#spotlightjournalcollectionspage .publistwrapper .separated-list > li {
+    border-bottom:solid 1px #cccccc;
+}
+
+#collectionspage .publistwrapper .separated-list > li:last-child,
+#confprocserialcollectionspage .publistwrapper .separated-list > li:last-child,
+#itemtypejournalcollectionspage .publistwrapper .separated-list > li:last-child,
+#journalcollectionspage .publistwrapper .separated-list > li:last-child,
+#publishercollectionspage .publistwrapper .separated-list > li:last-child,
+#spotlightjournalcollectionspage .publistwrapper .separated-list > li:last-child {
+    border-bottom:none 1px #ffffff;
+}
+
+#collectionpage .publistwrapper {
+    clear:both;
+}
+
+#collectionpage .coverImageContainer {
+    display:none;
+}
+
+#collectionpage .navigationBar,
+#collectionpage .resultsnav {
+    font-weight:bold;
+    margin-bottom:10px;
+    width:99%;
+}
+
+#collectionpage .resultsnav p {
+    font-weight:bold;
+}
+
+#collectionpage .soMeIcons {
+    clear:both;
+    float:right;
+    margin-bottom:20px;
+}
+
+#collectionpage .articleSourceTag .article_source_label {
+    display:none;
+}
+
+.collectionContainer .separated-list li {
+    border-bottom:solid 1px #cccccc;
+}
+
+.collectionContainer .separated-list li:last-child {
+    border-bottom:none 1px #ffffff;
+}
+
+.collectionSortBy {
+    clear:both;
+    margin-bottom:15px;
+}
+
+.collectionContentsControls {
+    clear:both;
+}
+
+.collectionContents {
+    float:left;
+    margin-bottom:0px;
+}
+
+.collectionsHeaderText {
+    border-bottom:solid 3px #cccccc;
+    margin:20px 0 20px 0;
+    padding-bottom:25px;
+}
+
+.collectionHeader {
+    border-bottom:dashed 1px #cccccc;
+    float:left;
+    margin-bottom:10px;
+    padding-bottom:10px;
+    width:100%;
+}
+
+.collectionSubtitle {
+    font-size:16px;
+    font-style:italic;
+    font-weight:bold;
+    padding:0 0 15px 0;
+}
+
+.collectionImage {
+    float:left;
+    padding-left:0;
+    padding-right:0;
+    position:relative;
+    width:170px;
+}
+
+.collectionImage img,
+.collectionImage img.cover {
+    width:150px;
+}
+
+.collectionMetadata {
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-size:1.2em;
+    margin-left:170px;
+}
+
+.collectionMetadata .metadata_label {
+    font-weight:bold;
+}
+
+.collectionControls {
+    float:right;
+    margin:0 0 10px 0;
+}
+
+.collectionButton {
+    min-width:60px;
+    padding:4px 10px;
+}
+
+.collectionStatusLive {
+    font-weight:bold;
+}
+
+.collectionStatusPending {
+    color:#cc0000;
+    font-weight:bold;
+}
+
+.collectionMainTitle {
+}
+
+.collectionTitle {
+    margin-bottom:10px;
+}
+
+.collectionLabel {
+    font-size:16px;
+    font-weight:bold;
+}
+
+.collectionIntroText {
+    font-size:12px;
+}
+
+.collectionDescription {
+    margin:0;
+}
+
+.collectionInstructions {
+    border:solid 1px #cccccc;
+    clear:both;
+    margin-bottom:15px;
+    padding:10px 5px;
+}
+
+#collectionDeleteConfirm h2 {
+    font-weight:bold;
+}
+
+#collectionDeleteConfirm ul li {
+    list-style-type:disc;
+}
+
+.confirmControls {
+    float:right;
+}
+
+.deleteItems {
+    display:inline-block;
+    float:right;
+}
+
+.deleteItem_label {
+    font-weight:bold;
+}
+
+.gatherItems {
+    display:inline-block;
+    float:right;
+}
+
+.gatherItems span {
+    font-weight:bold;
+}
+
+.gatherControls .addAllToCollection,
+.gatherControls .addToCollection {
+    display:inline-block;
+    float:right;
+}
+
+.gatherControls .addAllToCollection {
+    border:solid 1px #cccccc;
+    margin-right:10px;
+    padding:5px;
+}
+
+.searchResultsContainerInner {
+    margin-left:160px;
+}
+
+.searchResultsContainerInner.conceptResultsContainer {
+    margin-left:0px;
+}
+
+.ui-icon {
+    display:inline-block;
+}
+
+.adminAmendLinks,
+.create-links {
+    background-color:#f8f8f8;
+    margin:20px 0 10px 0;
+    outline:dotted thin #f8f8f8;
+}
+
+#collectionspage .collectionSortBy {
+    margin-left:170px;
+}
+
+.collectionSubtitleForListing {
+    font-style:italic;
+}
+
+/*Collection: Video/Podacast section */
+.vidPodcastTitle {
+	font-weight:bold;
+}
+
+.vidPodcastMetadata {
+	width: 50%;
+	float:left;
+	margin-left:15px;
+}
+
+#collectionDialogMetadata {
+	margin: 15px 0px;
+	width:100%;
+}
+
+.vidPodcastMetadata .authorsWithPopup,
+.vidPodcastMetadata p {
+	padding: 0 0 5px 0 !important;
+	line-height: 15px;
+}
+
+#jwPlayerHook_wrapper {
+	float:left;
+}
+
+.singleVideoPodcastContainer{
+	min-height: 135px;
+	width: 50%;
+	float:left;
+}
+.videoPodcastSeperator {
+	clear:both;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	margin: 15px 0px;
+}
+
+#videoPodcastCollections {
+	clear:both;
+}
+
+.vidPodcastThumbnail {
+	width: 130px;
+	text-align:center;
+	/*background-color:#666;*/
+	float:left;
+	cursor:pointer;
+}
+
+.vidPodcastThumbnail img {
+	max-width: 130px;
+	max-height: 86px;
+}
+
+.collectionContainer h3 {
+	margin-bottom:20px;
+}
+
+#collectionDialogHook {
+	padding: 30px 20px;
+}
+
+/* ========== End   of Collection styling =========================================================================== */
+/* ========== (Temporarily #47678) hide signin caret ================================================================ */
+
+.signinlink img {
+    display:none;
+}
+
+/* ========== (Temporarily #47678) hide signin caret ================================================================ */
+/* ========== Start of #47775 change ================================================================================ */
+.notopborder {
+    border-top:none 1px #ffffff;
+}
+
+/* ========== End   of #47775 change ================================================================================ */
+
+/* below is a fix as per justin Email "AIP UI work: Feb 10" */
+/* updating / undoing some of this change for bug 60577 on August 27 2014*/
+.showFacetsInternal .resultsnav {
+    margin-bottom:0;
+    padding:0;
+    width:710px;
+}
+
+#conceptpage .showFacetsInternal .resultsnav,
+#searchresultspage .showFacetsInternal .resultsnav {
+    background:none;
+    height:auto;
+}
+
+.affiliationSearchResultsContainer,
+.searchResultsContainerInner,
+.publist_paginated,
+.topicSearchResultsContainer {
+    clear:right
+}
+
+#content .showFacetsInternal .facets {
+    padding:20px 0;
+}
+
+.showFacetsInternal > ul.flat {
+    margin-left:160px;
+}
+
+.showFacetsInternal .navigationBar {
+    float:left;
+    padding:0 4px;
+    width:710px;
+}
+
+.showFacetsInternal .perpageoptions {
+    padding-right:10px;
+}
+
+#searchResultsContainer.showFacetsInternal .facets {
+    padding-top: 0;
+}
+
+/* End of AIP UI work:Feb 10 */
+
+/*======================= Start of #45910 ============================*/
+
+.item-title-footnote span.gen {
+    display:none;
+}
+
+.item-title-footnote span.fn-volume {
+    font-weight:bold;
+}
+/* ========== End   of #45910 change ================================================================================ */
+#recaptcha_area {
+    width:300px;
+}
+
+/* For User Admin textarea fields - Bug: 48868*/
+.form-field textarea {
+    height:60px;
+    resize:none;
+    width:340px;
+}
+
+.broadcastMessagePopUp {
+    background-color: #444444;
+    border-radius: 8px;
+    border: solid 2px #aaaaaa;
+    bottom: 30px;
+    box-shadow: 3px 3px #888888;
+    color: #ffffff;
+    display: none;
+    left: 30px;
+    opacity: 0.75;
+    padding: 9px;
+    position: fixed;
+    width: 250px;
+    z-index: 9999;
+}
+
+.broadcastMessagePopUp h6 {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 1.2em;
+    max-width: 95%;
+}
+
+.broadcastMessagePopUp .bcSeeMore,
+.broadcastMessagePopUp .bcSeeMore:link,
+.broadcastMessagePopUp .bcSeeMore:visited,
+.broadcastMessagePopUp .bcSeeMore:hover,
+.broadcastMessagePopUp .bcSeeMore:active {
+    color: #3399ff;
+}
+
+.broadcastMessagePopUp .bcSeeMore:hover,
+.broadcastMessagePopUp .bcSeeMore:active {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.closeBroadcastMessagePopup {
+    float: right;
+}
+
+.closeBroadcastMessagePopup:hover {
+    cursor: pointer;
+}
+
+.tmpDebug {
+    background-color: black;
+    border: solid thin yellow;
+    border-radius: 4px;
+    color: yellow;
+    display:none;
+    padding: 0.25em 0.5em;
+}
+
+/* 45780 */
+.layoutboxnews {
+   padding-left:15px;
+}
+
+#useradmintemplate .genericontain h4 {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+}
+
+#formatform .updateAlertsButton {
+    margin:-15px 22px 0 0;
+}
+
+.alertingTo {
+    width:100px;
+    display:inline-block;
+}
+
+label[for="alertingFormat"]{
+    width:96px;
+    display:inline-block;
+}
+label[for="alertingFormatHTML"],
+label[for="alertingFormatPLAIN"]{
+    vertical-align: -3px;
+}
+
+#alertingFormatHTML{
+    margin-left:20px;
+}
+
+
+.searchFilterContainer {
+    border-bottom:solid thin #cccccc;
+    border-top:solid thin #cccccc;
+    clear:both;
+    padding:8px 0;
+}
+
+#searchrefineform .styledbutton {
+   min-width:40px;
+   height:32px;
+}
+
+#searchrefineform button.disabled,
+#searchrefineform button.disabled:hover {
+    color:#ccc !important;
+    background: gray !important;
+    cursor: wait !important;
+}
+
+.cursorDisabled {
+    cursor: wait !important;
+}
+
+#conceptbyauthorcontent .explanationText {
+    display:none;
+}
+
+.searchFilterLabel {
+    font-weight:bold;
+}
+
+.submitsearch {
+    float:right;
+    margin-bottom:20px;
+}
+
+.sWDeselect {
+    float: right;
+}
+
+.sWControls {
+    float: right;
+}
+
+.sWControls.head {
+    position: absolute;
+    right: 15px;
+    top: 35px;
+}
+
+.sWDlgList {
+    border-top: solid thin #cccccc;
+    clear: both;
+}
+
+.sWDlgList ul {
+    margin-right: 0;
+}
+
+.sWDlgHook {
+    border: solid thin #cccccc;
+    max-height: 260px;
+    overflow: auto;
+    padding: 10px;
+    width: 60%;
+}
+
+.sWDlgSubmit {
+    float: right;
+}
+
+.sWDlgTitle,
+.selectDeselectAll {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.selectDeselectAll {
+    float: right;
+}
+
+.sWDlgTitle {
+    float: left;
+}
+
+.sWDlgTrigger {
+    border: solid 1px #cccccc;
+    clear: both;
+    display: block;
+    margin: 0 0 10px 0;
+    padding: 2px 5px;
+    width: 98%;
+    background-image:-moz-linear-gradient(49% 14% 180deg,rgb(255,255,255) 0%,rgb(214,214,214) 100%);
+    background-image:-webkit-gradient(linear,49% 14%,49% 123%,color-stop(0, rgb(255,255,255)),color-stop(1, rgb(214,214,214)));
+    background-image:-webkit-linear-gradient(180deg,rgb(255,255,255) 0%,rgb(214,214,214) 100%);
+    background-image:-ms-linear-gradient(180deg,rgb(255,255,255) 0%,rgb(214,214,214) 100%);
+    background-image:linear-gradient(180deg,rgb(255,255,255) 0%,rgb(214,214,214) 100%);
+    /*width:275px;
+    height:22px;
+    border-color:rgb(217,217,217);
+    border-width:1px;
+    -moz-border-radius:0%;
+    -webkit-border-radius:0%/4%;
+    border-radius:0%/4%;
+    border-style:solid;
+    -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffffff,endColorstr=#ffd6d6d6,GradientType=0)";
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffffff,endColorstr=#ffd6d6d6,GradientType=0);*/
+    cursor:pointer;
+}
+
+.sWDlgTrigger .openIcon {
+    background: url("/images/aip/popup_icon.png") no-repeat right transparent;
+    float: right;
+    width: 20px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.sWDlgTrigger.sw_publication {
+    /*margin-top: -35px;*/
+}
+
+.searchWithinContainerInner {
+    width: 63%;
+    display: inline-block;
+    margin: 15px 0px;
+}
+
+#advancedsearchpage .ui-dialog-titlebar { /* hide gray title bar for the search within dialogs */
+    background:none;
+    background-color:#ffffff;
+    border:none 1px #ffffff;
+    padding:0;
+}
+
+.dlgMaxHeight {
+    max-height:420px;
+}
+
+.refine-search-box {
+    width:220px;
+}
+
+.searchRefineContainer {
+    border-bottom: dotted thin #cccccc;
+    border-top: dotted thin #cccccc;
+    padding:5px 0;
+    margin: 15px 0px 20px;
+    clear:both;
+}
+
+.searchRefine {
+    display:inline-block;
+}
+
+.searchRefineReturn {
+    display:inline-block;
+}
+
+.searchRefineReturn.hidden {
+    display:none;
+}
+
+.searchRefineReturn a {
+    background-color:#ebebeb;
+    border:solid 1px #cccccc;
+    font-weight:bold;
+    padding:  9px 10px 8px 10px;
+}
+.searchRefineReturn a img {
+    margin-right:3px;
+}
+
+.or_connector {
+    clear: both;
+    display: inline-block;
+    font-style: italic;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    margin: 0px 10px;
+    padding: 0 10px;
+}
+
+.searchRefineLabel {
+    font-weight:bold;
+}
+
+.searchExplanation {
+    clear: both;
+    padding: 20px 0px 0px;
+}
+
+.greyedOut {
+    opacity: 0.5;
+}
+
+.itmCount {
+    color: #808080;
+    /*padding-left: 1em;*/
+}
+
+/*to show user info is loading*/
+.pageWaiting {
+    cursor: wait !important;
+}
+
+.morepostsloadingwrappper {
+    text-align:center;
+    width:540px;
+    margin-left:170px;
+}
+
+.blogInList .bookmark-separator {
+    padding-left:3px;
+}
+
+.blogInList .commentCount {
+    font-size:0.6em;
+    vertical-align:top;
+}
+
+/** start of fix for bug 60650 */
+
+#contributorpage .explanationText,
+#institutionpage .explanationText {
+    display:none;
+}
+
+#contributorpage #searchResultsContainer .sortBy,
+#institutionpage #searchResultsContainer .sortBy {
+    padding-left: 160px;
+}
+
+#contributorpage  .browsecontent  .resultsnav,
+#institutionpage  .browsecontent  .resultsnav {
+    background: none;
+    float: none;
+}
+
+#contributorpage  #searchShowHide,
+#institutionpage  #searchShowHide {
+    padding-bottom:20px;
+    padding-top: 23px;
+}
+
+#contributorpage .showFacetsInternal .navigationBar,
+#institutionpage .showFacetsInternal .navigationBar {
+    width:100%;
+}
+
+
+/** end of fix for bug 60650 */
+/** Advance search styles **/
+#advanced-search-form .termInput select{
+    padding:2px 5px;
+}
+#advanced-search-form .termInput select.fieldType{
+    padding:2px 0px;
+    width:180px; 
+}
+#advanced-search-form .termInput select.operator{
+    padding:2px 0px 0px 3px;
+}
+#advanced-search-form .termInput select.fieldType option {
+    padding: 2px 0px;
+}
+#advanced-search-form input[type="text"] {
+    padding:3px 5px;
+}
+
+#advanced-search-form .yearInput input[type="text"] {
+    margin-left:10px;
+}
+
+#advanced-search-form .termInput .longfield2 {
+    width:482px;
+}
+
+#advanced-search-form .termInput .longfield {
+    width:408px;
+}
+
+#advanced-search-form .termInput input#value1.error.defaultTerm {
+    color: #ccc;
+}
+/** End of Advance search styles **/
+/*--------- 403 error page styles -----------*/
+.loginFailedRegisterPrompt p {
+    color: #333332;
+    padding: 2px 0px 5px 24px !important;
+    font-size: 10px;
+}
+.loginFailedSignInPrompt p{
+    font-size: 10px;
+    font-weight: normal;
+    padding: 10px 0 5px 0 !important;
+    line-height:12px;
+}
+
+/* Search explanation text - added for exact search phrase */
+.quotes {
+	color:black;
+	font-weight:bold;
+}
+
+/* saved serarch rss specific - applied to site admin saved search only */
+.itemAction.adminItemAction {
+    width:12%;
+}
+
+/* from fulltext-html-tab.css so titles in TOC etc. are subscript appropriately*/
+.jp-sub {
+    font-size:0.83em;
+    vertical-align:sub;
+}
+
