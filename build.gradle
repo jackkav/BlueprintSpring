@@ -19,6 +19,7 @@ repositories {
     maven {
         url 'http://repo.spring.io/plugins-release'
     }
+    mavenCentral()
 }
 apply plugin: 'java'
 apply plugin: 'eclipse'
