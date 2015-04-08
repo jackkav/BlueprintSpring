@@ -14,6 +14,6 @@ public class HomeController {
     }
     @RequestMapping("/WIP")
     public String WIP() {
-        return "WIP";
+        return "Index";
     }
 }
