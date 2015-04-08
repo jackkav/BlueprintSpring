@@ -4,18 +4,22 @@ buildscript {
         springloadedVersion = '1.2.3.RELEASE'
     }
     repositories {
-        mavenCentral()
+        mavenLocal()
         maven {
             url 'http://repo.spring.io/plugins-release'
         }
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}") 
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
         classpath("io.spring.gradle:dependency-management-plugin:0.4.1.RELEASE")
-        classpath ("org.springframework:springloaded:${springloadedVersion}")
     }
 }
-
+repositories {
+    mavenLocal()
+    maven {
+        url 'http://repo.spring.io/plugins-release'
+    }
+}
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea' 
@@ -28,10 +32,6 @@ idea {
         inheritOutputDirs = false
         outputDir = file("$buildDir/classes/main/")
     }
-}
-repositories {
-    mavenLocal()
-    mavenCentral()
 }
 
 war {
