@@ -41,8 +41,7 @@
                 <div id="banner">
                     <h1 id="logo"><a href="#"
                                      title="Link to home page" id="homepagelink"><img
-                            src="http://scitation.aip.org/images/aip/aip_logo_transparent.gif" alt="aip"/></a></h1>
-
+                            src="images/aip/aip_logo_transparent.gif" alt="SciChina"/></a></h1>
                     <div id="navbar">
                         <ul>
                             <li id="aip_publishers"><a
@@ -113,101 +112,21 @@
                 <div id="loginBox">
                     <ul class="flat navigation">
                         <li class="item-signin">
-                            <a href="http://scitation.aip.org/;jsessionid=3i97c5lwamj6c.x-aip-live-06#"
-                               title="Link to sign in" class="signinlink toolsprite signin chevron down"><span
-                                    class="signin_text">Sign in </span> <span class="signin_text_pt2"><em>via</em> Username</span>
+                            <a href="#" class="signinlink toolsprite signin chevron down"><span
+                                    class="signin_text">Sign in </span>
                                 <img src="http://scitation.aip.org/images/aip/chevron_down.gif"/></a>
-
-                            <div class="signIn chevroncontent" style="">
-                                <form method="post"
-                                      action="https://scitation.aip.org/session;jsessionid=3i97c5lwamj6c.x-aip-live-06"
-                                      id="signinform" name="signinform">
-                                    <fieldset class="popBox-common popDownBox">
-                                        <div class="signininput userinput">
-                                            <div class="signinlabel signname">
-                                                Username
-                                            </div>
-                                            <input name="username" id="signname" size="20" maxlength="40" type="text"/>
-                                        </div>
-                                        <div class="clearer"></div>
-                                        <div id="signpageusernameerror" class="signin-error"></div>
-                                        <div class="signininput userinput">
-                                            <div class="signinlabel signpsswd">
-                                                Password
-                                            </div>
-                                            <input name="password" id="signpsswd" size="20" maxlength="20"
-                                                   type="password"/>
-                                        </div>
-                                        <div class="clearer"></div>
-                                        <div id="signpagepassworderror" class="signin-error"></div>
-                                        <div class="clearer"></div>
-                                        <div id="blankerror"></div>
-                                        <div class="signininput">
-                                            <input id="signinbutton" class="styledbutton" value="Sign in"
-                                                   type="submit"/>
-                                        </div>
-                                        <input name="signInTarget" id="signInTarget" value="/" type="hidden"/>
-                                        <input name="logintype" value="acs" id="loginboxsignlogintype" type="hidden"/>
-
-                                        <div class="signininput">
-                                            <a href="http://scitation.aip.org/registration/forgotten;jsessionid=3i97c5lwamj6c.x-aip-live-06"
-                                               title="" class="forgotten">Can't access your account?</a>
-                                        </div>
-                                        <div class="clearer"></div>
-                                    </fieldset>
-                                </form>
-                                <div class="clearer"></div>
-                            </div>
-                            <script type="text/javascript" charset="utf-8">
-                                $(document).ready(function () {
-                                    if ($("#signInTarget").val() == "") {
-                                        p = window.location.pathname;
-                                        ctx = $("#hiddenContext").text();
-                                        if (p.indexOf(ctx) == 0)
-                                            p = p.substring(ctx.length);
-                                        if (p.charAt(0) != '/')
-                                            p = "/" + p;
-                                        $("#signInTarget").val(p);
-                                    }
-                                    $(".societymember").click(function () {
-                                        if (!this.checked) {
-                                            if ($(".signname").text() == "Email address:") {
-                                                $(".signname").text("Username:");
-                                            }
-                                            if ($(".signpsswd").text() == "PIN:") {
-                                                $(".signpsswd").text("Password:");
-                                            }
-                                            $("#loginboxsignlogintype").val("acs");
-                                        } else {
-                                            if ($(".signname").text() == "Username:") {
-                                                $(".signname").text("Email address:");
-                                            }
-                                            if ($(".signpsswd").text() == "Password:") {
-                                                $(".signpsswd").text("PIN:");
-                                            }
-                                            $("#loginboxsignlogintype").val("memsys");
-                                        }
-                                    });
-                                    $("#signinbutton").click(function () {
-                                        var returnval = true;
-                                        var errorString = "Please complete both fields";
-                                        if ($("#signname").val() == "" || $("#signpsswd").val() == "") {
-                                            $("#signpagepassworderror").text(errorString);
-                                            $("#signpagepassworderror").show();
-                                            returnval = false;
-                                        } else {
-                                            $("#signinform").submit();
-                                        }
-                                        return returnval;
-                                    });
-                                });
-                            </script>
                         </li>
                         <li class="item-signin-institution">
-                            <a href="http://scitation.aip.org/session/ext/shib;jsessionid=3i97c5lwamj6c.x-aip-live-06?url=%2f"
-                               title="Link to sign in via Shibboleth/Athens"
+                            <a href="#"
                                class="loginregisterlink toolsprite signin-institution">Sign in <em>via</em>
-                                Shibboleth/Athens</a>
+                                ScholarOne</a>
+                                        <span class="menutext greyText">
+                                        </span>
+                        </li>
+                        <li class="item-signin-institution">
+                            <a href="#"
+                               class="loginregisterlink toolsprite signin-institution">Sign in <em>via</em>
+                                协同编辑</a>
                                         <span class="menutext greyText">
                                         </span>
                         </li>
@@ -217,15 +136,6 @@
                         </li>
                     </ul>
                 </div>
-                <ul class="flat navigation">
-                    <li class="item-cart">
-                        <a href="http://scitation.aip.org/cart;jsessionid=3i97c5lwamj6c.x-aip-live-06"
-                           title="Link to shopping cart" class="toolsprite cart"></a><a id="cartlink"
-                                                                                        href="http://scitation.aip.org/cart;jsessionid=3i97c5lwamj6c.x-aip-live-06">My
-                        cart</a>
-                    </li>
-                </ul>
-                <div id="signInOrRegisterDialog"></div>
                 <div class="advertscontainer">
                     <div style="display: block;" id="OAS_Right1" class="advert advertRight1"><a
                             href="http://oascentral.aip.org/RealMedia/ads/click_nx.ads/scitation.aip.org/1118788259@Right1,Right2,Right3%21Right1?"></a>
@@ -242,7 +152,7 @@
                 <div id="breadcrumb">
                 </div>
                 <blockquote>
-                    <p><strong>Scitation</strong> is the online home of leading journals and conference proceedings from
+                    <p><strong>SciChina</strong> is the online home of leading journals and conference proceedings from
                         AIP Publishing and AIP Member Societies</p>
                 </blockquote>
                 <div class="cyclenavcontainer">
@@ -1491,17 +1401,6 @@
         </div>
     </div>
 </div>
-
-
-<!--
-<script src="http://scitation.aip.org/js/v/4.9.2.3/aip/jwplayer/jwplayer.js" type="text/javascript"></script>
-<script src="http://scitation.aip.org/js/v/4.9.2.3/aip/jwplayer/jwplayer.key" type="text/javascript"></script>
-<script src="http://scitation.aip.org/js/v/4.9.2.3/jp/mediaobjects.js" type="text/javascript" charset="utf-8"></script>
-<script src="http://scitation.aip.org/js/v/4.9.2.3/jp/site.js" type="text/javascript" charset="utf-8"></script>
-<script src="http://scitation.aip.org/js/v/4.9.2.3/aip/aip-user-scripts.js" type="text/javascript"
-        charset="utf-8"></script>
--->
-
 
 </body>
 
