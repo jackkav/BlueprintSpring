@@ -15,6 +15,10 @@ buildscript {
         classpath ("org.springframework:springloaded:${springloadedVersion}")
     }
 }
+plugins {
+    id "java"
+    id "idea"
+}
 repositories {
     mavenLocal()
     maven {
@@ -22,8 +26,7 @@ repositories {
     }
     mavenCentral()
 }
-apply plugin: 'java'
-apply plugin: 'idea' 
+
 apply plugin: 'spring-boot'
 apply plugin: 'io.spring.dependency-management'
 
@@ -42,7 +45,8 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+    compile("org.springframework.boot:spring-boot-starter-freemarker")
     compile("org.springframework.boot:spring-boot-starter-web")
     testCompile("org.springframework.boot:spring-boot-starter-test") 
 }
@@ -52,3 +56,4 @@ tasks.withType(JavaCompile) {
 task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
 }
+
