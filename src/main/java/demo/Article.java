@@ -4,6 +4,10 @@ import org.springframework.data.annotation.Id;
 
 public class Article {
 
+    public String getId() {
+        return id;
+    }
+
     @Id
     private String id;
 
