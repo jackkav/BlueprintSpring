@@ -15,11 +15,6 @@ public class HomeController {
     @Autowired
     private JournalRepository repository2;
 
-//    @RequestMapping("/error")
-//    public String Error() {
-//        return "error";
-//    }
-
     @RequestMapping("/")
     public String Index() {
         return "redirect:index.html";
