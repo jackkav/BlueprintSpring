@@ -7,13 +7,13 @@
 
 <div class="container">
     <h1>HomePage</h1>
-    <form name="search" action="search" method="post">
+    <form action="/saveXML" method="post" enctype="multipart/form-data">
         <div class="control-group">
-            <label class="control-label" for="query">Search</label>
+            <label class="control-label" for="file">XML File</label>
         </div>
 
         <div class="controls">
-            <input type="text" name="query">
+            <input type="file" name="file">
         </div>
         <div class="controls">
             <input type="submit" class="btn btn-primary">

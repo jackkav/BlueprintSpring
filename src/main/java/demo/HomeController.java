@@ -3,9 +3,13 @@ package demo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
 
 @Controller
 public class HomeController {
@@ -25,6 +29,34 @@ public class HomeController {
         return "home";
     }
 
+    @RequestMapping(value="/search",method= RequestMethod.POST)
+    public String search(Model model, String query){
+        model.addAttribute("resultSet", repository.findByTitleLike(query));
+        return "result";
+    }
+
+    @RequestMapping("upload")
+    public String upload(){
+        return "upload";
+    }
+
+    @RequestMapping(value="/saveXML", method= RequestMethod.POST )
+    public @ResponseBody String saveXML(@RequestParam("file") MultipartFile file){
+        if (!file.isEmpty()) {
+            try {
+                
+//                DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+//                Document doc = db.parse(file.getInputStream());
+//                NodeList nodes = doc.getElementsByTagName("title");
+                return "File has been successfully uploaded ";
+            } catch (Exception e) {
+                return "File upload failed"  + ": " + e.getMessage();
+            }
+        } else {
+            return "Unable to upload. File is empty.";
+        }
+    }
+
     @RequestMapping("/wip")
     public String wip(Model model) {
         model.addAttribute("articles", repository.findAll());
@@ -42,9 +74,5 @@ public class HomeController {
         repository2.save(journal);
         return "redirect:/wip";
     }
-    @RequestMapping(value="/search",method= RequestMethod.POST)
-    public String search(Model model, String query){
-        model.addAttribute("resultSet", repository.findByTitle(query));
-        return "result";
-    }
+
 }
