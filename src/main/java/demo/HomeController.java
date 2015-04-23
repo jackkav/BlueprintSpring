@@ -44,7 +44,7 @@ public class HomeController {
     }
     @RequestMapping(value="/search",method= RequestMethod.POST)
     public String search(Model model, String query){
-        model.addAttribute("resultSet", repository.findAll());
+        model.addAttribute("resultSet", repository.findByTitle(query));
         return "result";
     }
 }
