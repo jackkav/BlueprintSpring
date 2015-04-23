@@ -10,6 +10,7 @@ import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import java.util.List;
 
 @Controller
 public class HomeController {
@@ -41,23 +42,29 @@ public class HomeController {
     }
 
     @RequestMapping(value="/saveXML", method= RequestMethod.POST )
-    public @ResponseBody String saveXML(@RequestParam("file") MultipartFile file){
-        if (!file.isEmpty()) {
-            try {
-                DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-                Document doc = db.parse(file.getInputStream());
-                NodeList nodes = doc.getElementsByTagName("title");
-                if(nodes!=null && nodes.getLength()!=0){
-                    Article article = new Article();
-                    article.setTitle(nodes.item(0).getTextContent());
-                    repository.save(article);
+    public @ResponseBody String saveXML(@RequestParam("file") List<MultipartFile> file){
+        String result = "";
+        for (MultipartFile obj : file){
+            if (!obj.isEmpty()) {
+                try {
+                    DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+                    Document doc = db.parse(obj.getInputStream());
+                    NodeList nodes = doc.getElementsByTagName("title");
+                    if(nodes!=null && nodes.getLength()!=0){
+                        Article article = new Article();
+                        article.setTitle(nodes.item(0).getTextContent());
+                        repository.save(article);
+                    }
+                } catch (Exception e) {
+                    result+=obj.getOriginalFilename() + " failed to upload!</br>";
+//                    return "File upload failed"  + ": " + e.getMessage();
                 }
-                return "File has been successfully uploaded ";
-            } catch (Exception e) {
-                return "File upload failed"  + ": " + e.getMessage();
             }
-        } else {
-            return "Unable to upload. File is empty.";
+        }
+        if(result.isEmpty()){
+            return "File has been successfully uploaded ";
+        }else {
+            return result;
         }
     }
 
