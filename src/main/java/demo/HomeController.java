@@ -17,7 +17,12 @@ public class HomeController {
 
     @RequestMapping("/")
     public String Index() {
-        return "redirect:index.html";
+        return "redirect:home";
+    }
+
+    @RequestMapping("home")
+    public String home(){
+        return "home";
     }
 
     @RequestMapping("/wip")
@@ -36,5 +41,10 @@ public class HomeController {
     public String addJournal(@ModelAttribute("journal")Journal journal, Model model){
         repository2.save(journal);
         return "redirect:/wip";
+    }
+    @RequestMapping(value="/search",method= RequestMethod.POST)
+    public String search(Model model, String query){
+        model.addAttribute("resultSet", repository.findAll());
+        return "result";
     }
 }
