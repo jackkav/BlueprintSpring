@@ -44,10 +44,14 @@ public class HomeController {
     public @ResponseBody String saveXML(@RequestParam("file") MultipartFile file){
         if (!file.isEmpty()) {
             try {
-                
-//                DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-//                Document doc = db.parse(file.getInputStream());
-//                NodeList nodes = doc.getElementsByTagName("title");
+                DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+                Document doc = db.parse(file.getInputStream());
+                NodeList nodes = doc.getElementsByTagName("title");
+                if(nodes!=null && nodes.getLength()!=0){
+                    Article article = new Article();
+                    article.setTitle(nodes.item(0).getTextContent());
+                    repository.save(article);
+                }
                 return "File has been successfully uploaded ";
             } catch (Exception e) {
                 return "File upload failed"  + ": " + e.getMessage();
