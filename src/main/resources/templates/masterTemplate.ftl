@@ -7,9 +7,9 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>${title}</title>
-            <link rel="stylesheet" href="webjars/bootstrap/3.3.4/css/bootstrap.min.css"/>
-            <link rel="stylesheet" href="webjars/bootstrap/3.3.4/css/bootstrap-theme.min.css"/>
-            <#--<link rel="stylesheet" href="webjars/bootswatch/3.1.1+1/css/bootswatch.min.css"/>-->
+            <link rel="stylesheet" href="/webjarslocator/bootstrap/css/bootstrap.min.css"/>
+            <link rel="stylesheet" href="/webjarslocator/bootstrap/css/bootstrap-theme.min.css"/>
+            <link rel="stylesheet" href="/webjarslocator/bootswatch/css/bootswatch.min.css"/>
         </head>
         <body>
             <div id="header">
@@ -24,7 +24,7 @@
             <!-- JavaScript
             ================================================== -->
             <!-- Placed at the end of the document so the pages load faster -->
-            <script src="webjars/jquery/2.0.3/jquery.min.js"></script>
+            <script src="/webjarslocator/jquery/jquery.min.js"></script>
         </body>
     </html>
 </#macro>

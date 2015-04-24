@@ -50,11 +50,12 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-freemarker")
     compile("org.springframework.boot:spring-boot-starter-web")
 //    compile("org.springframework.boot:spring-boot-starter-security")
+    compile("org.webjars:webjars-locator:0.21")
     compile("org.webjars:jquery:2.0.3-1")
 //    compile("org.webjars:jquery-ui:1.11.2")
 //    compile("org.webjars:jquery-ui-themes:1.11.2")
     compile("org.webjars:bootstrap:3.3.4")
-//    compile("org.webjars:bootswatch:3.1.1+1")
+    compile("org.webjars:bootswatch:3.0.0")
     compile("org.springframework.boot:spring-boot-starter-actuator")
     testCompile("org.springframework.boot:spring-boot-starter-test") 
 }

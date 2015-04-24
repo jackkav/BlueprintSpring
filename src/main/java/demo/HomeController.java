@@ -1,13 +1,19 @@
 package demo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.HandlerMapping;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
+import org.webjars.WebJarAssetLocator;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.util.List;
@@ -94,5 +100,17 @@ public class HomeController {
         repository2.save(journal);
         return "redirect:/wip";
     }
-
+    @ResponseBody
+    @RequestMapping("/webjarslocator/{webjar}/**")
+    public ResponseEntity locateWebjarAsset(@PathVariable String webjar, HttpServletRequest request) {
+        try {
+            String mvcPrefix = "/webjarslocator/" + webjar + "/"; // This prefix must match the mapping path!
+            String mvcPath = (String) request.getAttribute(HandlerMapping.PATH_WITHIN_HANDLER_MAPPING_ATTRIBUTE);
+            WebJarAssetLocator locator = new WebJarAssetLocator();
+            String fullPath = locator.getFullPath(webjar, mvcPath.substring(mvcPrefix.length()));
+            return new ResponseEntity(new ClassPathResource(fullPath), HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
 }
