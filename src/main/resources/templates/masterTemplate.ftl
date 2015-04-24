@@ -1,22 +1,30 @@
+<#import "nav.ftl" as nav />
 <#macro masterTemplate title="defaultTitle">
-<!DOCTYPE html
-        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
-        <title>${title}</title>
-        <link rel="stylesheet" href="webjars/bootstrap/3.3.4/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="webjars/bootstrap/3.3.4/css/bootstrap-theme.min.css"/>
-    </head>
-    <body>
-        <div id="header">Hello User
-            <form action="/logout" method="post">
-                <input type="submit" value="Sign Out"/>
-            </form>
-        </div>
-        <div id="content" class="container"><#nested /></div>
-        <div id="footer">Footer</div>
-    </body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>${title}</title>
+            <link rel="stylesheet" href="webjars/bootstrap/3.3.4/css/bootstrap.min.css"/>
+            <link rel="stylesheet" href="webjars/bootstrap/3.3.4/css/bootstrap-theme.min.css"/>
+            <#--<link rel="stylesheet" href="webjars/bootswatch/3.1.1+1/css/bootswatch.min.css"/>-->
+        </head>
+        <body>
+            <div id="header">
+                <#--Hello ${user!}-->
+                <#--<form action="/logout" method="post">-->
+                    <#--<input type="submit" value="Sign Out"/>-->
+                <#--</form>-->
+                <@nav.navigation/>
+            </div>
+            <div id="content" class="container"><#nested /></div>
+            <div id="footer">Footer</div>
+            <!-- JavaScript
+            ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="webjars/jquery/2.0.3/jquery.min.js"></script>
+        </body>
+    </html>
 </#macro>

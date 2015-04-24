@@ -1,15 +1,15 @@
 <#import "masterTemplate.ftl" as layout />
 <@layout.masterTemplate title="Home Page">
-<#--<#if request.getParameter("error")?has_content >-->
-<#--<div>-->
-    <#--Invalid username and password.-->
-<#--</div>-->
-<#--</#if>-->
-<#--<#if request.getParameter("logout")?has_content >-->
-<#--<div>-->
-    <#--You have been logged out.-->
-<#--</div>-->
-<#--</#if>-->
+<#if true >
+<div>
+    Invalid username and password.
+</div>
+</#if>
+    <#if false >
+    <div>
+        You have been logged out.
+    </div>
+    </#if>
 
 <form action="/login" method="post">
     <div class="control-group">
