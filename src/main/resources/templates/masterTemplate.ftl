@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="webjars/bootstrap/3.3.4/css/bootstrap-theme.min.css"/>
     </head>
     <body>
-        <div id="header">Header</div>
+        <div id="header">Hello User</div>
         <div id="content"><#nested /></div>
         <div id="footer">Footer</div>
     </body>

@@ -20,6 +20,11 @@ public class HomeController {
     @Autowired
     private JournalRepository repository2;
 
+    @RequestMapping("login")
+    public String login(){
+        return "login";
+    }
+
     @RequestMapping("/")
     public String Index() {
         return "redirect:home";
