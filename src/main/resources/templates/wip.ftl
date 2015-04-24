@@ -1,15 +1,6 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>Spring Freemarker</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" href="webjars/bootstrap/3.3.4/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="webjars/bootstrap/3.3.4/css/bootstrap-theme.min.css"/>
-    <#--<link rel="stylesheet" href="webjars/jquery-ui/1.11.2/themes/base/jquery-ui.css"/>-->
-<#--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
-<#--<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"/>-->
-</head>
-<body>
+<#import "masterTemplate.ftl" as layout />
+
+<@layout.masterTemplate title="Home Page">
 <div class="container">
     <div class="control-group">
         <h2 class="muted">Article</h2>
@@ -112,5 +103,4 @@
 </div>
 
 </div>
-</body>
-</html>
+</@layout.masterTemplate>

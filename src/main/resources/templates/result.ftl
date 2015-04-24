@@ -1,11 +1,6 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" href="webjars/bootstrap/3.3.4/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="webjars/bootstrap/3.3.4/css/bootstrap-theme.min.css"/>
-</head>
-<body>
+<#import "masterTemplate.ftl" as layout />
+
+<@layout.masterTemplate title="Home Page">
 <div class="container">
 <table class="table table-bordered table-striped">
     <thead>
@@ -24,5 +19,4 @@
     </tbody>
 </table>
 </div>
-</body>
-</html>
+</@layout.masterTemplate>
