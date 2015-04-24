@@ -10,7 +10,11 @@
         <link rel="stylesheet" href="webjars/bootstrap/3.3.4/css/bootstrap-theme.min.css"/>
     </head>
     <body>
-        <div id="header">Hello User</div>
+        <div id="header">Hello User
+            <form action="/logout" method="post">
+                <input type="submit" value="Sign Out"/>
+            </form>
+        </div>
         <div id="content"><#nested /></div>
         <div id="footer">Footer</div>
     </body>
