@@ -1,6 +1,5 @@
 <#import "masterTemplate.ftl" as layout />
 <@layout.masterTemplate title="Home Page">
-<div class="container">
 <table class="table table-bordered table-striped">
     <thead>
     <tr>
@@ -17,5 +16,4 @@
     </#list>
     </tbody>
 </table>
-</div>
 </@layout.masterTemplate>

@@ -1,7 +1,5 @@
 <#import "masterTemplate.ftl" as layout />
-
 <@layout.masterTemplate title="Home Page">
-<div class="container">
     <div class="control-group">
         <h2 class="muted">Article</h2>
 
@@ -100,7 +98,4 @@
         </tbody>
     </table>
 </#if>
-</div>
-
-</div>
 </@layout.masterTemplate>

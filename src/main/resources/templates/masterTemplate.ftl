@@ -15,7 +15,7 @@
                 <input type="submit" value="Sign Out"/>
             </form>
         </div>
-        <div id="content"><#nested /></div>
+        <div id="content" class="container"><#nested /></div>
         <div id="footer">Footer</div>
     </body>
 </html>

@@ -1,7 +1,5 @@
 <#import "masterTemplate.ftl" as layout />
-
 <@layout.masterTemplate title="Home Page">
-<div class="container">
     <h1>Home Page</h1>
     <form name="search" action="search" method="post">
         <div class="control-group">
@@ -15,5 +13,4 @@
             <input type="submit" class="btn btn-primary">
         </div>
     </form>
-</div>
 </@layout.masterTemplate>
