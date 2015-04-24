@@ -28,9 +28,9 @@
                     </ul>
                 </li>
             </ul>
-            <form class="navbar-form navbar-left" role="search">
+            <form class="navbar-form navbar-left" role="search" name="search" action="search" method="post">
                 <div class="form-group">
-                    <input class="form-control" placeholder="Search" type="text">
+                    <input class="form-control" placeholder="Search" type="text" name="query">
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>
