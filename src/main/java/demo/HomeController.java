@@ -11,6 +11,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.HandlerMapping;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
+import org.webjars.RequireJS;
 import org.webjars.WebJarAssetLocator;
 
 import javax.servlet.http.HttpServletRequest;
@@ -102,6 +103,11 @@ public class HomeController {
         return "redirect:/wip";
     }
     @ResponseBody
+    @RequestMapping(value = "/webjarsjs", produces = "application/javascript")
+    public String webjarjs() {
+        return RequireJS.getSetupJavaScript("/webjars/");
+    }
+    @ResponseBody
     @RequestMapping("/webjarslocator/{webjar}/**")
     public ResponseEntity locateWebjarAsset(@PathVariable String webjar, HttpServletRequest request) {
         try {
@@ -109,7 +115,7 @@ public class HomeController {
             String mvcPath = (String) request.getAttribute(HandlerMapping.PATH_WITHIN_HANDLER_MAPPING_ATTRIBUTE);
             WebJarAssetLocator locator = new WebJarAssetLocator();
             String fullPath = locator.getFullPath(webjar, mvcPath.substring(mvcPrefix.length()));
-            //Set<String> assets =locator.listAssets();
+            Set<String> assets =locator.listAssets();
             return new ResponseEntity(new ClassPathResource(fullPath), HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
