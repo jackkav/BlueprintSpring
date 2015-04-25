@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.util.List;
+import java.util.Set;
 
 @Controller
 public class HomeController {
@@ -108,6 +109,7 @@ public class HomeController {
             String mvcPath = (String) request.getAttribute(HandlerMapping.PATH_WITHIN_HANDLER_MAPPING_ATTRIBUTE);
             WebJarAssetLocator locator = new WebJarAssetLocator();
             String fullPath = locator.getFullPath(webjar, mvcPath.substring(mvcPrefix.length()));
+            //Set<String> assets =locator.listAssets();
             return new ResponseEntity(new ClassPathResource(fullPath), HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
