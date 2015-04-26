@@ -112,6 +112,7 @@ public class HomeController {
     public String webjarjs() {
         return RequireJS.getSetupJavaScript("/webjars/");
     }
+
     @ResponseBody
     @RequestMapping("/webjarslocator/{webjar}/**")
     public ResponseEntity locateWebjarAsset(@PathVariable String webjar, HttpServletRequest request) {
@@ -123,7 +124,7 @@ public class HomeController {
             Set<String> assets =locator.listAssets();
             return new ResponseEntity(new ClassPathResource(fullPath), HttpStatus.OK);
         } catch (Exception e) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);//TODO: while debug mode is active dump webjars
         }
     }
 }

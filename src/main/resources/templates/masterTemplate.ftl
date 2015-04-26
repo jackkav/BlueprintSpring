@@ -1,5 +1,5 @@
-
 <#import "nav.ftl" as nav />
+<#import "sidebar.ftl" as sidebar />
 <#macro masterTemplate title="defaultTitle">
 <!DOCTYPE html>
 <html lang="en">
@@ -15,27 +15,24 @@
 <body>
 <div id="header">
 <#--${messages["layout.greeting"]}-->
-<#--Hello ${user!}-->
-                <#--<form action="/logout" method="post">-->
-                    <#--<input type="submit" value="Sign Out"/>-->
-                <#--</form>-->
-                <@nav.navigation/>
+    <@nav.navigation/>
 </div>
-
-<div id="content" class="container"><#nested /></div>
-
-<footer class="footer container">
+<div class="container">
     <div class="row">
-        <div class="col-lg-12">
-
-            <ul class="list-unstyled">
-                <li class="pull-right"><a href="#top">Back to top</a></li>
-                <li><a href="https://github.com/jackkav/blueprintspring/">GitHub</a></li>
-            </ul>
-            <p>Made by Jack and 杨冬冬</p>
+        <div class="col-sm-8">
+            <div id="content"><#nested /></div>
         </div>
+        <@sidebar.sidebar/>
     </div>
+    <!-- /.row -->
+
+<footer class="footer">
+    <p>&copy; Company 2014</p>
 </footer>
+
+</div>
+<!-- /.container -->
+
 <!-- JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
