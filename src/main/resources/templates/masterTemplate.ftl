@@ -10,10 +10,11 @@
     <title>${title}</title>
     <link rel="stylesheet" href="/webjarslocator/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/webjarslocator/bootstrap/css/bootstrap-theme.min.css"/>
-<#--<link rel="stylesheet" href="/webjarslocator/bootswatch/css/bootswatch.min.css"/>-->
+    <link rel="stylesheet" href="/webjarslocator/datatables/css/jquery.dataTables.css"/>
 </head>
 <body>
 <div id="header">
+<#--${messages["layout.greeting"]}-->
 <#--Hello ${user!}-->
                 <#--<form action="/logout" method="post">-->
                     <#--<input type="submit" value="Sign Out"/>-->
@@ -40,6 +41,7 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="/webjarsjs"></script>
 <script data-main="/js/app" src="/webjarslocator/requirejs/require.min.js"></script>
+
 </body>
 </html>
 </#macro>

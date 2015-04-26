@@ -25,7 +25,7 @@
     </div>
     <div>
     <#if articles?size != 0 >
-        <table class="table table-bordered table-striped">
+        <table id="articletable" class="table table-bordered table-striped">
             <thead>
             <tr>
                 <th>Author</th>

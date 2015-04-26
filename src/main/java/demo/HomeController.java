@@ -20,6 +20,11 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.util.List;
 import java.util.Set;
 
+//TODO: i18n
+//TODO: setup datatables
+//TODO: set up sidebar
+
+
 @Controller
 public class HomeController {
 
