@@ -1,3 +1,4 @@
+<#--<%@taglib uri="http://www.springframework.org/tags" prefix="spring" %>-->
 <#import "nav.ftl" as nav />
 <#import "sidebar.ftl" as sidebar />
 <#macro masterTemplate title="defaultTitle">
@@ -21,6 +22,7 @@
         <div class="col-sm-8">
             <div id="content">
             ${something!}
+            <#--<@spring.message something />-->
                 <#nested />
             </div>
         </div>

@@ -1,6 +1,8 @@
 package demo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.MessageSource;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +20,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.util.List;
+import java.util.Locale;
 import java.util.Set;
 
 //TODO: i18n
@@ -30,6 +33,12 @@ public class HomeController {
     private ArticleRepository repository;
     @Autowired
     private JournalRepository repository2;
+
+//    @Autowired
+//    private MessageSource messageSource;
+    @Autowired
+    private ApplicationContext applicationContext;
+
 
     @RequestMapping("login")
     public String login(){
@@ -47,8 +56,10 @@ public class HomeController {
 
     @RequestMapping("home")
     public String home(Model model){
-        
-        model.addAttribute("something",System.currentTimeMillis());
+        //model.addAttribute("something", messageSource.getMessage("greeting", null, "didn't work", Locale.SIMPLIFIED_CHINESE));
+        //String a = applicationContext.getMessage("greeting",null, Locale.US);
+        String b = applicationContext.getMessage("greeting",null, Locale.CHINA);
+        model.addAttribute("something", a+b);
         return "home";
     }
 
