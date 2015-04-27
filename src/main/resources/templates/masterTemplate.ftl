@@ -20,6 +20,7 @@
     <div class="row">
         <div class="col-sm-8">
             <div id="content">
+            ${something!}
                 <#nested />
             </div>
         </div>

@@ -2,5 +2,5 @@
 <@layout.masterTemplate title="Home Page">
     <h1>Home Page</h1>
 
-${something}
+${greeting!}
 </@layout.masterTemplate>
