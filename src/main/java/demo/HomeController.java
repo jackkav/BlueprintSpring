@@ -67,7 +67,7 @@ public class HomeController {
     public @ResponseBody String saveXML(@RequestParam("file") List<MultipartFile> file){
         String result = "";
         for (MultipartFile obj : file){
-            if (!obj.isEmpty()) {
+            if (!obj.isEmpty()) {//TODO: add unit tests, refactor
                 try {
                     DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
                     Document doc = db.parse(obj.getInputStream());

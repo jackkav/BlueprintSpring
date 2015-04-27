@@ -21,5 +21,5 @@
             <li><a href="#">Register</a></li>
         </ol>
     </div>
-</div><!-- /.blog-sidebar -->
+</div>
 </#macro>

@@ -36,8 +36,12 @@
 <!-- JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="/webjarsjs"></script>
-<script data-main="/js/app" src="/webjarslocator/requirejs/require.min.js"></script>
+<#--<script src="/webjarsjs"></script>-->
+<#--<script data-main="/js/app" src="/webjarslocator/requirejs/require.min.js"></script>-->
+<script src="/webjarslocator/jquery/jquery.min.js"></script>
+<script src="/webjarslocator/bootstrap/bootstrap.min.js"></script>
+<script src="/webjarslocator/datatables/jquery.dataTables.min.js"></script>
+<script src="/js/app.js"></script>
 
 </body>
 </html>
