@@ -14,13 +14,15 @@
 </head>
 <body>
 <div id="header">
-<#--${messages["layout.greeting"]}-->
     <@nav.navigation/>
 </div>
 <div class="container">
     <div class="row">
         <div class="col-sm-8">
-            <div id="content"><#nested /></div>
+            <div id="content">
+                <#nested />
+                ${something}
+            </div>
         </div>
         <@sidebar.sidebar/>
     </div>

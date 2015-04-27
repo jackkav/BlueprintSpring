@@ -21,8 +21,6 @@ import java.util.List;
 import java.util.Set;
 
 //TODO: i18n
-//TODO: setup datatables
-//TODO: set up sidebar
 
 
 @Controller
@@ -48,7 +46,8 @@ public class HomeController {
     }
 
     @RequestMapping("home")
-    public String home(){
+    public String home(Model model){
+        model.addAttribute("something",System.currentTimeMillis());
         return "home";
     }
 
