@@ -47,6 +47,7 @@ public class HomeController {
 
     @RequestMapping("home")
     public String home(Model model){
+        
         model.addAttribute("something",System.currentTimeMillis());
         return "home";
     }

@@ -21,7 +21,6 @@
         <div class="col-sm-8">
             <div id="content">
                 <#nested />
-                ${something}
             </div>
         </div>
         <@sidebar.sidebar/>
