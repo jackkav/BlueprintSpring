@@ -29,6 +29,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.servlet.configuration.EnableWebMvcSecurity;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 
 @Configuration
@@ -50,7 +51,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
        http.formLogin().defaultSuccessUrl("/home")
                .and().authorizeRequests()
                .anyRequest().permitAll()
-               .antMatchers("/admin").hasAuthority("ROLE_ADMIN");
+               .and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
 //                .and().logout().and().authorizeRequests()
 //                .antMatchers("/index.html", "/home.html", "/login.html", "/", "/access", "/logout").permitAll().anyRequest()
 //                .authenticated()
