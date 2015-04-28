@@ -1,4 +1,4 @@
-<#--<%@taglib uri="http://www.springframework.org/tags" prefix="spring" %>-->
+
 <#import "nav.ftl" as nav />
 <#import "sidebar.ftl" as sidebar />
 <#macro masterTemplate title="defaultTitle">

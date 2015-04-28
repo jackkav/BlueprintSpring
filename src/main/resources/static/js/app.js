@@ -4,4 +4,9 @@
 
 $(document).ready(function () {
     $('.table').dataTable();
+
 });
+function showLogin()
+{
+    $('#loginBox').toggle();
+}

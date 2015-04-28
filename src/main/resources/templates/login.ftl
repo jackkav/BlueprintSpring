@@ -1,16 +1,4 @@
-<#import "masterTemplate.ftl" as layout />
-<@layout.masterTemplate title="Home Page">
-<#if true >
-<div>
-    Invalid username and password.
-</div>
-</#if>
-    <#if false >
-    <div>
-        You have been logged out.
-    </div>
-    </#if>
-
+<#macro loginForm>
 <form action="/login" method="post">
     <div class="control-group">
         <label class="control-label" for="username">User Name</label>
@@ -30,4 +18,4 @@
     </div>
     <#--<sec:csrfInput />-->
 </form>
-</@layout.masterTemplate>
+</#macro>

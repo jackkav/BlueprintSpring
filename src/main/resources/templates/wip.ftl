@@ -1,5 +1,6 @@
 <#import "masterTemplate.ftl" as layout />
 <@layout.masterTemplate title="Home Page">
+<div class="row">
     <div class="control-group">
         <h2 class="muted">Article</h2>
 
@@ -23,6 +24,8 @@
             </div>
         </form>
     </div>
+</div>
+<div class="row">
     <div>
     <#if articles?size != 0 >
         <table id="articletable" class="table table-bordered table-striped">
@@ -43,6 +46,7 @@
         </table>
     </#if>
     </div>
+</div>
     <div class="control-group">
         <h2 class="muted">Journal</h2>
 
