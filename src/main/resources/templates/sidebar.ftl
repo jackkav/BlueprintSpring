@@ -18,8 +18,12 @@
     <#--</div>-->
     <div class="sidebar-module">
         <ol class="list-unstyled">
-            <li><a onclick="showLogin()">Sign In</a></li>
+            <li>
+                <span id="loginBoxToggledOff" class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+                <span id="loginBoxToggledOn" style="display: none;" class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                <a onclick="showLogin()">Sign In</a></li>
             <li id="loginBox" style="display: none;"><@login.loginForm/></li>
+            <li class="divider"></li>
             <li><a href="#">Register</a></li>
         </ol>
     </div>

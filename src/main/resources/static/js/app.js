@@ -9,4 +9,6 @@ $(document).ready(function () {
 function showLogin()
 {
     $('#loginBox').toggle();
+    $('#loginBoxToggledOn').toggle();
+    $('#loginBoxToggledOff').toggle();
 }

@@ -50,16 +50,7 @@ public class HomeController {
 //    private MessageSource messageSource;
     @Autowired
     private ApplicationContext applicationContext;
-
-
-    @RequestMapping("login")
-    public String login(){
-        return "login";
-    }
-//    @RequestMapping("logout")
-//    public String logout(){
-//        return "home";
-//    }
+    
 
     @RequestMapping("/")
     public String Index() {
