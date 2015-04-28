@@ -16,9 +16,10 @@
  *
  */
 
-package demo;
+package demo.security;
 
 
+import demo.domain.Client;
 import org.jongo.MongoCollection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.InternalAuthenticationServiceException;

@@ -16,7 +16,7 @@
  *
  */
 
-package demo;
+package demo.domain;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
