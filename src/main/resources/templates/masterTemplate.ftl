@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/webjarslocator/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/webjarslocator/bootstrap/css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="/webjarslocator/datatables/css/jquery.dataTables.css"/>
+    <link rel="stylesheet" href="/css/new.css"/>
 </head>
 <body>
 <div id="header">
@@ -30,11 +31,14 @@
     </div>
     <!-- /.row -->
 
-<footer class="footer">
-    <p>&copy; Company 2014</p>
-</footer>
+
 
 </div>
+<footer class="footer">
+    <div class="container">
+        <p>&copy; Company 2014</p>
+    </div>
+</footer>
 <!-- /.container -->
 
 <!-- JavaScript
