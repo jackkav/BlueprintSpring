@@ -65,6 +65,8 @@ dependencies {
 //    compile("org.webjars:bootswatch-journal:3.1.1+1")
     compile("org.webjars:datatables:1.10.5")
     compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile("dom4j:dom4j:1.6.1")
+    compile("org.json:json:20141113")
     testCompile("org.springframework.boot:spring-boot-starter-test") 
 }
 
