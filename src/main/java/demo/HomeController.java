@@ -57,9 +57,9 @@ public class HomeController {
     @RequestMapping("home")
     public String home(Model model){
         //model.addAttribute("something", messageSource.getMessage("greeting", null, "didn't work", Locale.SIMPLIFIED_CHINESE));
-        String a = applicationContext.getMessage("greeting",null, Locale.US);
-        String b = applicationContext.getMessage("greeting",null, Locale.CHINA);
-        model.addAttribute("something", a+b);
+        //String a = applicationContext.getMessage("greeting",null, Locale.US);
+        //String b = applicationContext.getMessage("greeting",null, Locale.CHINA);
+        //model.addAttribute("something", a+b);
         return "home";
     }
 

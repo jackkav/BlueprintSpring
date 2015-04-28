@@ -11,7 +11,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @WebAppConfiguration
 public class LayoutDemoApplicationTests {
 
-	@Test
 	public void contextLoads() {
 	}
 
