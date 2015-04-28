@@ -6,6 +6,8 @@ import org.springframework.context.MessageSource;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.web.bind.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -24,7 +26,7 @@ import java.util.Locale;
 import java.util.Set;
 
 //TODO: i18n
-
+//TODO: Security
 
 @Controller
 public class HomeController {
@@ -36,18 +38,18 @@ public class HomeController {
 
 //    @Autowired
 //    private MessageSource messageSource;
-    @Autowired
-    private ApplicationContext applicationContext;
+//    @Autowired
+//    private ApplicationContext applicationContext;
 
 
-    @RequestMapping("login")
-    public String login(){
-        return "login";
-    }
-    @RequestMapping("logout")
-    public String logout(){
-        return "home";
-    }
+//    @RequestMapping("login")
+//    public String login(){
+//        return "login";
+//    }
+//    @RequestMapping("logout")
+//    public String logout(){
+//        return "home";
+//    }
 
     @RequestMapping("/")
     public String Index() {
@@ -68,6 +70,13 @@ public class HomeController {
         model.addAttribute("resultSet", repository.findByTitleLike(query));
         return "result";
     }
+
+    @Secured({"ROLE_ADMIN"})
+    @RequestMapping("admin")
+    public String admin(){
+        return "admin";
+    }
+
 
     @RequestMapping("upload")
     public String upload(){
@@ -90,7 +99,6 @@ public class HomeController {
                     }
                 } catch (Exception e) {
                     result+=obj.getOriginalFilename() + " failed to upload!</br>";
-//                    return "File upload failed"  + ": " + e.getMessage();
                 }
             }
         }

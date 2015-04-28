@@ -20,10 +20,7 @@ import java.util.Locale;
 public class LayoutDemoApplication {
 
     public static void main(String[] args) {
-
         SpringApplication.run(LayoutDemoApplication.class, args);
-
-
     }
     @Bean
     public Jongo jongo() {
