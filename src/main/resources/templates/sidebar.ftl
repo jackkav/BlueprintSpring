@@ -17,7 +17,7 @@
     <#--</div>-->
     <div class="sidebar-module">
         <ol class="list-unstyled">
-            <li><a href="#">Sign In</a></li>
+            <li><a href="/login">Sign In</a></li>
             <li><a href="#">Register</a></li>
         </ol>
     </div>

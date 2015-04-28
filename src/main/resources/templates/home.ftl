@@ -4,4 +4,5 @@
 
 ${greeting!}
 ${something!}
+热火看
 </@layout.masterTemplate>

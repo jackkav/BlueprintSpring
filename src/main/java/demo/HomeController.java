@@ -5,41 +5,36 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBObject;
 import com.mongodb.Mongo;
 import com.mongodb.util.JSON;
+import demo.domain.Client;
 import org.dom4j.io.DOMReader;
-import org.json.JSONML;
+import org.jongo.MongoCollection;
 import org.json.JSONObject;
 import org.json.XML;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.MessageSource;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.web.bind.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.HandlerMapping;
 import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
 import org.webjars.RequireJS;
 import org.webjars.WebJarAssetLocator;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
-import java.io.IOException;
-import java.io.StringWriter;
 import java.util.List;
-import java.util.Locale;
 import java.util.Set;
 
 //TODO: i18n
-
+//TODO: Security
 
 @Controller
 public class HomeController {
@@ -49,6 +44,8 @@ public class HomeController {
     @Autowired
     private JournalRepository repository2;
 
+    @Autowired
+    private MongoCollection users;
 //    @Autowired
 //    private MessageSource messageSource;
     @Autowired
@@ -59,10 +56,10 @@ public class HomeController {
     public String login(){
         return "login";
     }
-    @RequestMapping("logout")
-    public String logout(){
-        return "home";
-    }
+//    @RequestMapping("logout")
+//    public String logout(){
+//        return "home";
+//    }
 
     @RequestMapping("/")
     public String Index() {
@@ -72,9 +69,9 @@ public class HomeController {
     @RequestMapping("home")
     public String home(Model model){
         //model.addAttribute("something", messageSource.getMessage("greeting", null, "didn't work", Locale.SIMPLIFIED_CHINESE));
-        String a = applicationContext.getMessage("greeting",null, Locale.US);
-        String b = applicationContext.getMessage("greeting",null, Locale.CHINA);
-        model.addAttribute("something", a+b);
+        //String a = applicationContext.getMessage("greeting",null, Locale.US);
+        //String b = applicationContext.getMessage("greeting",null, Locale.CHINA);
+        //model.addAttribute("something", a+b);
         return "home";
     }
 
@@ -83,6 +80,18 @@ public class HomeController {
         model.addAttribute("resultSet", repository.findByTitleLike(query));
         return "result";
     }
+
+    @Secured({"ROLE_ADMIN"})
+    @RequestMapping("admin")
+    public String admin(@AuthenticationPrincipal UserDetails userDetails, Model model){
+        if(userDetails==null)return "redirect:home";
+        String user = userDetails.getUsername();
+        if(user.isEmpty())return "redirect:home";
+        Client client = users.findOne("{#: #}", Client.USERNAME, user).as(Client.class);
+        model.addAttribute("user",client.toString());
+        return "admin";
+    }
+
 
     @RequestMapping("upload")
     public String upload(){
