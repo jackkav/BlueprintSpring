@@ -1,5 +1,14 @@
 package demo;
 
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.DBObject;
+import com.mongodb.Mongo;
+import com.mongodb.util.JSON;
+import org.dom4j.io.DOMReader;
+import org.json.JSONML;
+import org.json.JSONObject;
+import org.json.XML;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.MessageSource;
@@ -19,6 +28,12 @@ import org.webjars.WebJarAssetLocator;
 import javax.servlet.http.HttpServletRequest;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import java.io.IOException;
+import java.io.StringWriter;
 import java.util.List;
 import java.util.Locale;
 import java.util.Set;
@@ -77,19 +92,30 @@ public class HomeController {
     @RequestMapping(value="/saveXML", method= RequestMethod.POST )
     public @ResponseBody String saveXML(@RequestParam("file") List<MultipartFile> file){
         String result = "";
-        for (MultipartFile obj : file){
-            if (!obj.isEmpty()) {//TODO: add unit tests, refactor
+        for (MultipartFile content : file){
+            if (!content.isEmpty()) {//TODO: add unit tests, refactor
                 try {
                     DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-                    Document doc = db.parse(obj.getInputStream());
-                    NodeList nodes = doc.getElementsByTagName("title");
-                    if(nodes!=null && nodes.getLength()!=0){
-                        Article article = new Article();
-                        article.setTitle(nodes.item(0).getTextContent());
-                        repository.save(article);
-                    }
+                    Document doc = db.parse(content.getInputStream());
+//                    NodeList nodes = doc.getElementsByTagName("title");
+//                    if(nodes!=null && nodes.getLength()!=0){
+//                        Article article = new Article();
+//                        article.setTitle(nodes.item(0).getTextContent());
+//                        repository.save(article);
+//                    }
+                    DOMReader xmlReader = new DOMReader();
+                    String xml = xmlReader.read(doc).asXML();
+//                    JSONObject json = JSONML.toJSONObject(xml);
+                    JSONObject json = XML.toJSONObject(xml);
+                    DBObject dbObject = (DBObject) JSON.parse(json.toString());
+//
+                    Mongo mongo = new Mongo("localhost", 27017);
+                    DB db2 = mongo.getDB("demo");
+                    DBCollection collection = db2.getCollection("article");
+                    collection.insert(dbObject);
+
                 } catch (Exception e) {
-                    result+=obj.getOriginalFilename() + " failed to upload!</br>";
+                    result+=content.getOriginalFilename() + " failed to upload!</br>";
 //                    return "File upload failed"  + ": " + e.getMessage();
                 }
             }
