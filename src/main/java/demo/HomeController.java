@@ -20,6 +20,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.bind.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.HandlerMapping;
@@ -28,6 +29,7 @@ import org.webjars.RequireJS;
 import org.webjars.WebJarAssetLocator;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.util.List;
@@ -46,17 +48,26 @@ public class HomeController {
 
     @Autowired
     private MongoCollection users;
-//    @Autowired
+    //    @Autowired
 //    private MessageSource messageSource;
     @Autowired
     private ApplicationContext applicationContext;
-    
+
 
     @RequestMapping("/")
     public String Index() {
         return "redirect:home";
     }
-
+    @RequestMapping("/register")
+    public String register() {
+        return "register";
+    }
+    @RequestMapping(value="/addUser",method= RequestMethod.POST)
+    public String addUser(@Valid @ModelAttribute("user")UserForm userForm, BindingResult result, Model model){
+        if(result.hasErrors())
+            return "register";
+        return "home";
+    }
     @RequestMapping("home")
     public String home(Model model){
         //model.addAttribute("something", messageSource.getMessage("greeting", null, "didn't work", Locale.SIMPLIFIED_CHINESE));
