@@ -21,9 +21,11 @@ import org.springframework.security.web.bind.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.HandlerMapping;
+import org.springframework.web.servlet.ModelAndView;
 import org.w3c.dom.Document;
 import org.webjars.RequireJS;
 import org.webjars.WebJarAssetLocator;
@@ -62,11 +64,29 @@ public class HomeController {
     public String register() {
         return "register";
     }
+//    @RequestMapping(value="/addUser",method= RequestMethod.POST)
+//    public ModelAndView addUser(@Valid @ModelAttribute("register")UserForm userForm, BindingResult result, Model model){
+//        ModelAndView mav = new ModelAndView("register");
+//        if(result.hasErrors()) {
+////            ModelAndView mav= new ModelAndView("register", result.getModel());
+//            return mav;
+//        }
+//        return mav;
+//    }
     @RequestMapping(value="/addUser",method= RequestMethod.POST)
-    public String addUser(@Valid @ModelAttribute("user")UserForm userForm, BindingResult result, Model model){
-        if(result.hasErrors())
+    public String addUser(@Valid @ModelAttribute("userForm")UserForm userForm, BindingResult result, Model model){
+        if(result.hasErrors()) {
+            //new ModelAndView("register", bindingResult.getModel());
+            //model.addAttributes("result",result);
+            model.addAttribute("errorLog", "has-error");
+            model.addAttribute("username_error", result.getFieldError().getDefaultMessage());
+            System.out.println("Has errors=" + result.hasErrors()); // Output: Has errors=true
+            for (FieldError err:result.getFieldErrors()){
+                System.out.println(err.getDefaultMessage()); // Output: must be greater than or equal to 10
+            }
             return "register";
-        return "home";
+        }
+        return "redirect:/home";
     }
     @RequestMapping("home")
     public String home(Model model){
