@@ -1,42 +1,31 @@
 <#macro navigation>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/home">Brand</a>
+             <a class="navbar-brand" href="#">Project name</a>
         </div>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div id="navbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/upload">Upload <span class="sr-only">(current)</span></a></li>
-                <li><a href="/wip">WIP</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
                     </ul>
                 </li>
+                <li><a href="/upload">Publications</a></li>
+                <li><a href="/wip">Topics</a></li>
+                <li><a href="/wip">Collections</a></li>
+                <li><a href="/wip">Librarian</a></li>
+                <li><a href="/wip">Author</a></li>
             </ul>
-            <form class="navbar-form navbar-left" role="search" name="search" action="search" method="post">
+            <form class="navbar-form navbar-right" role="search" name="search" action="search" method="post">
                 <div class="form-group">
                     <input class="form-control" placeholder="Search" type="text" name="query">
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/admin">Admin</a></li>
-            </ul>
         </div>
     </div>
 </nav>

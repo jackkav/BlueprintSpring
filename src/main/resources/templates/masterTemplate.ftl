@@ -7,9 +7,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${title}</title>
     <link rel="stylesheet" href="/webjarslocator/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://getbootstrap.com/examples/non-responsive/non-responsive.css"/>
     <link rel="stylesheet" href="/webjarslocator/bootstrap/css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="/webjarslocator/datatables/css/jquery.dataTables.css"/>
     <link rel="stylesheet" href="/css/new.css"/>
@@ -23,23 +23,17 @@
         <div class="col-sm-8">
             <div id="content">
             ${something!}
-            <#--<@spring.message something />-->
                 <#nested />
             </div>
         </div>
         <@sidebar.sidebar/>
     </div>
-    <!-- /.row -->
-
-
-
 </div>
 <footer class="footer">
     <div class="container">
         <p>&copy; Company 2014</p>
     </div>
 </footer>
-<!-- /.container -->
 
 <!-- JavaScript
 ================================================== -->
