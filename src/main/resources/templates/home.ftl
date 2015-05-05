@@ -4,5 +4,5 @@
 
 ${greeting!}
 ${something!}
-热火看
+中文
 </@layout.masterTemplate>

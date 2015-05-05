@@ -50,6 +50,8 @@ targetCompatibility = 1.8
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-mongodb")
     compile("org.springframework.boot:spring-boot-starter-freemarker")
+    //compile("javax.servlet:jstl")
+    //compile("org.apache.tomcat.embed:tomcat-embed-jasper")
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-security")
     compile("org.jongo:jongo:1.1")

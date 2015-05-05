@@ -50,8 +50,7 @@ public class HomeController {
 
     @Autowired
     private MongoCollection users;
-    //    @Autowired
-//    private MessageSource messageSource;
+
     @Autowired
     private ApplicationContext applicationContext;
 
@@ -60,19 +59,12 @@ public class HomeController {
     public String Index() {
         return "redirect:home";
     }
+
     @RequestMapping("/register")
     public String register() {
         return "register";
     }
-//    @RequestMapping(value="/addUser",method= RequestMethod.POST)
-//    public ModelAndView addUser(@Valid @ModelAttribute("register")UserForm userForm, BindingResult result, Model model){
-//        ModelAndView mav = new ModelAndView("register");
-//        if(result.hasErrors()) {
-////            ModelAndView mav= new ModelAndView("register", result.getModel());
-//            return mav;
-//        }
-//        return mav;
-//    }
+
     @RequestMapping(value="/addUser",method= RequestMethod.POST)
     public String addUser(@Valid @ModelAttribute("userForm")UserForm userForm, BindingResult result, Model model){
         if(result.hasErrors()) {
@@ -90,10 +82,7 @@ public class HomeController {
     }
     @RequestMapping("home")
     public String home(Model model){
-        //model.addAttribute("something", messageSource.getMessage("greeting", null, "didn't work", Locale.SIMPLIFIED_CHINESE));
-        //String a = applicationContext.getMessage("greeting",null, Locale.US);
-        //String b = applicationContext.getMessage("greeting",null, Locale.CHINA);
-        //model.addAttribute("something", a+b);
+
         return "home";
     }
 
@@ -128,18 +117,11 @@ public class HomeController {
                 try {
                     DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
                     Document doc = db.parse(content.getInputStream());
-//                    NodeList nodes = doc.getElementsByTagName("title");
-//                    if(nodes!=null && nodes.getLength()!=0){
-//                        Article article = new Article();
-//                        article.setTitle(nodes.item(0).getTextContent());
-//                        repository.save(article);
-//                    }
                     DOMReader xmlReader = new DOMReader();
                     String xml = xmlReader.read(doc).asXML();
-//                    JSONObject json = JSONML.toJSONObject(xml);
                     JSONObject json = XML.toJSONObject(xml);
                     DBObject dbObject = (DBObject) JSON.parse(json.toString());
-//
+                    //TODO: tidy up data access
                     Mongo mongo = new Mongo("localhost", 27017);
                     DB db2 = mongo.getDB("demo");
                     DBCollection collection = db2.getCollection("article");
@@ -147,7 +129,6 @@ public class HomeController {
 
                 } catch (Exception e) {
                     result+=content.getOriginalFilename() + " failed to upload!</br>";
-//                    return "File upload failed"  + ": " + e.getMessage();
                 }
             }
         }
