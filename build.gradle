@@ -50,26 +50,23 @@ targetCompatibility = 1.8
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-mongodb")
     compile("org.springframework.boot:spring-boot-starter-freemarker")
-    //compile("javax.servlet:jstl")
-    //compile("org.apache.tomcat.embed:tomcat-embed-jasper")
+    compile("javax.servlet:jstl:1.2")
+    compile("org.apache.tomcat.embed:tomcat-embed-jasper")
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-security")
     compile("org.jongo:jongo:1.1")
     compile("org.apache.commons:commons-lang3:3.3.2")
     compile("com.google.code.findbugs:jsr305:3.0.0")
-
     compile("org.webjars:webjars-locator:0.21")
 //    compile("org.webjars:jquery:2.0.3-1")
 //    compile("org.webjars:jquery-ui:1.11.2")
 //    compile("org.webjars:jquery-ui-themes:1.11.2")
-//    compile("org.webjars:requirejs:2.1.16")
     compile("org.webjars:bootstrap:3.3.4")
-//    compile("org.webjars:bootswatch-journal:3.1.1+1")
     compile("org.webjars:datatables:1.10.5")
     compile("org.springframework.boot:spring-boot-starter-actuator")
     compile("dom4j:dom4j:1.6.1")
     compile("org.json:json:20141113")
-    testCompile("org.springframework.boot:spring-boot-starter-test") 
+    testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
 
