@@ -16,11 +16,13 @@
 </head>
 <body>
 <div id="header">
-    <h1 id="logo">
-        <a href="/" title="Link to home page" id="homepagelink">
-            <img src="/images/aip/aip_logo_transparent.gif" alt="aip"/>
-        </a>
-    </h1>
+    <div class="container">
+        <div class="row">
+            <a href="/">
+                <img src="/images/aip/aip_logo_transparent.gif" alt="scp"/>
+            </a>
+        </div>
+    </div>
     <@nav.navigation/>
 </div>
 <div class="container">
